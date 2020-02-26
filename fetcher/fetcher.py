@@ -8,7 +8,7 @@ class Fetcher:
 
     def fetch(self, url):
         NewsFeed = feedparser.parse(url)
-        print(len(NewsFeed.entries))
+        #print(len(NewsFeed.entries))
         entry = NewsFeed.entries[1] # list of entry objects
 
         #print(entry.keys())
@@ -19,7 +19,7 @@ class Fetcher:
 
     def fetch(self):
         NewsFeed = feedparser.parse('https://www.channelnewsasia.com/rssfeeds/8395986') # ugly temp function for testing
-        print(len(NewsFeed.entries))
+        #print(len(NewsFeed.entries))
         entry = NewsFeed.entries[1] # list of entry objects
 
         #print(entry.keys())

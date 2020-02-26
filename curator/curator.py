@@ -45,19 +45,19 @@ class Curator:
         # number of most influencing words to display per topic
         n_top_words = 15
 
-        for i, topic_vec in enumerate(cls.components_):
-            print(i, end=' ')
-            # topic_vec.argsort() produces a new array
-            # in which word_index with the least score is the
-            # first array element and word_index with highest
-            # score is the last array element. Then using a
-            # fancy indexing [-1: -n_top_words-1:-1], we are
-            # slicing the array from its end in such a way that
-            # top `n_top_words` word_index with highest scores
-            # are returned in descending order
-            for fid in topic_vec.argsort()[-1:-n_top_words-1:-1]:
-                print(feature_names[fid], end=' ')
-            print()
+        #for i, topic_vec in enumerate(cls.components_):
+        #    print(i, end=' ')
+        #    # topic_vec.argsort() produces a new array
+        #    # in which word_index with the least score is the
+        #    # first array element and word_index with highest
+        #    # score is the last array element. Then using a
+        #    # fancy indexing [-1: -n_top_words-1:-1], we are
+        #    # slicing the array from its end in such a way that
+        #    # top `n_top_words` word_index with highest scores
+        #    # are returned in descending order
+        #    for fid in topic_vec.argsort()[-1:-n_top_words-1:-1]:
+        #        print(feature_names[fid], end=' ')
+        #    print()
 
         # first transform the text into features using vec
         # then pass it to transform of cls
