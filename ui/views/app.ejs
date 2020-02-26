@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>News Reader</title>
+
+    <!-- my stuff -->
+    <link rel="stylesheet" href="stylesheets/style.css">
+  </head>
+  <body>
+    <!-- page content -->
+    <div id="app">
+      <div class="container centered">
+        <div class="focused container">
+          <div class="row">
+            <div class="lined card">
+              <h1>What's up?</h1>
+              Check out the hottest topics in the latest news.
+              <div id="summarise-btn" class="primary button">
+                Summarise it!
+              </div>
+            </div>
+          </div>
+          <div v-if="articles.length == 0" class="loader-box">
+            <div class="loader"></div>
+            <div class="message">Loading...</div>
+          </div>
+          <div v-else v-for="x in articles" class="row">
+            <div class="card">
+              <div class="title">
+                {{ x.title }}
+              </div>
+              <div class="body">
+                {{ x.summary }}
+              </div>
+              <div class="secondary button">
+                More
+              </div>
+            </div>
+            <!--
+              <div class="card"></div>
+              <div class="card"></div>
+              <div class="card"></div>
+            -->
+          </div>
+        </div>
+      </div>
+      {{ message }}
+    </div>
+  </body>
+
+  <!-- libraries -->
+  <!-- development version, includes helpful console warnings -->
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  <script src="javascripts/script.js"></script>
+</html>
+
