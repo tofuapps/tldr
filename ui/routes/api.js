@@ -8,7 +8,7 @@ router.get('/newsfeed/get', function(req, res, next) {
   //res.render('index', { title: 'Express' });
   //res.render('app');
   console.log(path.join(global.appRoot, '../main.py'))
-  const pythonProcess = spawn('python3',[path.join(global.appRoot, '../main.py'), 'arg1']);
+  const pythonProcess = spawn('pipenv', ['run', 'python3', path.join(global.appRoot, '../main.py'), 'arg1']);
   pythonProcess.stdout.on('data', (data) => {
     // Do something with the data returned from python script
     //console.log('got data??? ' + data.toString());

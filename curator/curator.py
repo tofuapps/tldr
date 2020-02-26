@@ -14,13 +14,10 @@ class Curator:
     
 
     def __init__(self):
-        self.fetcher = Fetcher()
         pass
 
 
-    def curate(self):
-        articles = self.fetcher.fetch()
-        
+    def curate(self, articles): 
         #return self.cluster(articles)
         return self.classify(articles)
 

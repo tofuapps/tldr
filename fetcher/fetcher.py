@@ -5,24 +5,32 @@ import feedparser
 import json
 
 class Fetcher:
+    feeds = [ 'https://www.channelnewsasia.com/rssfeeds/8395986' ]
+
     """ Supplies the news articles """
     def __init__(self):
         pass
 
-    def fetch(self, url, debug=False):
+    def fetch(self, url=None, debug=False):
         """"Fetches list of news from an rss feed and returns the raw result."""
-        NewsFeed = feedparser.parse(url)
+        if url is None:
+            url = Fetcher.feeds
 
-        if debug:
-            print(len(NewsFeed.entries))
-            entry = NewsFeed.entries[1]
+        res = []
+        for f in url:
+            NewsFeed = feedparser.parse(f)
 
-            print(entry.keys())
-            print(entry.title)
-            print(entry.summary)
-            print(entry)
+            if debug:
+                print(len(NewsFeed.entries))
+                entry = NewsFeed.entries[1]
 
-        return NewsFeed.entries
+                print(entry.keys())
+                print(entry.title)
+                print(entry.summary)
+                print(entry)
+
+            res += NewsFeed.entries;
+        return res
 
     def simple_fetch(self, url):
         """
@@ -119,9 +127,8 @@ class Fetcher:
 
 
 if __name__ == '__main__':
-    feeds = [ 'https://www.channelnewsasia.com/rssfeeds/8395986' ]
     fetcher = Fetcher()
-    for f in feeds:
+    for f in Fetcher.feeds:
         results = fetcher.simple_fetch(f)
         print("\n\n--- Article  ---")
         print(json.dumps(results[0], indent=4))
