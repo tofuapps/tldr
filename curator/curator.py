@@ -1,10 +1,9 @@
 #!/usr/bin/python3
-import utils.utils
+import utils.utils as utils
 
-from fetcher.fetcher import Fetcher
 from sklearn.feature_extraction.text import TfidfVectorizer
 
-import matplotlib.pyplot as plt
+import numpy as np
 from sklearn.cluster import KMeans
 
 from sklearn.metrics import silhouette_score
@@ -27,6 +26,7 @@ class Curator:
 
         # number of topics to extract
         n_topics = round(len(articles) ** 0.5 * 0.5) # sqrt(n)/2 is hopefully a good estimate
+        #n_topics = 20
 
         from sklearn.feature_extraction.text import CountVectorizer, TfidfVectorizer
         vec = TfidfVectorizer(max_features=5000, stop_words="english", max_df=0.95, min_df=2)
@@ -61,7 +61,13 @@ class Curator:
         # the result will be a matrix of shape [2, 10]
         # then we sort the topic id based on the score using argsort
         # and take the last one (with the highest score) for each row using `[:,-1]` indexing
-        topic_labels = cls.transform(features).argsort(axis=1)[:,-1]
+        #topic_labels = cls.transform(features).argsort(axis=1)[:,-1]
+        topic_scores = cls.transform(features)
+        for row in topic_scores:
+            print(row.max())
+        FIT_VAL = 0.3   # certainty we require before classifying into any topic
+        topic_labels = np.apply_along_axis(lambda row: row.argmax() if row[row.argmax()] >= FIT_VAL else -1, 1, topic_scores)   # for each row
+        #print(topic_labels)
 
         # sort articles into buckets
         buckets = []
@@ -71,7 +77,10 @@ class Curator:
                 'articles': []
             })
         for index, a in enumerate(articles):
-            buckets[topic_labels[index]]['articles'].append(a)
+            current_topic = topic_labels[index]
+            if current_topic == -1:
+                continue
+            buckets[current_topic]['articles'].append(a)
 
         return buckets
 
@@ -88,6 +97,7 @@ class Curator:
 
         # apply kmeans clustering for classfication
         n_clusters = round(len(corpus) ** 0.5 * 0.5)
+        #n_clusters = 50
         print("Generating {} clusters".format(n_clusters))
         clustering_model = KMeans(  # create k-means model with custom config
             n_clusters=n_clusters,
@@ -100,10 +110,15 @@ class Curator:
 
         # evaluate the clustering quality -1 is bad, 0 is overlap, 1 is good
         print(silhouette_score(tfidf_matrix, labels=document_labels))
-        utils.visualize_tfidf_matrix(tfidf_matrix)
+        #utils.visualize_tfidf_matrix(tfidf_matrix)
+        return document_labels
 
 
 
 if __name__ == '__main__':
+    from fetcher.fetcher import Fetcher
+    fetcher = Fetcher()
     curator = Curator()
-    print(curator.curate())
+    articles = fetcher.fetch();
+    #print(curator.cluster(articles))
+    print(curator.curate(articles))

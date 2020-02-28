@@ -1,8 +1,9 @@
 #!/usr/bin/python3
+import matplotlib.pyplot as plt
 from sklearn.decomposition import PCA
 from sklearn.manifold import TSNE
 
-def visualize_tfidf_matrix(self, tfidf_matrix):
+def visualize_tfidf_matrix(tfidf_matrix):
     # Visualisation (optional)
     # ----------------------------------------------------------------------------------------------------------------------
     X = tfidf_matrix.todense() # convert list of vectors into 2d matrix
