@@ -10,38 +10,101 @@
   <body>
     <!-- page content -->
     <div id="app">
-      <div class="container centered">
-        <div class="focused container">
+      <div class="row">
+        <div class="sidebar">
+          <div v-on:click="activetab=0" v-bind:class="[ activetab === 0 ? 'selected' : '']" class="item">
+            <div class="icon">
+              <i data-feather="book"></i>
+            </div>
+            <div class="content">
+              Headlines
+            </div>
+          </div>
+          <div v-on:click="activetab=1" v-bind:class="[ activetab === 1 ? 'selected' : '']" class="item">
+            <div class="icon">
+              <i data-feather="circle"></i>
+            </div>
+            <div class="content">
+              Hot topics
+            </div>
+          </div>
+        </div>
+        <div class="container">
           <div class="row">
-            <div class="lined card">
-              <h1>What's up?</h1>
-              Check out the hottest topics in the latest news.
-              <div id="summarise-btn" class="primary button">
-                Summarise it!
+            <div v-if="activetab === 0" class="column" style="flex: 1">
+              <div class="lined card">
+                <h1>What's up?</h1>
+                Check out the hottest topics in the latest news.
+                <!--<div id="summarise-btn" class="primary button">
+                  Summarise it!
+                </div>-->
+              </div>
+              <div v-if="newsfeed.length == 0" class="loader-box">
+                <div class="loader"></div>
+                <div class="message">Loading...</div>
+              </div>
+              <div v-else v-for="x in newsfeed.reduce((r,a) => {
+                return r.concat(a.articles); },[])" class="row">
+                <a :href=x.link>
+                  <div class="card">
+                    <div class="title">
+                      {{ x.title }}
+                    </div>
+                    <div class="body">
+                      {{ x.summary }}
+                    </div>
+                    <div class="secondary button">
+                      More
+                    </div>
+                  </div>
+                </a>
+                <!--
+                  <div class="card"></div>
+                  <div class="card"></div>
+                  <div class="card"></div>
+                -->
               </div>
             </div>
-          </div>
-          <div v-if="articles.length == 0" class="loader-box">
-            <div class="loader"></div>
-            <div class="message">Loading...</div>
-          </div>
-          <div v-else v-for="x in articles" class="row">
-            <div class="card">
-              <div class="title">
-                {{ x.title }}
+            <div v-if="activetab === 1" class="column" style="flex: 1">
+              <div class="lined card">
+                <h1>Hot topics</h1>
+                Big things happening now
               </div>
-              <div class="body">
-                {{ x.summary }}
+              <div v-if="newsfeed.length == 0" class="loader-box">
+                <div class="loader"></div>
+                <div class="message">Loading...</div>
               </div>
-              <div class="secondary button">
-                More
+              <div v-else v-for="x in newsfeed" class="row">
+                <a :href=x.link>
+                  <div class="card">
+                    <div class="title">
+                      {{ x.keywords }}
+                    </div>
+                    <div class="body">
+                      <!--{{ x.articles.reduce((r,a) => {
+                        return r.concat(a.links); }, []); }}-->
+                    </div>
+                    <div class="secondary button">
+                      More
+                    </div>
+                  </div>
+                </a>
+                <!--
+                  <div class="card"></div>
+                  <div class="card"></div>
+                  <div class="card"></div>
+                -->
               </div>
             </div>
-            <!--
-              <div class="card"></div>
-              <div class="card"></div>
-              <div class="card"></div>
-            -->
+            <div class="column" style="max-width: 200px">
+              <div class="card">
+                <input type="checkbox"/>
+                some options for summariser
+                <div id=".join('\n').substring(0,200)summarise-btn" class="primary button">
+                  Summarise it!
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -52,6 +115,7 @@
   <!-- libraries -->
   <!-- development version, includes helpful console warnings -->
   <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
   <script src="javascripts/script.js"></script>
 </html>
 

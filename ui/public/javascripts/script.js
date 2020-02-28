@@ -1,8 +1,11 @@
+feather.replace();
+
 var app = new Vue({
   el: '#app',
   data: {
-    message: 'Hello Vue!',
-    articles: []
+    activetab: 0,
+    message: '', //'Hello Vue!',
+    newsfeed: []
   }
 })
 
@@ -26,8 +29,10 @@ docReady(() => {
     .then(data => {
       console.log(data);
       console.log(JSON.stringify(data));
-      //articles = data[0].articles;
-      app.articles = data[0].articles;
+      //data[0].articles.forEach(e => {
+      //  e.keywords
+      //});
+      app.newsfeed = data;
       //for (let i = 0; i < data[0].articles.length; ++i) {
       //  newsfeed.articles.push(data[0].articles[i]);
       //}
@@ -50,19 +55,19 @@ docReady(() => {
         </div>
     `;
 
-  document.getElementById('summarise-btn').onclick = () => {
-    let modal = document.createElement('div');
-    modal.innerHTML = sampleModal;
+  //document.getElementById('summarise-btn').onclick = () => {
+  //  let modal = document.createElement('div');
+  //  modal.innerHTML = sampleModal;
 
-    modal.querySelector('input[value="Ok"]').addEventListener('click', () => {
-      document.body.removeChild(modal);
-    });
+  //  modal.querySelector('input[value="Ok"]').addEventListener('click', () => {
+  //    document.body.removeChild(modal);
+  //  });
 
-    modal.querySelector('input[value="Cancel"]').addEventListener('click', () => {
-      document.body.removeChild(modal);
-    });
+  //  modal.querySelector('input[value="Cancel"]').addEventListener('click', () => {
+  //    document.body.removeChild(modal);
+  //  });
 
-    document.body.appendChild(modal);
-  };
+  //  document.body.appendChild(modal);
+  //};
 
 });

@@ -12,16 +12,20 @@
 
 html, body {
   height: 100%;
+  padding: 0 !important;
+  margin: 0 !important;
 }
 
 .container {
+  flex: 1;
+  min-height: 100%;
   display: flex;
   flex-flow: column nowrap;
 }
 
 .focused.container {
   padding: 20px;
-  max-width: 600px;
+  //max-width: 600px;
 }
 
 .centered {
@@ -31,19 +35,23 @@ html, body {
 
 .row {
   display: flex;
-  flex-flow: row wrap;
+  flex-flow: row nowrap;
 }
 
+.column {
+  display: flex;
+  flex-flow: column nowrap;
+}
 
 .card {
-  flex: 1;
+  //flex: 1;
   padding: 20px 40px;
   margin: 10px;
-  min-width: 200px;
+  //min-width: 200px;
   border-radius: 4px;
   box-shadow:
-  inset   0px 0px 0px 1px #eeeeee,
-  1px 1px 1px 1px #eeeeee;
+    inset   0px 0px 0px 1px #eeeeee,
+    1px 1px 1px 1px #eeeeee;
 }
 
 .lined.card {
@@ -151,4 +159,49 @@ color: var(--color-3);
 @keyframes spin {
   0% { transform: rotate(0deg); }
   100% { transform: rotate(360deg); }
+}
+
+.sidebar {
+  flex: 1;
+  max-width: 300px;
+  padding: 8px 0;
+}
+
+.sidebar > .item {
+  padding: 8px 16px;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  min-height: 16px;
+}
+
+.sidebar > .item.selected {
+  background-color: lightgrey;
+}
+
+.sidebar > .item.selected:hover {
+}
+
+.sidebar > .item:hover {
+  color: var(--color-2);
+  cursor: pointer;
+}
+
+.sidebar > .item > .icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-right: 16px;
+}
+
+i {
+  padding: 0;
+}
+
+.sidebar > .item > .content {
+}
+
+a {
+  text-decoration: none;
+  color: black;
 }
