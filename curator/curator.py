@@ -63,8 +63,8 @@ class Curator:
         # and take the last one (with the highest score) for each row using `[:,-1]` indexing
         #topic_labels = cls.transform(features).argsort(axis=1)[:,-1]
         topic_scores = cls.transform(features)
-        for row in topic_scores:
-            print(row.max())
+        #for row in topic_scores:
+        #    print(row.max())
         FIT_VAL = 0.3   # certainty we require before classifying into any topic
         topic_labels = np.apply_along_axis(lambda row: row.argmax() if row[row.argmax()] >= FIT_VAL else -1, 1, topic_scores)   # for each row
         #print(topic_labels)
