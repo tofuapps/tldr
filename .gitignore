@@ -103,6 +103,9 @@ dist
 # TernJS port file
 .tern-port
 
+# Python cache
+__pycache__/
+
 # Swap
 [._]*.s[a-v][a-z]
 !*.svg  # comment out if you don't need vector files
