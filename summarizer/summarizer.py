@@ -8,13 +8,13 @@ class Summarizer:
         self.stopwords = nltk.corpus.stopwords.words('english')
 
 
-    def summarize(self, title, passage, title_factor=3, sentences=5, debug=False):
+    def summarize(self, title, passage, title_factor=3, num_sentences=5, debug=False):
         """
         Returns a summary of the passage based upon the title.
 
         The importance of the title contents in the summary can be adjusted with the title_factor parameter, which defaults to 3.
 
-        The number of sentences in the returned summary can be adjusted with the sentences parameter, which defaults to 5.
+        The number of sentences in the returned summary can be adjusted with the num_sentences parameter, which defaults to 5.
 
         A dict with the keys 'title' and 'summary' will be returned.
         """
@@ -68,7 +68,7 @@ class Summarizer:
                 print(str(data[1]) + ": " + data[0])
 
         #use first 5 sentences, and arrange based on original sentence order
-        sentence_score_pairs = sentence_score_pairs[0:min(sentences, len(sentence_score_pairs))]
+        sentence_score_pairs = sentence_score_pairs[0:min(num_sentences, len(sentence_score_pairs))]
         sentence_score_pairs.sort(key=lambda x: sentences.index(x[0]))
 
         #combine the summaries together, with [...] to indicate parts that are removed.
