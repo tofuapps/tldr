@@ -31,7 +31,7 @@
         </div>
         <div class="container">
           <div class="row">
-            <div v-if="activetab === 0" class="column" style="flex: 1">
+            <div v-if="activetab === 0" class="column" style="flex: 1" id="headlines-container">
               <div class="lined card">
                 <h1>What's up?</h1>
                 Check out the hottest topics in the latest news.
@@ -45,7 +45,7 @@
               </div>
               <div v-else v-for="x in newsfeed.reduce((r,a) => {
                 return r.concat(a.articles); },[])" class="row">
-                <a :href=x.link>
+                <a> <!--:href=x.link>-->
                   <div class="card">
                     <div class="title">
                       {{ x.title }}
@@ -53,7 +53,7 @@
                     <div class="body">
                       {{ x.summary }}
                     </div>
-                    <div class="secondary button">
+                    <div class="secondary button single-summary-btn">
                       More
                     </div>
                   </div>

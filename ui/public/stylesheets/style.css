@@ -124,11 +124,13 @@ color: var(--color-3);
 }
 
 .modal > .content {
-  background-color: #222;
-  border: solid 4px #222;
-  border-radius: 8px;
-  //box-shadow: 0 0 0 4px #ccc;
+  background-color: var(--color-0);
   padding: 32px;
+  //border: solid 4px var(--color-0);
+  border-radius: 4px;
+  box-shadow:
+    inset   0px 0px 0px 1px #eeeeee,
+    1px 1px 1px 1px #eeeeee;
 }
 
 .modal > .content > .title {

@@ -3,63 +3,105 @@
         "articles": [
             {
                 "guidislink": false,
-                "id": "http://www.straitstimes.com/world/while-you-were-sleeping-5-stories-you-might-have-missed-feb-28-1",
-                "link": "http://www.straitstimes.com/world/while-you-were-sleeping-5-stories-you-might-have-missed-feb-28-1",
+                "id": "http://www.straitstimes.com/world/united-states/three-coronavirus-cases-confirmed-in-maryland-governor",
+                "link": "http://www.straitstimes.com/world/united-states/three-coronavirus-cases-confirmed-in-maryland-governor",
                 "links": [
                     {
-                        "href": "http://www.straitstimes.com/world/while-you-were-sleeping-5-stories-you-might-have-missed-feb-28-1",
+                        "href": "http://www.straitstimes.com/world/united-states/three-coronavirus-cases-confirmed-in-maryland-governor",
                         "rel": "alternate",
                         "type": "text/html"
                     }
                 ],
-                "published": "Fri, 28 Feb 2020 06:00:00 +0800",
+                "published": "Fri, 06 Mar 2020 08:32:28 +0800",
                 "published_parsed": [
                     2020,
-                    2,
-                    27,
-                    22,
-                    0,
-                    0,
                     3,
-                    58,
+                    6,
+                    0,
+                    32,
+                    28,
+                    4,
+                    66,
                     0
                 ],
                 "source": {
-                    "href": "https://www.straitstimes.com/news/world/rss.xml/20200228",
+                    "href": "https://www.straitstimes.com/news/world/rss.xml/20200306",
                     "title": "The Straits Times"
                 },
-                "summary": "February 28, 2020 6:00 AM<br /><br />A selection of news stories that happened overnight, Feb 28, 2020.",
+                "summary": "March 06, 2020 8:32 AM<br /><br />WASHINGTON (REUTERS) - Maryland's public health laboratory has confirmed three coronavirus cases, Governor Larry Hogan said in a statement on Thursday (March 5).",
                 "summary_detail": {
                     "base": "https://www.straitstimes.com/",
                     "language": "en",
                     "type": "text/html",
-                    "value": "February 28, 2020 6:00 AM<br /><br />A selection of news stories that happened overnight, Feb 28, 2020."
+                    "value": "March 06, 2020 8:32 AM<br /><br />WASHINGTON (REUTERS) - Maryland's public health laboratory has confirmed three coronavirus cases, Governor Larry Hogan said in a statement on Thursday (March 5)."
                 },
-                "title": "While You Were Sleeping: 5 stories you might have missed, Feb 28",
+                "title": "Three coronavirus cases confirmed in Maryland: Governor",
                 "title_detail": {
                     "base": "https://www.straitstimes.com/",
                     "language": "en",
                     "type": "text/plain",
-                    "value": "While You Were Sleeping: 5 stories you might have missed, Feb 28"
+                    "value": "Three coronavirus cases confirmed in Maryland: Governor"
+                }
+            },
+            {
+                "guidislink": false,
+                "id": "http://www.straitstimes.com/world/while-you-were-sleeping-5-stories-you-might-have-missed-march-6-1",
+                "link": "http://www.straitstimes.com/world/while-you-were-sleeping-5-stories-you-might-have-missed-march-6-1",
+                "links": [
+                    {
+                        "href": "http://www.straitstimes.com/world/while-you-were-sleeping-5-stories-you-might-have-missed-march-6-1",
+                        "rel": "alternate",
+                        "type": "text/html"
+                    }
+                ],
+                "published": "Fri, 06 Mar 2020 06:00:00 +0800",
+                "published_parsed": [
+                    2020,
+                    3,
+                    5,
+                    22,
+                    0,
+                    0,
+                    3,
+                    65,
+                    0
+                ],
+                "source": {
+                    "href": "https://www.straitstimes.com/news/world/rss.xml/20200306",
+                    "title": "The Straits Times"
+                },
+                "summary": "March 06, 2020 6:00 AM<br /><br />A selection of news stories that happened overnight, March 6, 2020.",
+                "summary_detail": {
+                    "base": "https://www.straitstimes.com/",
+                    "language": "en",
+                    "type": "text/html",
+                    "value": "March 06, 2020 6:00 AM<br /><br />A selection of news stories that happened overnight, March 6, 2020."
+                },
+                "title": "While You Were Sleeping: 5 stories you might have missed, March 6",
+                "title_detail": {
+                    "base": "https://www.straitstimes.com/",
+                    "language": "en",
+                    "type": "text/plain",
+                    "value": "While You Were Sleeping: 5 stories you might have missed, March 6"
                 }
             }
         ],
         "keywords": [
             "br",
+            "march",
             "2020",
-            "february",
-            "28",
+            "06",
             "reuters",
             "00",
-            "feb",
-            "27",
-            "washington",
             "thursday",
-            "11",
-            "cases",
             "afp",
-            "states",
-            "said"
+            "coronavirus",
+            "washington",
+            "health",
+            "nytimes",
+            "people",
+            "said",
+            "pm"
         ]
     },
     {
@@ -67,11 +109,11 @@
             {
                 "guidislink": false,
                 "href": "",
-                "id": "https://www.channelnewsasia.com/news/asia/covid-19-japan-school-closure-plan-stuns-parents-officials-12479628",
-                "link": "https://www.channelnewsasia.com/news/asia/covid-19-japan-school-closure-plan-stuns-parents-officials-12479628",
+                "id": "https://www.channelnewsasia.com/news/asia/covid19-coronavirus-new-cases-philippines-manila-12509070",
+                "link": "https://www.channelnewsasia.com/news/asia/covid19-coronavirus-new-cases-philippines-manila-12509070",
                 "links": [
                     {
-                        "href": "https://www.channelnewsasia.com/news/asia/covid-19-japan-school-closure-plan-stuns-parents-officials-12479628",
+                        "href": "https://www.channelnewsasia.com/news/asia/covid19-coronavirus-new-cases-philippines-manila-12509070",
                         "rel": "alternate",
                         "type": "text/html"
                     }
@@ -79,28 +121,28 @@
                 "media_thumbnail": [
                     {
                         "height": "720",
-                        "url": "https://www.channelnewsasia.com/image/12476202/16x9/1280/720/e05e1040668ec29e4ea3c4e427a0f55c/Zk/japan-pupils-wearing-surgical-masks.jpg",
+                        "url": "https://www.channelnewsasia.com/image/12447218/16x9/1280/720/1c45d757b80071f1f9c063b274c4a50c/VM/a-woman-wearing-a-protective-mask-rides-a-crowded-train-in-manila-1.jpg",
                         "width": "1280"
                     }
                 ],
-                "published": "Fri, 28 Feb 2020 10:59:54 +0800",
+                "published": "Fri, 06 Mar 2020 15:20:38 +0800",
                 "published_parsed": [
                     2020,
-                    2,
-                    28,
-                    2,
-                    59,
-                    54,
+                    3,
+                    6,
+                    7,
+                    20,
+                    38,
                     4,
-                    59,
+                    66,
                     0
                 ],
-                "summary": "The Japanese government's abrupt call for schools nationwide to close over the coronavirus outbreak has caught parents and administrators off-guard, prompting criticism even as some experts defended the move.",
+                "summary": "MANILA: Philippines announced two more COVID-19 cases on Friday (Mar 6),\u00a0bringing the country\u2019s total number of infections up to five, the department of health said.\u00a0\n\n\nIn a press release, the health department said the fourth case was a 48-year-old\u00a0Filipino man with a travel history to Japan.\u00a0The ...",
                 "summary_detail": {
                     "base": "https://www.channelnewsasia.com/rssfeeds/8395986",
                     "language": "en-US",
                     "type": "text/html",
-                    "value": "The Japanese government's abrupt call for schools nationwide to close over the coronavirus outbreak has caught parents and administrators off-guard, prompting criticism even as some experts defended the move."
+                    "value": "MANILA: Philippines announced two more COVID-19 cases on Friday (Mar 6),\u00a0bringing the country\u2019s total number of infections up to five, the department of health said.\u00a0\n\n\nIn a press release, the health department said the fourth case was a 48-year-old\u00a0Filipino man with a travel history to Japan.\u00a0The ..."
                 },
                 "tags": [
                     {
@@ -109,12 +151,1034 @@
                         "term": "Asia"
                     }
                 ],
-                "title": "COVID-19: Japan school closure plan stuns parents, officials",
+                "title": "2 new COVID-19 cases in Philippines, including man who had travelled to Japan",
                 "title_detail": {
                     "base": "https://www.channelnewsasia.com/rssfeeds/8395986",
                     "language": "en-US",
                     "type": "text/plain",
-                    "value": "COVID-19: Japan school closure plan stuns parents, officials"
+                    "value": "2 new COVID-19 cases in Philippines, including man who had travelled to Japan"
+                }
+            },
+            {
+                "guidislink": false,
+                "href": "",
+                "id": "https://www.channelnewsasia.com/news/singapore/coronavirus-temperature-screening-important-but-not-foolproof-12507898",
+                "link": "https://www.channelnewsasia.com/news/singapore/coronavirus-temperature-screening-important-but-not-foolproof-12507898",
+                "links": [
+                    {
+                        "href": "https://www.channelnewsasia.com/news/singapore/coronavirus-temperature-screening-important-but-not-foolproof-12507898",
+                        "rel": "alternate",
+                        "type": "text/html"
+                    }
+                ],
+                "media_thumbnail": [
+                    {
+                        "height": "720",
+                        "url": "https://www.channelnewsasia.com/image/12507914/16x9/1280/720/e57c3103d0ceff650656db71dfa171a5/pE/entire-panel.png",
+                        "width": "1280"
+                    }
+                ],
+                "published": "Fri, 06 Mar 2020 14:30:08 +0800",
+                "published_parsed": [
+                    2020,
+                    3,
+                    6,
+                    6,
+                    30,
+                    8,
+                    4,
+                    66,
+                    0
+                ],
+                "summary": "SINGAPORE: Temperature screening is an important tool in detecting\u00a0COVID-19 cases, but it is not a foolproof measure and should not be regarded as the only way to identify people who are unwell, health authorities said on Friday (Mar 6).\n\n\"Temperature tests are\u00a0very important because many of our ...",
+                "summary_detail": {
+                    "base": "https://www.channelnewsasia.com/rssfeeds/8395986",
+                    "language": "en-US",
+                    "type": "text/html",
+                    "value": "SINGAPORE: Temperature screening is an important tool in detecting\u00a0COVID-19 cases, but it is not a foolproof measure and should not be regarded as the only way to identify people who are unwell, health authorities said on Friday (Mar 6).\n\n\"Temperature tests are\u00a0very important because many of our ..."
+                },
+                "tags": [
+                    {
+                        "label": null,
+                        "scheme": null,
+                        "term": "Singapore"
+                    }
+                ],
+                "title": "Temperature screening 'important' but not 'foolproof' in detecting COVID-19: Gan Kim Yong",
+                "title_detail": {
+                    "base": "https://www.channelnewsasia.com/rssfeeds/8395986",
+                    "language": "en-US",
+                    "type": "text/plain",
+                    "value": "Temperature screening 'important' but not 'foolproof' in detecting COVID-19: Gan Kim Yong"
+                }
+            },
+            {
+                "guidislink": false,
+                "href": "",
+                "id": "https://www.channelnewsasia.com/news/singapore/coronavirus-pets-spread-possibility-singapore-moh-covid-19-12508030",
+                "link": "https://www.channelnewsasia.com/news/singapore/coronavirus-pets-spread-possibility-singapore-moh-covid-19-12508030",
+                "links": [
+                    {
+                        "href": "https://www.channelnewsasia.com/news/singapore/coronavirus-pets-spread-possibility-singapore-moh-covid-19-12508030",
+                        "rel": "alternate",
+                        "type": "text/html"
+                    }
+                ],
+                "media_thumbnail": [
+                    {
+                        "height": "720",
+                        "url": "https://www.channelnewsasia.com/image/8170294/16x9/1280/720/87226d2747a00110f69177f55b55ce44/kT/yishun-cat---2451240.png",
+                        "width": "1280"
+                    }
+                ],
+                "published": "Fri, 06 Mar 2020 13:21:57 +0800",
+                "published_parsed": [
+                    2020,
+                    3,
+                    6,
+                    5,
+                    21,
+                    57,
+                    4,
+                    66,
+                    0
+                ],
+                "summary": "SINGAPORE: There is a \"theoretical possibility\" that COVID-19 could spread from animals to humans, the Ministry of Health (MOH) said on Friday (Mar 6), although it assessed that pets are not a \"serious vector\" of transmission.\n\nIn a news conference, MOH's director of Medical Services Kenneth Mak ...",
+                "summary_detail": {
+                    "base": "https://www.channelnewsasia.com/rssfeeds/8395986",
+                    "language": "en-US",
+                    "type": "text/html",
+                    "value": "SINGAPORE: There is a \"theoretical possibility\" that COVID-19 could spread from animals to humans, the Ministry of Health (MOH) said on Friday (Mar 6), although it assessed that pets are not a \"serious vector\" of transmission.\n\nIn a news conference, MOH's director of Medical Services Kenneth Mak ..."
+                },
+                "tags": [
+                    {
+                        "label": null,
+                        "scheme": null,
+                        "term": "Singapore"
+                    }
+                ],
+                "title": "'Theoretical possibility' that COVID-19 can spread from animals to humans, but pets not a serious vector of transmission: MOH",
+                "title_detail": {
+                    "base": "https://www.channelnewsasia.com/rssfeeds/8395986",
+                    "language": "en-US",
+                    "type": "text/plain",
+                    "value": "'Theoretical possibility' that COVID-19 can spread from animals to humans, but pets not a serious vector of transmission: MOH"
+                }
+            },
+            {
+                "guidislink": false,
+                "href": "",
+                "id": "https://www.channelnewsasia.com/news/singapore/coronavirus-covid-19-clean-taskforce-12507868",
+                "link": "https://www.channelnewsasia.com/news/singapore/coronavirus-covid-19-clean-taskforce-12507868",
+                "links": [
+                    {
+                        "href": "https://www.channelnewsasia.com/news/singapore/coronavirus-covid-19-clean-taskforce-12507868",
+                        "rel": "alternate",
+                        "type": "text/html"
+                    }
+                ],
+                "media_thumbnail": [
+                    {
+                        "height": "720",
+                        "url": "https://www.channelnewsasia.com/image/12507902/16x9/1280/720/a2fa16da6338c96de0812b97c624aee3/Fd/masagos.png",
+                        "width": "1280"
+                    }
+                ],
+                "published": "Fri, 06 Mar 2020 14:35:39 +0800",
+                "published_parsed": [
+                    2020,
+                    3,
+                    6,
+                    6,
+                    35,
+                    39,
+                    4,
+                    66,
+                    0
+                ],
+                "summary": "SINGAPORE: A multi-agency task force has been formed to step up public hygiene standards in Singapore beyond the COVID-19 outbreak, authorities said on Friday (Mar 6).\n\nThe new SG Clean Taskforce, chaired by Minister for the Environment and Water Resources Masagos Zulkifli, is\u00a0under the purview of ...",
+                "summary_detail": {
+                    "base": "https://www.channelnewsasia.com/rssfeeds/8395986",
+                    "language": "en-US",
+                    "type": "text/html",
+                    "value": "SINGAPORE: A multi-agency task force has been formed to step up public hygiene standards in Singapore beyond the COVID-19 outbreak, authorities said on Friday (Mar 6).\n\nThe new SG Clean Taskforce, chaired by Minister for the Environment and Water Resources Masagos Zulkifli, is\u00a0under the purview of ..."
+                },
+                "tags": [
+                    {
+                        "label": null,
+                        "scheme": null,
+                        "term": "Singapore"
+                    }
+                ],
+                "title": "Task force formed to raise public hygiene standards beyond COVID-19 outbreak",
+                "title_detail": {
+                    "base": "https://www.channelnewsasia.com/rssfeeds/8395986",
+                    "language": "en-US",
+                    "type": "text/plain",
+                    "value": "Task force formed to raise public hygiene standards beyond COVID-19 outbreak"
+                }
+            },
+            {
+                "guidislink": false,
+                "href": "",
+                "id": "https://www.channelnewsasia.com/news/asia/covid19-china-reports-more-deaths-infections-coronavirus-12508004",
+                "link": "https://www.channelnewsasia.com/news/asia/covid19-china-reports-more-deaths-infections-coronavirus-12508004",
+                "links": [
+                    {
+                        "href": "https://www.channelnewsasia.com/news/asia/covid19-china-reports-more-deaths-infections-coronavirus-12508004",
+                        "rel": "alternate",
+                        "type": "text/html"
+                    }
+                ],
+                "media_thumbnail": [
+                    {
+                        "height": "720",
+                        "url": "https://www.channelnewsasia.com/image/12507806/16x9/1280/720/4a6b43b0a5112a7a4ce4f97e7e07dff/Dv/a-man-wears-a-mask-as-he-crosses-a-street-in-a-business-district-in-beijing-1.jpg",
+                        "width": "1280"
+                    }
+                ],
+                "published": "Fri, 06 Mar 2020 10:53:11 +0800",
+                "published_parsed": [
+                    2020,
+                    3,
+                    6,
+                    2,
+                    53,
+                    11,
+                    4,
+                    66,
+                    0
+                ],
+                "summary": "BEIJING: China reported 30 more deaths from the COVID-19 outbreak on Friday (Mar 6), with fresh infections rising for a second straight day and 16 new cases imported from overseas.\n\nIn total 3,042 people have died from the disease in China, the National Health Commission said.\n\nREAD:\u00a0COVID-19 cases ...",
+                "summary_detail": {
+                    "base": "https://www.channelnewsasia.com/rssfeeds/8395986",
+                    "language": "en-US",
+                    "type": "text/html",
+                    "value": "BEIJING: China reported 30 more deaths from the COVID-19 outbreak on Friday (Mar 6), with fresh infections rising for a second straight day and 16 new cases imported from overseas.\n\nIn total 3,042 people have died from the disease in China, the National Health Commission said.\n\nREAD:\u00a0COVID-19 cases ..."
+                },
+                "tags": [
+                    {
+                        "label": null,
+                        "scheme": null,
+                        "term": "Asia"
+                    }
+                ],
+                "title": "China reports 30 COVID-19 deaths, rise in new infections and imported cases",
+                "title_detail": {
+                    "base": "https://www.channelnewsasia.com/rssfeeds/8395986",
+                    "language": "en-US",
+                    "type": "text/plain",
+                    "value": "China reports 30 COVID-19 deaths, rise in new infections and imported cases"
+                }
+            }
+        ],
+        "keywords": [
+            "singapore",
+            "mar",
+            "friday",
+            "said",
+            "covid",
+            "19",
+            "cases",
+            "health",
+            "total",
+            "country",
+            "authorities",
+            "announced",
+            "number",
+            "minister",
+            "reported"
+        ]
+    },
+    {
+        "articles": [
+            {
+                "guidislink": false,
+                "href": "",
+                "id": "https://www.channelnewsasia.com/news/business/facebook--google-ask-san-francisco-staff-to-work-from-home-amid-coronavirus-12509094",
+                "link": "https://www.channelnewsasia.com/news/business/facebook--google-ask-san-francisco-staff-to-work-from-home-amid-coronavirus-12509094",
+                "links": [
+                    {
+                        "href": "https://www.channelnewsasia.com/news/business/facebook--google-ask-san-francisco-staff-to-work-from-home-amid-coronavirus-12509094",
+                        "rel": "alternate",
+                        "type": "text/html"
+                    }
+                ],
+                "media_thumbnail": [
+                    {
+                        "height": "720",
+                        "url": "https://www.channelnewsasia.com/image/12509090/16x9/1280/720/17dce8cc005ae72df1de0616f7faabc/hk/file-photo--facebook-logos-1.jpg",
+                        "width": "1280"
+                    }
+                ],
+                "published": "Fri, 06 Mar 2020 14:30:29 +0800",
+                "published_parsed": [
+                    2020,
+                    3,
+                    6,
+                    6,
+                    30,
+                    29,
+                    4,
+                    66,
+                    0
+                ],
+                "summary": "Social media giant Facebook Inc and Alphabet Inc's  Google on Thursday recommended their San Francisco Bay area employees to work from home to minimize the risk of spreading Covid-19.",
+                "summary_detail": {
+                    "base": "https://www.channelnewsasia.com/rssfeeds/8395986",
+                    "language": "en-US",
+                    "type": "text/html",
+                    "value": "Social media giant Facebook Inc and Alphabet Inc's  Google on Thursday recommended their San Francisco Bay area employees to work from home to minimize the risk of spreading Covid-19."
+                },
+                "tags": [
+                    {
+                        "label": null,
+                        "scheme": null,
+                        "term": "Business"
+                    }
+                ],
+                "title": "Facebook, Google ask San Francisco staff to work from home amid coronavirus",
+                "title_detail": {
+                    "base": "https://www.channelnewsasia.com/rssfeeds/8395986",
+                    "language": "en-US",
+                    "type": "text/plain",
+                    "value": "Facebook, Google ask San Francisco staff to work from home amid coronavirus"
+                }
+            },
+            {
+                "guidislink": false,
+                "href": "",
+                "id": "https://www.channelnewsasia.com/news/sport/golfer-piercy-loses-sponsors-over-homophobic-buttigieg-meme---reports-12508544",
+                "link": "https://www.channelnewsasia.com/news/sport/golfer-piercy-loses-sponsors-over-homophobic-buttigieg-meme---reports-12508544",
+                "links": [
+                    {
+                        "href": "https://www.channelnewsasia.com/news/sport/golfer-piercy-loses-sponsors-over-homophobic-buttigieg-meme---reports-12508544",
+                        "rel": "alternate",
+                        "type": "text/html"
+                    }
+                ],
+                "media_thumbnail": [
+                    {
+                        "height": "720",
+                        "url": "https://www.channelnewsasia.com/image/12508542/16x9/1280/720/3160b5a70537eea139bc6fefdbb4836a/Mh/pga--at-amp-t-pebble-beach-pro-am---third-round-1.jpg",
+                        "width": "1280"
+                    }
+                ],
+                "published": "Fri, 06 Mar 2020 11:25:27 +0800",
+                "published_parsed": [
+                    2020,
+                    3,
+                    6,
+                    3,
+                    25,
+                    27,
+                    4,
+                    66,
+                    0
+                ],
+                "summary": "Former U.S. Open runner-up Scott Piercy has lost major sponsors after he posted a homophobic meme on social media about openly-gay former U.S. presidential candidate Pete Buttigieg, several media reported.",
+                "summary_detail": {
+                    "base": "https://www.channelnewsasia.com/rssfeeds/8395986",
+                    "language": "en-US",
+                    "type": "text/html",
+                    "value": "Former U.S. Open runner-up Scott Piercy has lost major sponsors after he posted a homophobic meme on social media about openly-gay former U.S. presidential candidate Pete Buttigieg, several media reported."
+                },
+                "tags": [
+                    {
+                        "label": null,
+                        "scheme": null,
+                        "term": "Sport"
+                    }
+                ],
+                "title": "Golfer Piercy loses sponsors over homophobic Buttigieg meme - reports",
+                "title_detail": {
+                    "base": "https://www.channelnewsasia.com/rssfeeds/8395986",
+                    "language": "en-US",
+                    "type": "text/plain",
+                    "value": "Golfer Piercy loses sponsors over homophobic Buttigieg meme - reports"
+                }
+            },
+            {
+                "guidislink": false,
+                "id": "https://www.bbc.co.uk/news/world-us-canada-51762753",
+                "link": "https://www.bbc.co.uk/news/world-us-canada-51762753",
+                "links": [
+                    {
+                        "href": "https://www.bbc.co.uk/news/world-us-canada-51762753",
+                        "rel": "alternate",
+                        "type": "text/html"
+                    }
+                ],
+                "published": "Thu, 05 Mar 2020 21:38:40 GMT",
+                "published_parsed": [
+                    2020,
+                    3,
+                    5,
+                    21,
+                    38,
+                    40,
+                    3,
+                    65,
+                    0
+                ],
+                "summary": "A social media video showed D'Adrien Anderson licking ice cream and putting it back.",
+                "summary_detail": {
+                    "base": "http://feeds.bbci.co.uk/news/rss.xml",
+                    "language": null,
+                    "type": "text/html",
+                    "value": "A social media video showed D'Adrien Anderson licking ice cream and putting it back."
+                },
+                "title": "Texas ice cream licker jailed for social media joke",
+                "title_detail": {
+                    "base": "http://feeds.bbci.co.uk/news/rss.xml",
+                    "language": null,
+                    "type": "text/plain",
+                    "value": "Texas ice cream licker jailed for social media joke"
+                }
+            },
+            {
+                "guidislink": false,
+                "id": "https://www.bbc.co.uk/news/disability-51726896",
+                "link": "https://www.bbc.co.uk/news/disability-51726896",
+                "links": [
+                    {
+                        "href": "https://www.bbc.co.uk/news/disability-51726896",
+                        "rel": "alternate",
+                        "type": "text/html"
+                    }
+                ],
+                "published": "Fri, 06 Mar 2020 04:02:57 GMT",
+                "published_parsed": [
+                    2020,
+                    3,
+                    6,
+                    4,
+                    2,
+                    57,
+                    4,
+                    66,
+                    0
+                ],
+                "summary": "They can hula hoop and inject insulin at the same time. Meet the duo who are using social media to destigmatise diabetes.",
+                "summary_detail": {
+                    "base": "http://feeds.bbci.co.uk/news/rss.xml",
+                    "language": null,
+                    "type": "text/html",
+                    "value": "They can hula hoop and inject insulin at the same time. Meet the duo who are using social media to destigmatise diabetes."
+                },
+                "title": "The TikTok stars giving diabetes the needle",
+                "title_detail": {
+                    "base": "http://feeds.bbci.co.uk/news/rss.xml",
+                    "language": null,
+                    "type": "text/plain",
+                    "value": "The TikTok stars giving diabetes the needle"
+                }
+            },
+            {
+                "guidislink": false,
+                "id": "https://www.bbc.co.uk/news/stories-51591410",
+                "link": "https://www.bbc.co.uk/news/stories-51591410",
+                "links": [
+                    {
+                        "href": "https://www.bbc.co.uk/news/stories-51591410",
+                        "rel": "alternate",
+                        "type": "text/html"
+                    }
+                ],
+                "published": "Sat, 22 Feb 2020 01:01:19 GMT",
+                "published_parsed": [
+                    2020,
+                    2,
+                    22,
+                    1,
+                    1,
+                    19,
+                    5,
+                    53,
+                    0
+                ],
+                "summary": "More young people are turning to social media to explore their faith.",
+                "summary_detail": {
+                    "base": "http://feeds.bbci.co.uk/news/rss.xml",
+                    "language": null,
+                    "type": "text/html",
+                    "value": "More young people are turning to social media to explore their faith."
+                },
+                "title": "What happens when a Hindu and Muslim YouTuber meet?",
+                "title_detail": {
+                    "base": "http://feeds.bbci.co.uk/news/rss.xml",
+                    "language": null,
+                    "type": "text/plain",
+                    "value": "What happens when a Hindu and Muslim YouTuber meet?"
+                }
+            },
+            {
+                "guidislink": false,
+                "id": "http://www.straitstimes.com/world/united-states/facebook-google-ask-san-francisco-staff-to-work-from-home-amid-coronavirus",
+                "link": "http://www.straitstimes.com/world/united-states/facebook-google-ask-san-francisco-staff-to-work-from-home-amid-coronavirus",
+                "links": [
+                    {
+                        "href": "http://www.straitstimes.com/world/united-states/facebook-google-ask-san-francisco-staff-to-work-from-home-amid-coronavirus",
+                        "rel": "alternate",
+                        "type": "text/html"
+                    }
+                ],
+                "published": "Fri, 06 Mar 2020 14:28:45 +0800",
+                "published_parsed": [
+                    2020,
+                    3,
+                    6,
+                    6,
+                    28,
+                    45,
+                    4,
+                    66,
+                    0
+                ],
+                "source": {
+                    "href": "https://www.straitstimes.com/news/world/rss.xml/20200306",
+                    "title": "The Straits Times"
+                },
+                "summary": "March 06, 2020 2:28 PM<br /><br />SAN FRANCISCO (REUTERS) - Social media giant Facebook and Alphabet's Google on Thursday (March 5) recommended that their San Francisco Bay area employees to work from home to minimise the risk of spreading Covid-19.",
+                "summary_detail": {
+                    "base": "https://www.straitstimes.com/",
+                    "language": "en",
+                    "type": "text/html",
+                    "value": "March 06, 2020 2:28 PM<br /><br />SAN FRANCISCO (REUTERS) - Social media giant Facebook and Alphabet's Google on Thursday (March 5) recommended that their San Francisco Bay area employees to work from home to minimise the risk of spreading Covid-19."
+                },
+                "title": "Coronavirus: Facebook, Google ask San Francisco staff to work from home",
+                "title_detail": {
+                    "base": "https://www.straitstimes.com/",
+                    "language": "en",
+                    "type": "text/plain",
+                    "value": "Coronavirus: Facebook, Google ask San Francisco staff to work from home"
+                }
+            }
+        ],
+        "keywords": [
+            "media",
+            "social",
+            "people",
+            "video",
+            "duo",
+            "san",
+            "francisco",
+            "using",
+            "spreading",
+            "work",
+            "gay",
+            "time",
+            "alphabet",
+            "giant",
+            "google"
+        ]
+    },
+    {
+        "articles": [
+            {
+                "guidislink": false,
+                "href": "",
+                "id": "https://www.channelnewsasia.com/news/sport/football-ighalo-s-double-denies-rooney-as-man-utd-move-into-fa-12507558",
+                "link": "https://www.channelnewsasia.com/news/sport/football-ighalo-s-double-denies-rooney-as-man-utd-move-into-fa-12507558",
+                "links": [
+                    {
+                        "href": "https://www.channelnewsasia.com/news/sport/football-ighalo-s-double-denies-rooney-as-man-utd-move-into-fa-12507558",
+                        "rel": "alternate",
+                        "type": "text/html"
+                    }
+                ],
+                "media_thumbnail": [
+                    {
+                        "height": "720",
+                        "url": "https://www.channelnewsasia.com/image/12507556/16x9/1280/720/697cc1ed38c3cdca298e2dad0c8fb364/gI/manchester-united-striker-odion-ighalo-scored-his-team-s-second-goal-against-derby-1583444857335-8.jpg",
+                        "width": "1280"
+                    }
+                ],
+                "published": "Fri, 06 Mar 2020 07:19:26 +0800",
+                "published_parsed": [
+                    2020,
+                    3,
+                    5,
+                    23,
+                    19,
+                    26,
+                    3,
+                    65,
+                    0
+                ],
+                "summary": "DERBY: Ole Gunnar Solskjaer has challenged Manchester United to compete on three fronts after they moved into the FA Cup quarter-finals with a 3-0 win at Wayne Rooney's Derby on Thursday (Mar 5).\n\nSolskjaer's side were never in danger of a shock fifth round exit against the second tier Rams as Luke ...",
+                "summary_detail": {
+                    "base": "https://www.channelnewsasia.com/rssfeeds/8395986",
+                    "language": "en-US",
+                    "type": "text/html",
+                    "value": "DERBY: Ole Gunnar Solskjaer has challenged Manchester United to compete on three fronts after they moved into the FA Cup quarter-finals with a 3-0 win at Wayne Rooney's Derby on Thursday (Mar 5).\n\nSolskjaer's side were never in danger of a shock fifth round exit against the second tier Rams as Luke ..."
+                },
+                "tags": [
+                    {
+                        "label": null,
+                        "scheme": null,
+                        "term": "Sport"
+                    }
+                ],
+                "title": "Football: Ighalo's double denies Rooney as Man Utd move into FA Cup quarter-finals",
+                "title_detail": {
+                    "base": "https://www.channelnewsasia.com/rssfeeds/8395986",
+                    "language": "en-US",
+                    "type": "text/plain",
+                    "value": "Football: Ighalo's double denies Rooney as Man Utd move into FA Cup quarter-finals"
+                }
+            },
+            {
+                "guidislink": false,
+                "href": "",
+                "id": "https://www.channelnewsasia.com/news/sport/football-rapinoe-adjusting-to-life-in-the-spotlight-12507338",
+                "link": "https://www.channelnewsasia.com/news/sport/football-rapinoe-adjusting-to-life-in-the-spotlight-12507338",
+                "links": [
+                    {
+                        "href": "https://www.channelnewsasia.com/news/sport/football-rapinoe-adjusting-to-life-in-the-spotlight-12507338",
+                        "rel": "alternate",
+                        "type": "text/html"
+                    }
+                ],
+                "media_thumbnail": [
+                    {
+                        "height": "720",
+                        "url": "https://www.channelnewsasia.com/image/12253430/16x9/1280/720/376417f26e662645b3d2c14a365d1044/rQ/us-football-star-megan-rapinoe-here-receiving-sports-illustrated-s-sportsperson-of-the-year-award-for-2019-vowed-athletes-won-t-be-silenced-after-the-ioc-warned-against-politica-protests-at-the-2020-t-1578698773487-2.jpg",
+                        "width": "1280"
+                    }
+                ],
+                "published": "Fri, 06 Mar 2020 03:55:52 +0800",
+                "published_parsed": [
+                    2020,
+                    3,
+                    5,
+                    19,
+                    55,
+                    52,
+                    3,
+                    65,
+                    0
+                ],
+                "summary": "ORLANDO: Megan Rapinoe's life has changed before her very eyes.\n\nEight months after helping the United States win a fourth women's World Cup crown, Rapinoe is in high demand, on and off the pitch.\n\nThe 34-year-old swept the individual prizes at the World Cup, scooping the Golden Boot for top-scorer ...",
+                "summary_detail": {
+                    "base": "https://www.channelnewsasia.com/rssfeeds/8395986",
+                    "language": "en-US",
+                    "type": "text/html",
+                    "value": "ORLANDO: Megan Rapinoe's life has changed before her very eyes.\n\nEight months after helping the United States win a fourth women's World Cup crown, Rapinoe is in high demand, on and off the pitch.\n\nThe 34-year-old swept the individual prizes at the World Cup, scooping the Golden Boot for top-scorer ..."
+                },
+                "tags": [
+                    {
+                        "label": null,
+                        "scheme": null,
+                        "term": "Sport"
+                    }
+                ],
+                "title": "Football: Rapinoe adjusting to life in the spotlight",
+                "title_detail": {
+                    "base": "https://www.channelnewsasia.com/rssfeeds/8395986",
+                    "language": "en-US",
+                    "type": "text/plain",
+                    "value": "Football: Rapinoe adjusting to life in the spotlight"
+                }
+            },
+            {
+                "guidislink": false,
+                "id": "https://www.bbc.co.uk/sport/football/51726490",
+                "link": "https://www.bbc.co.uk/sport/football/51726490",
+                "links": [
+                    {
+                        "href": "https://www.bbc.co.uk/sport/football/51726490",
+                        "rel": "alternate",
+                        "type": "text/html"
+                    }
+                ],
+                "published": "Thu, 05 Mar 2020 22:42:11 GMT",
+                "published_parsed": [
+                    2020,
+                    3,
+                    5,
+                    22,
+                    42,
+                    11,
+                    3,
+                    65,
+                    0
+                ],
+                "summary": "Odion Ighalo scores twice as Manchester United cruise past Derby County and their record goalscorer Wayne Rooney.",
+                "summary_detail": {
+                    "base": "http://feeds.bbci.co.uk/news/rss.xml",
+                    "language": null,
+                    "type": "text/html",
+                    "value": "Odion Ighalo scores twice as Manchester United cruise past Derby County and their record goalscorer Wayne Rooney."
+                },
+                "title": "Ighalo double sees off Rooney's Derby and sends Man Utd into FA Cup quarters",
+                "title_detail": {
+                    "base": "http://feeds.bbci.co.uk/news/rss.xml",
+                    "language": null,
+                    "type": "text/plain",
+                    "value": "Ighalo double sees off Rooney's Derby and sends Man Utd into FA Cup quarters"
+                }
+            },
+            {
+                "guidislink": false,
+                "id": "https://www.bbc.co.uk/sport/av/football/51714983",
+                "link": "https://www.bbc.co.uk/sport/av/football/51714983",
+                "links": [
+                    {
+                        "href": "https://www.bbc.co.uk/sport/av/football/51714983",
+                        "rel": "alternate",
+                        "type": "text/html"
+                    }
+                ],
+                "published": "Thu, 05 Mar 2020 22:11:24 GMT",
+                "published_parsed": [
+                    2020,
+                    3,
+                    5,
+                    22,
+                    11,
+                    24,
+                    3,
+                    65,
+                    0
+                ],
+                "summary": "Watch highlights as Odion Ighalo's brace helps Manchester United to a comfortable victory over Wayne Rooney's Derby County in the FA Cup fifth round.",
+                "summary_detail": {
+                    "base": "http://feeds.bbci.co.uk/news/rss.xml",
+                    "language": null,
+                    "type": "text/html",
+                    "value": "Watch highlights as Odion Ighalo's brace helps Manchester United to a comfortable victory over Wayne Rooney's Derby County in the FA Cup fifth round."
+                },
+                "title": "FA Cup highlights: Derby County 0-3 Manchester United",
+                "title_detail": {
+                    "base": "http://feeds.bbci.co.uk/news/rss.xml",
+                    "language": null,
+                    "type": "text/plain",
+                    "value": "FA Cup highlights: Derby County 0-3 Manchester United"
+                }
+            }
+        ],
+        "keywords": [
+            "united",
+            "new",
+            "manchester",
+            "cup",
+            "derby",
+            "world",
+            "wayne",
+            "york",
+            "rooney",
+            "time",
+            "thursday",
+            "county",
+            "round",
+            "states",
+            "ighalo"
+        ]
+    },
+    {
+        "articles": [
+            {
+                "guidislink": false,
+                "href": "",
+                "id": "https://www.channelnewsasia.com/news/commentary/covid-10-coronavirus-impact-us-workers-gig-economy-worst-hit-12508558",
+                "link": "https://www.channelnewsasia.com/news/commentary/covid-10-coronavirus-impact-us-workers-gig-economy-worst-hit-12508558",
+                "links": [
+                    {
+                        "href": "https://www.channelnewsasia.com/news/commentary/covid-10-coronavirus-impact-us-workers-gig-economy-worst-hit-12508558",
+                        "rel": "alternate",
+                        "type": "text/html"
+                    }
+                ],
+                "media_thumbnail": [
+                    {
+                        "height": "720",
+                        "url": "https://www.channelnewsasia.com/image/9246646/16x9/1280/720/6b4dc3fc8f089f6fb2fcd0613bc13bb/td/file-photo--a-cyclist-rides-a-bicyle-as-he-delivers-food-for-deliveroo--an-example-of-the-emergence-of-what-is-known-as-the--gig-economy---in-paris-2.jpg",
+                        "width": "1280"
+                    }
+                ],
+                "published": "Fri, 06 Mar 2020 15:20:37 +0800",
+                "published_parsed": [
+                    2020,
+                    3,
+                    6,
+                    7,
+                    20,
+                    37,
+                    4,
+                    66,
+                    0
+                ],
+                "summary": "If the outbreak sparks a lasting downturn, low-paid contingent workers are most vulnerable, says the Financial Times\u2019 Gillian Tett.",
+                "summary_detail": {
+                    "base": "https://www.channelnewsasia.com/rssfeeds/8395986",
+                    "language": "en-US",
+                    "type": "text/html",
+                    "value": "If the outbreak sparks a lasting downturn, low-paid contingent workers are most vulnerable, says the Financial Times\u2019 Gillian Tett."
+                },
+                "tags": [
+                    {
+                        "label": null,
+                        "scheme": null,
+                        "term": "Commentary"
+                    }
+                ],
+                "title": "Commentary: COVID-19 will hit gig workers particularly hard",
+                "title_detail": {
+                    "base": "https://www.channelnewsasia.com/rssfeeds/8395986",
+                    "language": "en-US",
+                    "type": "text/plain",
+                    "value": "Commentary: COVID-19 will hit gig workers particularly hard"
+                }
+            },
+            {
+                "guidislink": false,
+                "href": "",
+                "id": "https://www.channelnewsasia.com/news/business/how-lipper-award-winning-fund-managers-are-playing-coronavirus-scare-12509054",
+                "link": "https://www.channelnewsasia.com/news/business/how-lipper-award-winning-fund-managers-are-playing-coronavirus-scare-12509054",
+                "links": [
+                    {
+                        "href": "https://www.channelnewsasia.com/news/business/how-lipper-award-winning-fund-managers-are-playing-coronavirus-scare-12509054",
+                        "rel": "alternate",
+                        "type": "text/html"
+                    }
+                ],
+                "media_thumbnail": [
+                    {
+                        "height": "720",
+                        "url": "https://www.channelnewsasia.com/image/12509052/16x9/1280/720/e8009ffc5a73731a56590a54408512fb/Fx/file-photo--a-trader-works-on-the-floor-at-the-new-york-stock-exchange--nyse--in-new-york-city-1.jpg",
+                        "width": "1280"
+                    }
+                ],
+                "published": "Fri, 06 Mar 2020 14:10:30 +0800",
+                "published_parsed": [
+                    2020,
+                    3,
+                    6,
+                    6,
+                    10,
+                    30,
+                    4,
+                    66,
+                    0
+                ],
+                "summary": "Uncertainty over the economic impact of the coronavirus outbreak has prompted at least some winners of the U.S. Lipper Fund Awards to look for companies that can withstand a prolonged pullback.",
+                "summary_detail": {
+                    "base": "https://www.channelnewsasia.com/rssfeeds/8395986",
+                    "language": "en-US",
+                    "type": "text/html",
+                    "value": "Uncertainty over the economic impact of the coronavirus outbreak has prompted at least some winners of the U.S. Lipper Fund Awards to look for companies that can withstand a prolonged pullback."
+                },
+                "tags": [
+                    {
+                        "label": null,
+                        "scheme": null,
+                        "term": "Business"
+                    }
+                ],
+                "title": "How Lipper Award-winning fund managers are playing coronavirus scare",
+                "title_detail": {
+                    "base": "https://www.channelnewsasia.com/rssfeeds/8395986",
+                    "language": "en-US",
+                    "type": "text/plain",
+                    "value": "How Lipper Award-winning fund managers are playing coronavirus scare"
+                }
+            },
+            {
+                "guidislink": false,
+                "href": "",
+                "id": "https://www.channelnewsasia.com/news/business/us-employment-report-expected-to-show-strength-before-coronavirus-spread-12508962",
+                "link": "https://www.channelnewsasia.com/news/business/us-employment-report-expected-to-show-strength-before-coronavirus-spread-12508962",
+                "links": [
+                    {
+                        "href": "https://www.channelnewsasia.com/news/business/us-employment-report-expected-to-show-strength-before-coronavirus-spread-12508962",
+                        "rel": "alternate",
+                        "type": "text/html"
+                    }
+                ],
+                "media_thumbnail": [
+                    {
+                        "height": "720",
+                        "url": "https://www.channelnewsasia.com/image/12508960/16x9/1280/720/509baf7572404d6212ebd75b5e73c4d3/jB/file-photo--x-model-suvs-being-built-on-the-assembly-line-at-the-bmw-manufacturing-facility-in-greer-1.jpg",
+                        "width": "1280"
+                    }
+                ],
+                "published": "Fri, 06 Mar 2020 13:20:16 +0800",
+                "published_parsed": [
+                    2020,
+                    3,
+                    6,
+                    5,
+                    20,
+                    16,
+                    4,
+                    66,
+                    0
+                ],
+                "summary": "U.S. job growth likely slowed in February, but the pace probably remained consistent with a healthy labor market despite the coronavirus outbreak, which stoked financial market fears of a recession and prompted an emergency interest rate cut from the Federal Reserve.",
+                "summary_detail": {
+                    "base": "https://www.channelnewsasia.com/rssfeeds/8395986",
+                    "language": "en-US",
+                    "type": "text/html",
+                    "value": "U.S. job growth likely slowed in February, but the pace probably remained consistent with a healthy labor market despite the coronavirus outbreak, which stoked financial market fears of a recession and prompted an emergency interest rate cut from the Federal Reserve."
+                },
+                "tags": [
+                    {
+                        "label": null,
+                        "scheme": null,
+                        "term": "Business"
+                    }
+                ],
+                "title": "US employment report expected to show strength before coronavirus spread",
+                "title_detail": {
+                    "base": "https://www.channelnewsasia.com/rssfeeds/8395986",
+                    "language": "en-US",
+                    "type": "text/plain",
+                    "value": "US employment report expected to show strength before coronavirus spread"
+                }
+            },
+            {
+                "guidislink": false,
+                "href": "",
+                "id": "https://www.channelnewsasia.com/news/business/us-financial-companies-prep-for-new-normal-amid-coronavirus-outbreak-12507726",
+                "link": "https://www.channelnewsasia.com/news/business/us-financial-companies-prep-for-new-normal-amid-coronavirus-outbreak-12507726",
+                "links": [
+                    {
+                        "href": "https://www.channelnewsasia.com/news/business/us-financial-companies-prep-for-new-normal-amid-coronavirus-outbreak-12507726",
+                        "rel": "alternate",
+                        "type": "text/html"
+                    }
+                ],
+                "media_thumbnail": [
+                    {
+                        "height": "720",
+                        "url": "https://www.channelnewsasia.com/image/12507722/16x9/1280/720/89b7452c2a69a560df48b214b74e6efa/lM/jp-morgan-chase--amp--co--corporate-headquarters-in-new-york-1.jpg",
+                        "width": "1280"
+                    }
+                ],
+                "published": "Fri, 06 Mar 2020 07:20:30 +0800",
+                "published_parsed": [
+                    2020,
+                    3,
+                    5,
+                    23,
+                    20,
+                    30,
+                    3,
+                    65,
+                    0
+                ],
+                "summary": "U.S. financial companies are doubling down on travel restrictions to include domestic trips, replacing meetings with video calls, and webcasting events as the coronavirus outbreak starts to alter business-as-usual across the sector.",
+                "summary_detail": {
+                    "base": "https://www.channelnewsasia.com/rssfeeds/8395986",
+                    "language": "en-US",
+                    "type": "text/html",
+                    "value": "U.S. financial companies are doubling down on travel restrictions to include domestic trips, replacing meetings with video calls, and webcasting events as the coronavirus outbreak starts to alter business-as-usual across the sector."
+                },
+                "tags": [
+                    {
+                        "label": null,
+                        "scheme": null,
+                        "term": "Business"
+                    }
+                ],
+                "title": "US financial companies prep for new normal amid coronavirus outbreak",
+                "title_detail": {
+                    "base": "https://www.channelnewsasia.com/rssfeeds/8395986",
+                    "language": "en-US",
+                    "type": "text/plain",
+                    "value": "US financial companies prep for new normal amid coronavirus outbreak"
+                }
+            },
+            {
+                "guidislink": false,
+                "href": "",
+                "id": "https://www.channelnewsasia.com/news/commentary/covid-19-coronavirus-united-states-china-how-dealing-with-it-12505256",
+                "link": "https://www.channelnewsasia.com/news/commentary/covid-19-coronavirus-united-states-china-how-dealing-with-it-12505256",
+                "links": [
+                    {
+                        "href": "https://www.channelnewsasia.com/news/commentary/covid-19-coronavirus-united-states-china-how-dealing-with-it-12505256",
+                        "rel": "alternate",
+                        "type": "text/html"
+                    }
+                ],
+                "media_thumbnail": [
+                    {
+                        "height": "720",
+                        "url": "https://www.channelnewsasia.com/image/11931522/16x9/1280/720/14ad14f036a973d11b32e7dab802056e/hp/us-president-donald-trump-proclaims-friendship-with-china-s-president-xi-jinping-but-their-trade-war-is-giving-the-world-jitters-1569117382568-3.jpg",
+                        "width": "1280"
+                    }
+                ],
+                "published": "Fri, 06 Mar 2020 06:10:38 +0800",
+                "published_parsed": [
+                    2020,
+                    3,
+                    5,
+                    22,
+                    10,
+                    38,
+                    3,
+                    65,
+                    0
+                ],
+                "summary": "Hopefully, its defeat will show the worth of intelligent and honest government, says the Financial Times\u2019 Philip Stephens.",
+                "summary_detail": {
+                    "base": "https://www.channelnewsasia.com/rssfeeds/8395986",
+                    "language": "en-US",
+                    "type": "text/html",
+                    "value": "Hopefully, its defeat will show the worth of intelligent and honest government, says the Financial Times\u2019 Philip Stephens."
+                },
+                "tags": [
+                    {
+                        "label": null,
+                        "scheme": null,
+                        "term": "Commentary"
+                    }
+                ],
+                "title": "Commentary: COVID-19 has laid a political minefield for many major countries",
+                "title_detail": {
+                    "base": "https://www.channelnewsasia.com/rssfeeds/8395986",
+                    "language": "en-US",
+                    "type": "text/plain",
+                    "value": "Commentary: COVID-19 has laid a political minefield for many major countries"
+                }
+            },
+            {
+                "guidislink": false,
+                "id": "https://www.bbc.co.uk/news/explainers-51738687",
+                "link": "https://www.bbc.co.uk/news/explainers-51738687",
+                "links": [
+                    {
+                        "href": "https://www.bbc.co.uk/news/explainers-51738687",
+                        "rel": "alternate",
+                        "type": "text/html"
+                    }
+                ],
+                "published": "Thu, 05 Mar 2020 15:28:13 GMT",
+                "published_parsed": [
+                    2020,
+                    3,
+                    5,
+                    15,
+                    28,
+                    13,
+                    3,
+                    65,
+                    0
+                ],
+                "summary": "Music, sports and other events could be called off because of the coronavirus outbreak.",
+                "summary_detail": {
+                    "base": "http://feeds.bbci.co.uk/news/rss.xml",
+                    "language": null,
+                    "type": "text/html",
+                    "value": "Music, sports and other events could be called off because of the coronavirus outbreak."
+                },
+                "title": "Coronavirus: Will I get a refund on my ticket if events are cancelled?",
+                "title_detail": {
+                    "base": "http://feeds.bbci.co.uk/news/rss.xml",
+                    "language": null,
+                    "type": "text/plain",
+                    "value": "Coronavirus: Will I get a refund on my ticket if events are cancelled?"
                 }
             },
             {
@@ -128,24 +1192,24 @@
                         "type": "text/html"
                     }
                 ],
-                "published": "Thu, 27 Feb 2020 09:53:47 GMT",
+                "published": "Thu, 05 Mar 2020 12:56:08 GMT",
                 "published_parsed": [
                     2020,
-                    2,
-                    27,
-                    9,
-                    53,
-                    47,
                     3,
-                    58,
+                    5,
+                    12,
+                    56,
+                    8,
+                    3,
+                    65,
                     0
                 ],
-                "summary": "What will the government do if there is a UK coronavirus outbreak and how prepared is the NHS?",
+                "summary": "What will the government do if there is a major UK coronavirus outbreak and how prepared is the NHS?",
                 "summary_detail": {
                     "base": "http://feeds.bbci.co.uk/news/rss.xml",
                     "language": null,
                     "type": "text/html",
-                    "value": "What will the government do if there is a UK coronavirus outbreak and how prepared is the NHS?"
+                    "value": "What will the government do if there is a major UK coronavirus outbreak and how prepared is the NHS?"
                 },
                 "title": "Coronavirus: How is the UK planning for an outbreak?",
                 "title_detail": {
@@ -154,878 +1218,24 @@
                     "type": "text/plain",
                     "value": "Coronavirus: How is the UK planning for an outbreak?"
                 }
-            },
-            {
-                "guidislink": false,
-                "id": "https://www.bbc.co.uk/news/entertainment-arts-51627622",
-                "link": "https://www.bbc.co.uk/news/entertainment-arts-51627622",
-                "links": [
-                    {
-                        "href": "https://www.bbc.co.uk/news/entertainment-arts-51627622",
-                        "rel": "alternate",
-                        "type": "text/html"
-                    }
-                ],
-                "published": "Tue, 25 Feb 2020 16:02:31 GMT",
-                "published_parsed": [
-                    2020,
-                    2,
-                    25,
-                    16,
-                    2,
-                    31,
-                    1,
-                    56,
-                    0
-                ],
-                "summary": "Concerns about the coronavirus outbreak in Italy is the latest difficulty to hit the film franchise.",
-                "summary_detail": {
-                    "base": "http://feeds.bbci.co.uk/news/rss.xml",
-                    "language": null,
-                    "type": "text/html",
-                    "value": "Concerns about the coronavirus outbreak in Italy is the latest difficulty to hit the film franchise."
-                },
-                "title": "Coronavirus: Mission Impossible filming halted over health fears",
-                "title_detail": {
-                    "base": "http://feeds.bbci.co.uk/news/rss.xml",
-                    "language": null,
-                    "type": "text/plain",
-                    "value": "Coronavirus: Mission Impossible filming halted over health fears"
-                }
             }
         ],
         "keywords": [
-            "coronavirus",
             "outbreak",
-            "italy",
-            "government",
-            "uk",
-            "country",
-            "schools",
-            "hit",
-            "close",
-            "questions",
-            "parents",
-            "concerns",
-            "worst",
-            "europe",
-            "latest"
-        ]
-    },
-    {
-        "articles": [
-            {
-                "guidislink": false,
-                "href": "",
-                "id": "https://www.channelnewsasia.com/news/sport/keown-slams-arsenal-s--unprofessional--display-after-europa-exit-12479686",
-                "link": "https://www.channelnewsasia.com/news/sport/keown-slams-arsenal-s--unprofessional--display-after-europa-exit-12479686",
-                "links": [
-                    {
-                        "href": "https://www.channelnewsasia.com/news/sport/keown-slams-arsenal-s--unprofessional--display-after-europa-exit-12479686",
-                        "rel": "alternate",
-                        "type": "text/html"
-                    }
-                ],
-                "media_thumbnail": [
-                    {
-                        "height": "720",
-                        "url": "https://www.channelnewsasia.com/image/12479684/16x9/1280/720/3db782992f8083e2a8354cd21003a6c6/UO/europa-league-final---chelsea-v-arsenal-1.jpg",
-                        "width": "1280"
-                    }
-                ],
-                "published": "Fri, 28 Feb 2020 11:05:54 +0800",
-                "published_parsed": [
-                    2020,
-                    2,
-                    28,
-                    3,
-                    5,
-                    54,
-                    4,
-                    59,
-                    0
-                ],
-                "summary": "Former Arsenal defender Martin Keown has criticised the team for their \"unprofessional\" performance in Thursday's Europa League defeat by Olympiakos Piraeus, which knocked them out of the competition.",
-                "summary_detail": {
-                    "base": "https://www.channelnewsasia.com/rssfeeds/8395986",
-                    "language": "en-US",
-                    "type": "text/html",
-                    "value": "Former Arsenal defender Martin Keown has criticised the team for their \"unprofessional\" performance in Thursday's Europa League defeat by Olympiakos Piraeus, which knocked them out of the competition."
-                },
-                "tags": [
-                    {
-                        "label": null,
-                        "scheme": null,
-                        "term": "Sport"
-                    }
-                ],
-                "title": "Keown slams Arsenal's 'unprofessional' display after Europa exit",
-                "title_detail": {
-                    "base": "https://www.channelnewsasia.com/rssfeeds/8395986",
-                    "language": "en-US",
-                    "type": "text/plain",
-                    "value": "Keown slams Arsenal's 'unprofessional' display after Europa exit"
-                }
-            },
-            {
-                "guidislink": false,
-                "href": "",
-                "id": "https://www.channelnewsasia.com/news/sport/football-arsenal-knocked-out-of-europa-league-12479116",
-                "link": "https://www.channelnewsasia.com/news/sport/football-arsenal-knocked-out-of-europa-league-12479116",
-                "links": [
-                    {
-                        "href": "https://www.channelnewsasia.com/news/sport/football-arsenal-knocked-out-of-europa-league-12479116",
-                        "rel": "alternate",
-                        "type": "text/html"
-                    }
-                ],
-                "media_thumbnail": [
-                    {
-                        "height": "720",
-                        "url": "https://www.channelnewsasia.com/image/12479130/16x9/1280/720/581497cb0d7af2f9832554c1b5365339/HI/olympiakos.jpg",
-                        "width": "1280"
-                    }
-                ],
-                "published": "Fri, 28 Feb 2020 07:38:08 +0800",
-                "published_parsed": [
-                    2020,
-                    2,
-                    27,
-                    23,
-                    38,
-                    8,
-                    3,
-                    58,
-                    0
-                ],
-                "summary": "PARIS: Youssef El-Arabi scored in the last minute of extra-time as Olympiakos knocked Arsenal out of the Europa League on Thursday (Feb 27) on a night when four former European champions were eliminated.\n\nAjax, Celtic, Benfica and Porto went out but Manchester United hardly broke sweat after Simon ...",
-                "summary_detail": {
-                    "base": "https://www.channelnewsasia.com/rssfeeds/8395986",
-                    "language": "en-US",
-                    "type": "text/html",
-                    "value": "PARIS: Youssef El-Arabi scored in the last minute of extra-time as Olympiakos knocked Arsenal out of the Europa League on Thursday (Feb 27) on a night when four former European champions were eliminated.\n\nAjax, Celtic, Benfica and Porto went out but Manchester United hardly broke sweat after Simon ..."
-                },
-                "tags": [
-                    {
-                        "label": null,
-                        "scheme": null,
-                        "term": "Sport"
-                    }
-                ],
-                "title": "Football: Arsenal knocked out of Europa League",
-                "title_detail": {
-                    "base": "https://www.channelnewsasia.com/rssfeeds/8395986",
-                    "language": "en-US",
-                    "type": "text/plain",
-                    "value": "Football: Arsenal knocked out of Europa League"
-                }
-            },
-            {
-                "guidislink": false,
-                "href": "",
-                "id": "https://www.channelnewsasia.com/news/sport/united--wolves-and-roma-into-last-16--porto-and-sporting-out-12479046",
-                "link": "https://www.channelnewsasia.com/news/sport/united--wolves-and-roma-into-last-16--porto-and-sporting-out-12479046",
-                "links": [
-                    {
-                        "href": "https://www.channelnewsasia.com/news/sport/united--wolves-and-roma-into-last-16--porto-and-sporting-out-12479046",
-                        "rel": "alternate",
-                        "type": "text/html"
-                    }
-                ],
-                "media_thumbnail": [
-                    {
-                        "height": "720",
-                        "url": "https://www.channelnewsasia.com/image/12479040/16x9/1280/720/7c26e3093621c97b42158ab35eb8069d/eP/europa-league---round-of-32-second-leg---manchester-united-v-club-brugge-3.jpg",
-                        "width": "1280"
-                    }
-                ],
-                "published": "Fri, 28 Feb 2020 06:32:43 +0800",
-                "published_parsed": [
-                    2020,
-                    2,
-                    27,
-                    22,
-                    32,
-                    43,
-                    3,
-                    58,
-                    0
-                ],
-                "summary": "Manchester United and Wolverhampton Wanderers cruised into the Europa League last 16 with emphatic aggregate wins, while Arsenal were taken to extra time, AS Roma squeezed through but Sporting and Porto were knocked out on Thursday.",
-                "summary_detail": {
-                    "base": "https://www.channelnewsasia.com/rssfeeds/8395986",
-                    "language": "en-US",
-                    "type": "text/html",
-                    "value": "Manchester United and Wolverhampton Wanderers cruised into the Europa League last 16 with emphatic aggregate wins, while Arsenal were taken to extra time, AS Roma squeezed through but Sporting and Porto were knocked out on Thursday."
-                },
-                "tags": [
-                    {
-                        "label": null,
-                        "scheme": null,
-                        "term": "Sport"
-                    }
-                ],
-                "title": "United, Wolves and Roma into last 16, Porto and Sporting out",
-                "title_detail": {
-                    "base": "https://www.channelnewsasia.com/rssfeeds/8395986",
-                    "language": "en-US",
-                    "type": "text/plain",
-                    "value": "United, Wolves and Roma into last 16, Porto and Sporting out"
-                }
-            },
-            {
-                "guidislink": false,
-                "href": "",
-                "id": "https://www.channelnewsasia.com/news/sport/united-striker-martial-suffers-another-muscle-injury-12478634",
-                "link": "https://www.channelnewsasia.com/news/sport/united-striker-martial-suffers-another-muscle-injury-12478634",
-                "links": [
-                    {
-                        "href": "https://www.channelnewsasia.com/news/sport/united-striker-martial-suffers-another-muscle-injury-12478634",
-                        "rel": "alternate",
-                        "type": "text/html"
-                    }
-                ],
-                "media_thumbnail": [
-                    {
-                        "height": "720",
-                        "url": "https://www.channelnewsasia.com/image/12478632/16x9/1280/720/a4c50bfa5eca72e0dd1ee6f60626b3cc/Rx/europa-league---manchester-united-training-1.jpg",
-                        "width": "1280"
-                    }
-                ],
-                "published": "Fri, 28 Feb 2020 04:16:15 +0800",
-                "published_parsed": [
-                    2020,
-                    2,
-                    27,
-                    20,
-                    16,
-                    15,
-                    3,
-                    58,
-                    0
-                ],
-                "summary": "Manchester United forward Anthony Martial was a last-minute absentee from their Europa League last-32, second leg tie against Club Bruges on Thursday due to injury and is doubtful for the Premier League clash at Everton on Sunday.",
-                "summary_detail": {
-                    "base": "https://www.channelnewsasia.com/rssfeeds/8395986",
-                    "language": "en-US",
-                    "type": "text/html",
-                    "value": "Manchester United forward Anthony Martial was a last-minute absentee from their Europa League last-32, second leg tie against Club Bruges on Thursday due to injury and is doubtful for the Premier League clash at Everton on Sunday."
-                },
-                "tags": [
-                    {
-                        "label": null,
-                        "scheme": null,
-                        "term": "Sport"
-                    }
-                ],
-                "title": "United striker Martial suffers another muscle injury",
-                "title_detail": {
-                    "base": "https://www.channelnewsasia.com/rssfeeds/8395986",
-                    "language": "en-US",
-                    "type": "text/plain",
-                    "value": "United striker Martial suffers another muscle injury"
-                }
-            }
-        ],
-        "keywords": [
-            "league",
-            "europa",
-            "arsenal",
-            "knocked",
-            "defeat",
-            "manchester",
-            "united",
-            "16",
-            "olympiakos",
-            "extra",
-            "porto",
-            "thursday",
-            "milan",
-            "minute",
-            "time"
-        ]
-    },
-    {
-        "articles": [
-            {
-                "guidislink": false,
-                "href": "",
-                "id": "https://www.channelnewsasia.com/news/business/after-bloomberg-memes--facebook-will-publicly-track-political-sponsored-content-12478802",
-                "link": "https://www.channelnewsasia.com/news/business/after-bloomberg-memes--facebook-will-publicly-track-political-sponsored-content-12478802",
-                "links": [
-                    {
-                        "href": "https://www.channelnewsasia.com/news/business/after-bloomberg-memes--facebook-will-publicly-track-political-sponsored-content-12478802",
-                        "rel": "alternate",
-                        "type": "text/html"
-                    }
-                ],
-                "media_thumbnail": [
-                    {
-                        "height": "720",
-                        "url": "https://www.channelnewsasia.com/image/12478800/16x9/1280/720/8c0421fe9256168e8f5f4daf1aca8235/tS/file-photo--facebook-logos-1.jpg",
-                        "width": "1280"
-                    }
-                ],
-                "published": "Fri, 28 Feb 2020 04:56:34 +0800",
-                "published_parsed": [
-                    2020,
-                    2,
-                    27,
-                    20,
-                    56,
-                    34,
-                    3,
-                    58,
-                    0
-                ],
-                "summary": "Facebook Inc  will provide a way for people to track political sponsored content on Facebook and Instagram ahead of the U.S. presidential election, it said on Thursday.",
-                "summary_detail": {
-                    "base": "https://www.channelnewsasia.com/rssfeeds/8395986",
-                    "language": "en-US",
-                    "type": "text/html",
-                    "value": "Facebook Inc  will provide a way for people to track political sponsored content on Facebook and Instagram ahead of the U.S. presidential election, it said on Thursday."
-                },
-                "tags": [
-                    {
-                        "label": null,
-                        "scheme": null,
-                        "term": "Business"
-                    }
-                ],
-                "title": "After Bloomberg memes, Facebook will publicly track political sponsored content",
-                "title_detail": {
-                    "base": "https://www.channelnewsasia.com/rssfeeds/8395986",
-                    "language": "en-US",
-                    "type": "text/plain",
-                    "value": "After Bloomberg memes, Facebook will publicly track political sponsored content"
-                }
-            },
-            {
-                "guidislink": false,
-                "href": "",
-                "id": "https://www.channelnewsasia.com/news/business/facebook-to-publicly-track-political-sponsored-content-after-bloomberg-s-paid-memes-12478694",
-                "link": "https://www.channelnewsasia.com/news/business/facebook-to-publicly-track-political-sponsored-content-after-bloomberg-s-paid-memes-12478694",
-                "links": [
-                    {
-                        "href": "https://www.channelnewsasia.com/news/business/facebook-to-publicly-track-political-sponsored-content-after-bloomberg-s-paid-memes-12478694",
-                        "rel": "alternate",
-                        "type": "text/html"
-                    }
-                ],
-                "media_thumbnail": [
-                    {
-                        "height": "720",
-                        "url": "https://www.channelnewsasia.com/image/12478692/16x9/1280/720/fe945f9d9d9d973892c28b1cef1c0e3a/JO/file-photo--a-facebook-logo-is-displayed-on-a-smartphone-in-this-illustration-1.jpg",
-                        "width": "1280"
-                    }
-                ],
-                "published": "Fri, 28 Feb 2020 07:50:39 +0800",
-                "published_parsed": [
-                    2020,
-                    2,
-                    27,
-                    23,
-                    50,
-                    39,
-                    3,
-                    58,
-                    0
-                ],
-                "summary": "Facebook Inc  will provide a way for people to track political sponsored content on Facebook and Instagram ahead of the U.S. presidential election, it said on Thursday.",
-                "summary_detail": {
-                    "base": "https://www.channelnewsasia.com/rssfeeds/8395986",
-                    "language": "en-US",
-                    "type": "text/html",
-                    "value": "Facebook Inc  will provide a way for people to track political sponsored content on Facebook and Instagram ahead of the U.S. presidential election, it said on Thursday."
-                },
-                "tags": [
-                    {
-                        "label": null,
-                        "scheme": null,
-                        "term": "Business"
-                    }
-                ],
-                "title": "Facebook to publicly track political sponsored content after Bloomberg's paid memes",
-                "title_detail": {
-                    "base": "https://www.channelnewsasia.com/rssfeeds/8395986",
-                    "language": "en-US",
-                    "type": "text/plain",
-                    "value": "Facebook to publicly track political sponsored content after Bloomberg's paid memes"
-                }
-            },
-            {
-                "guidislink": false,
-                "id": "http://www.straitstimes.com/world/united-states/facebook-to-publicly-track-political-sponsored-content-after-bloombergs-paid",
-                "link": "http://www.straitstimes.com/world/united-states/facebook-to-publicly-track-political-sponsored-content-after-bloombergs-paid",
-                "links": [
-                    {
-                        "href": "http://www.straitstimes.com/world/united-states/facebook-to-publicly-track-political-sponsored-content-after-bloombergs-paid",
-                        "rel": "alternate",
-                        "type": "text/html"
-                    }
-                ],
-                "published": "Fri, 28 Feb 2020 07:38:19 +0800",
-                "published_parsed": [
-                    2020,
-                    2,
-                    27,
-                    23,
-                    38,
-                    19,
-                    3,
-                    58,
-                    0
-                ],
-                "source": {
-                    "href": "https://www.straitstimes.com/news/world/rss.xml/20200228",
-                    "title": "The Straits Times"
-                },
-                "summary": "February 28, 2020 7:38 AM<br /><br />SAN FRANCISCO (REUTERS) - Facebook Inc will provide a way for people to track political sponsored content on Facebook and Instagram ahead of the US presidential election, it said on Thursday (Feb 27).",
-                "summary_detail": {
-                    "base": "https://www.straitstimes.com/",
-                    "language": "en",
-                    "type": "text/html",
-                    "value": "February 28, 2020 7:38 AM<br /><br />SAN FRANCISCO (REUTERS) - Facebook Inc will provide a way for people to track political sponsored content on Facebook and Instagram ahead of the US presidential election, it said on Thursday (Feb 27)."
-                },
-                "title": "Facebook to publicly track political sponsored content after Michael Bloomberg's paid memes",
-                "title_detail": {
-                    "base": "https://www.straitstimes.com/",
-                    "language": "en",
-                    "type": "text/plain",
-                    "value": "Facebook to publicly track political sponsored content after Michael Bloomberg's paid memes"
-                }
-            }
-        ],
-        "keywords": [
-            "facebook",
-            "election",
-            "way",
-            "political",
-            "people",
-            "content",
-            "track",
-            "instagram",
-            "sponsored",
-            "ahead",
-            "provide",
-            "presidential",
-            "said",
-            "thursday",
-            "san"
-        ]
-    },
-    {
-        "articles": [
-            {
-                "guidislink": false,
-                "id": "https://www.bbc.co.uk/news/world-europe-51655012",
-                "link": "https://www.bbc.co.uk/news/world-europe-51655012",
-                "links": [
-                    {
-                        "href": "https://www.bbc.co.uk/news/world-europe-51655012",
-                        "rel": "alternate",
-                        "type": "text/html"
-                    }
-                ],
-                "published": "Thu, 27 Feb 2020 02:51:36 GMT",
-                "published_parsed": [
-                    2020,
-                    2,
-                    27,
-                    2,
-                    51,
-                    36,
-                    3,
-                    58,
-                    0
-                ],
-                "summary": "Selina Lund said fellow guests were not following hygiene rules to prevent the spread of the virus.",
-                "summary_detail": {
-                    "base": "http://feeds.bbci.co.uk/news/rss.xml",
-                    "language": null,
-                    "type": "text/html",
-                    "value": "Selina Lund said fellow guests were not following hygiene rules to prevent the spread of the virus."
-                },
-                "title": "Coronavirus: Tenerife hotel guests 'horrified' by conditions",
-                "title_detail": {
-                    "base": "http://feeds.bbci.co.uk/news/rss.xml",
-                    "language": null,
-                    "type": "text/plain",
-                    "value": "Coronavirus: Tenerife hotel guests 'horrified' by conditions"
-                }
-            },
-            {
-                "guidislink": false,
-                "id": "https://www.bbc.co.uk/news/world-asia-china-51647597",
-                "link": "https://www.bbc.co.uk/news/world-asia-china-51647597",
-                "links": [
-                    {
-                        "href": "https://www.bbc.co.uk/news/world-asia-china-51647597",
-                        "rel": "alternate",
-                        "type": "text/html"
-                    }
-                ],
-                "published": "Thu, 27 Feb 2020 00:16:50 GMT",
-                "published_parsed": [
-                    2020,
-                    2,
-                    27,
-                    0,
-                    16,
-                    50,
-                    3,
-                    58,
-                    0
-                ],
-                "summary": "As China battles the deadly virus, medics on the front line are being hailed as heroes.",
-                "summary_detail": {
-                    "base": "http://feeds.bbci.co.uk/news/rss.xml",
-                    "language": null,
-                    "type": "text/html",
-                    "value": "As China battles the deadly virus, medics on the front line are being hailed as heroes."
-                },
-                "title": "Coronavirus: The \u2018propaganda push\u2019 in China",
-                "title_detail": {
-                    "base": "http://feeds.bbci.co.uk/news/rss.xml",
-                    "language": null,
-                    "type": "text/plain",
-                    "value": "Coronavirus: The \u2018propaganda push\u2019 in China"
-                }
-            },
-            {
-                "guidislink": false,
-                "id": "https://www.bbc.co.uk/news/health-51652874",
-                "link": "https://www.bbc.co.uk/news/health-51652874",
-                "links": [
-                    {
-                        "href": "https://www.bbc.co.uk/news/health-51652874",
-                        "rel": "alternate",
-                        "type": "text/html"
-                    }
-                ],
-                "published": "Wed, 26 Feb 2020 18:59:42 GMT",
-                "published_parsed": [
-                    2020,
-                    2,
-                    26,
-                    18,
-                    59,
-                    42,
-                    2,
-                    57,
-                    0
-                ],
-                "summary": "Five ways to successfully self-isolate to prevent the spread of the virus.",
-                "summary_detail": {
-                    "base": "http://feeds.bbci.co.uk/news/rss.xml",
-                    "language": null,
-                    "type": "text/html",
-                    "value": "Five ways to successfully self-isolate to prevent the spread of the virus."
-                },
-                "title": "Coronavirus: How to self-isolate",
-                "title_detail": {
-                    "base": "http://feeds.bbci.co.uk/news/rss.xml",
-                    "language": null,
-                    "type": "text/plain",
-                    "value": "Coronavirus: How to self-isolate"
-                }
-            },
-            {
-                "guidislink": false,
-                "id": "https://www.bbc.co.uk/news/health-51048366",
-                "link": "https://www.bbc.co.uk/news/health-51048366",
-                "links": [
-                    {
-                        "href": "https://www.bbc.co.uk/news/health-51048366",
-                        "rel": "alternate",
-                        "type": "text/html"
-                    }
-                ],
-                "published": "Wed, 26 Feb 2020 09:02:28 GMT",
-                "published_parsed": [
-                    2020,
-                    2,
-                    26,
-                    9,
-                    2,
-                    28,
-                    2,
-                    57,
-                    0
-                ],
-                "summary": "The virus is spreading around the world, but what is it, how can we be protected and can it be stopped?",
-                "summary_detail": {
-                    "base": "http://feeds.bbci.co.uk/news/rss.xml",
-                    "language": null,
-                    "type": "text/html",
-                    "value": "The virus is spreading around the world, but what is it, how can we be protected and can it be stopped?"
-                },
-                "title": "What is coronavirus and what are the symptoms?",
-                "title_detail": {
-                    "base": "http://feeds.bbci.co.uk/news/rss.xml",
-                    "language": null,
-                    "type": "text/plain",
-                    "value": "What is coronavirus and what are the symptoms?"
-                }
-            },
-            {
-                "guidislink": false,
-                "id": "https://www.bbc.co.uk/news/world-51649358",
-                "link": "https://www.bbc.co.uk/news/world-51649358",
-                "links": [
-                    {
-                        "href": "https://www.bbc.co.uk/news/world-51649358",
-                        "rel": "alternate",
-                        "type": "text/html"
-                    }
-                ],
-                "published": "Wed, 26 Feb 2020 16:32:48 GMT",
-                "published_parsed": [
-                    2020,
-                    2,
-                    26,
-                    16,
-                    32,
-                    48,
-                    2,
-                    57,
-                    0
-                ],
-                "summary": "How countries are battling the virus - from disinfectant lorries in China to roadblocks in Italy.",
-                "summary_detail": {
-                    "base": "http://feeds.bbci.co.uk/news/rss.xml",
-                    "language": null,
-                    "type": "text/html",
-                    "value": "How countries are battling the virus - from disinfectant lorries in China to roadblocks in Italy."
-                },
-                "title": "Five countries, five responses",
-                "title_detail": {
-                    "base": "http://feeds.bbci.co.uk/news/rss.xml",
-                    "language": null,
-                    "type": "text/plain",
-                    "value": "Five countries, five responses"
-                }
-            },
-            {
-                "guidislink": false,
-                "id": "https://www.bbc.co.uk/news/world-51235105",
-                "link": "https://www.bbc.co.uk/news/world-51235105",
-                "links": [
-                    {
-                        "href": "https://www.bbc.co.uk/news/world-51235105",
-                        "rel": "alternate",
-                        "type": "text/html"
-                    }
-                ],
-                "published": "Thu, 27 Feb 2020 14:15:10 GMT",
-                "published_parsed": [
-                    2020,
-                    2,
-                    27,
-                    14,
-                    15,
-                    10,
-                    3,
-                    58,
-                    0
-                ],
-                "summary": "Key maps and charts explaining how the Covid-19 virus has spread and how it is being dealt with.",
-                "summary_detail": {
-                    "base": "http://feeds.bbci.co.uk/news/rss.xml",
-                    "language": null,
-                    "type": "text/html",
-                    "value": "Key maps and charts explaining how the Covid-19 virus has spread and how it is being dealt with."
-                },
-                "title": "A visual guide to the outbreak",
-                "title_detail": {
-                    "base": "http://feeds.bbci.co.uk/news/rss.xml",
-                    "language": null,
-                    "type": "text/plain",
-                    "value": "A visual guide to the outbreak"
-                }
-            },
-            {
-                "guidislink": false,
-                "id": "https://www.bbc.co.uk/news/world-asia-51609840",
-                "link": "https://www.bbc.co.uk/news/world-asia-51609840",
-                "links": [
-                    {
-                        "href": "https://www.bbc.co.uk/news/world-asia-51609840",
-                        "rel": "alternate",
-                        "type": "text/html"
-                    }
-                ],
-                "published": "Tue, 25 Feb 2020 06:58:12 GMT",
-                "published_parsed": [
-                    2020,
-                    2,
-                    25,
-                    6,
-                    58,
-                    12,
-                    1,
-                    56,
-                    0
-                ],
-                "summary": "How the practices of a secretive religious sect may have played into the rapid spread of the virus.",
-                "summary_detail": {
-                    "base": "http://feeds.bbci.co.uk/news/rss.xml",
-                    "language": null,
-                    "type": "text/html",
-                    "value": "How the practices of a secretive religious sect may have played into the rapid spread of the virus."
-                },
-                "title": "Coronavirus: Why did infections shoot up in South Korea?",
-                "title_detail": {
-                    "base": "http://feeds.bbci.co.uk/news/rss.xml",
-                    "language": null,
-                    "type": "text/plain",
-                    "value": "Coronavirus: Why did infections shoot up in South Korea?"
-                }
-            }
-        ],
-        "keywords": [
-            "virus",
-            "spread",
-            "china",
-            "prevent",
-            "rapid",
-            "deadly",
-            "covid",
-            "19",
-            "disinfectant",
-            "ways",
-            "played",
-            "expert",
-            "isolate",
-            "spreading",
-            "line"
-        ]
-    },
-    {
-        "articles": [
-            {
-                "guidislink": false,
-                "href": "",
-                "id": "https://www.channelnewsasia.com/news/sport/cycling-uae-tour-abandoned-after-two-italian-riders-test-for-12478972",
-                "link": "https://www.channelnewsasia.com/news/sport/cycling-uae-tour-abandoned-after-two-italian-riders-test-for-12478972",
-                "links": [
-                    {
-                        "href": "https://www.channelnewsasia.com/news/sport/cycling-uae-tour-abandoned-after-two-italian-riders-test-for-12478972",
-                        "rel": "alternate",
-                        "type": "text/html"
-                    }
-                ],
-                "media_thumbnail": [
-                    {
-                        "height": "720",
-                        "url": "https://www.channelnewsasia.com/image/12478970/16x9/1280/720/513a121b441707dd74546fa63c8d01c6/LC/for-chris-froome-the-uae-tour-was-his-first-race-since-last-june-it-s-a-shame-he-tweeted-when-it-was-cancelled-1582841187197-2.jpg",
-                        "width": "1280"
-                    }
-                ],
-                "published": "Fri, 28 Feb 2020 06:48:31 +0800",
-                "published_parsed": [
-                    2020,
-                    2,
-                    27,
-                    22,
-                    48,
-                    31,
-                    3,
-                    58,
-                    0
-                ],
-                "summary": "DUBAI: The UAE Tour was abandoned on Thursday (Feb 27) after two Italian cyclists tested positive for the coronavirus, officials said, with teams and riders reported to be under lockdown in their hotels.\n\n\"The remaining stages of the UAE Tour are cancelled after two cyclists from Italy tested ...",
-                "summary_detail": {
-                    "base": "https://www.channelnewsasia.com/rssfeeds/8395986",
-                    "language": "en-US",
-                    "type": "text/html",
-                    "value": "DUBAI: The UAE Tour was abandoned on Thursday (Feb 27) after two Italian cyclists tested positive for the coronavirus, officials said, with teams and riders reported to be under lockdown in their hotels.\n\n\"The remaining stages of the UAE Tour are cancelled after two cyclists from Italy tested ..."
-                },
-                "tags": [
-                    {
-                        "label": null,
-                        "scheme": null,
-                        "term": "Sport"
-                    }
-                ],
-                "title": "Cycling: UAE Tour abandoned after two Italian riders test for coronavirus",
-                "title_detail": {
-                    "base": "https://www.channelnewsasia.com/rssfeeds/8395986",
-                    "language": "en-US",
-                    "type": "text/plain",
-                    "value": "Cycling: UAE Tour abandoned after two Italian riders test for coronavirus"
-                }
-            },
-            {
-                "guidislink": false,
-                "href": "",
-                "id": "https://www.channelnewsasia.com/news/sport/tennis-djokovic-reaches-dubai-championships-semi-finals-12478218",
-                "link": "https://www.channelnewsasia.com/news/sport/tennis-djokovic-reaches-dubai-championships-semi-finals-12478218",
-                "links": [
-                    {
-                        "href": "https://www.channelnewsasia.com/news/sport/tennis-djokovic-reaches-dubai-championships-semi-finals-12478218",
-                        "rel": "alternate",
-                        "type": "text/html"
-                    }
-                ],
-                "media_thumbnail": [
-                    {
-                        "height": "720",
-                        "url": "https://www.channelnewsasia.com/image/12478278/16x9/1280/720/720fc26ff468e0f25b76ed63c9bc2d9f/jF/novak-djokovic.jpg",
-                        "width": "1280"
-                    }
-                ],
-                "published": "Fri, 28 Feb 2020 03:42:06 +0800",
-                "published_parsed": [
-                    2020,
-                    2,
-                    27,
-                    19,
-                    42,
-                    6,
-                    3,
-                    58,
-                    0
-                ],
-                "summary": "DUBAI: Novak Djokovic won his 16th match of an undefeated season, hammering Russia's Karen Khachanov 6-2, 6-2 on Thursday (Feb 27) for a place in the Dubai Championships semi-finals.\n\nThe world number one, playing in the UAE for an 11th time, will face third seed Gael Monfils, who beat French ...",
-                "summary_detail": {
-                    "base": "https://www.channelnewsasia.com/rssfeeds/8395986",
-                    "language": "en-US",
-                    "type": "text/html",
-                    "value": "DUBAI: Novak Djokovic won his 16th match of an undefeated season, hammering Russia's Karen Khachanov 6-2, 6-2 on Thursday (Feb 27) for a place in the Dubai Championships semi-finals.\n\nThe world number one, playing in the UAE for an 11th time, will face third seed Gael Monfils, who beat French ..."
-                },
-                "tags": [
-                    {
-                        "label": null,
-                        "scheme": null,
-                        "term": "Sport"
-                    }
-                ],
-                "title": "Tennis: Djokovic reaches Dubai Championships semi-finals",
-                "title_detail": {
-                    "base": "https://www.channelnewsasia.com/rssfeeds/8395986",
-                    "language": "en-US",
-                    "type": "text/plain",
-                    "value": "Tennis: Djokovic reaches Dubai Championships semi-finals"
-                }
-            }
-        ],
-        "keywords": [
-            "thursday",
-            "world",
-            "27",
-            "said",
-            "feb",
-            "uae",
-            "tour",
             "coronavirus",
-            "dubai",
-            "cancelled",
-            "italian",
-            "set",
-            "remaining",
-            "stages",
-            "reported"
+            "financial",
+            "says",
+            "times",
+            "events",
+            "sports",
+            "government",
+            "despite",
+            "china",
+            "impact",
+            "economic",
+            "nhs",
+            "paid",
+            "world"
         ]
     },
     {
@@ -1033,11 +1243,11 @@
             {
                 "guidislink": false,
                 "href": "",
-                "id": "https://www.channelnewsasia.com/news/singapore/measures-in-budget-2020-appropriate-for-now-to-deal-with-covid-12479812",
-                "link": "https://www.channelnewsasia.com/news/singapore/measures-in-budget-2020-appropriate-for-now-to-deal-with-covid-12479812",
+                "id": "https://www.channelnewsasia.com/news/world/pence-visits-covid19-hot-spot-washington-state-amid-tension-12508552",
+                "link": "https://www.channelnewsasia.com/news/world/pence-visits-covid19-hot-spot-washington-state-amid-tension-12508552",
                 "links": [
                     {
-                        "href": "https://www.channelnewsasia.com/news/singapore/measures-in-budget-2020-appropriate-for-now-to-deal-with-covid-12479812",
+                        "href": "https://www.channelnewsasia.com/news/world/pence-visits-covid19-hot-spot-washington-state-amid-tension-12508552",
                         "rel": "alternate",
                         "type": "text/html"
                     }
@@ -1045,81 +1255,28 @@
                 "media_thumbnail": [
                     {
                         "height": "720",
-                        "url": "https://www.channelnewsasia.com/image/12479974/16x9/1280/720/7e606732dd1f867e644445c206340f1a/Ih/deputy-prime-minister-heng-swee-keat-on-feb-28--2019.jpg",
+                        "url": "https://www.channelnewsasia.com/image/12508550/16x9/1280/720/955d8bc303acdfe01b5f2e7411583db6/ED/u-s--vice-president-mike-pence--who-heads-the-government-s-coronavirus-task-force--speaks-during-a-press-conference-at-the-pierce-county-readiness-center-at-camp-murray-near-tacoma-1.jpg",
                         "width": "1280"
                     }
                 ],
-                "published": "Fri, 28 Feb 2020 13:20:37 +0800",
+                "published": "Fri, 06 Mar 2020 13:31:43 +0800",
                 "published_parsed": [
                     2020,
-                    2,
-                    28,
+                    3,
+                    6,
                     5,
-                    20,
-                    37,
+                    31,
+                    43,
                     4,
-                    59,
+                    66,
                     0
                 ],
-                "summary": "SINGAPORE: Singapore\u2019s overall spending in Budget 2020 is \u201cappropriate\u201d for the current challenges brought on by the outbreak of COVID-19, with support being applied to where it matters most, said Deputy Prime Minister Heng Swee Keat on Friday (Feb 28).\n\n\nIn the first part of his wrap-up speech ...",
+                "summary": "Vice President Mike Pence traveled to the state of Washington on Thursday to pledge federal support to one of the areas hardest hit by the coronavirus and defended President Donald Trump's response amid tension with the state's governor over science.",
                 "summary_detail": {
                     "base": "https://www.channelnewsasia.com/rssfeeds/8395986",
                     "language": "en-US",
                     "type": "text/html",
-                    "value": "SINGAPORE: Singapore\u2019s overall spending in Budget 2020 is \u201cappropriate\u201d for the current challenges brought on by the outbreak of COVID-19, with support being applied to where it matters most, said Deputy Prime Minister Heng Swee Keat on Friday (Feb 28).\n\n\nIn the first part of his wrap-up speech ..."
-                },
-                "tags": [
-                    {
-                        "label": null,
-                        "scheme": null,
-                        "term": "Singapore"
-                    }
-                ],
-                "title": "Measures in Budget 2020 appropriate for now to deal with COVID-19 challenges: DPM Heng",
-                "title_detail": {
-                    "base": "https://www.channelnewsasia.com/rssfeeds/8395986",
-                    "language": "en-US",
-                    "type": "text/plain",
-                    "value": "Measures in Budget 2020 appropriate for now to deal with COVID-19 challenges: DPM Heng"
-                }
-            },
-            {
-                "guidislink": false,
-                "href": "",
-                "id": "https://www.channelnewsasia.com/news/world/new-zealand-s-pm-says-australia-s-deportation-policy-is--corrosive--12480010",
-                "link": "https://www.channelnewsasia.com/news/world/new-zealand-s-pm-says-australia-s-deportation-policy-is--corrosive--12480010",
-                "links": [
-                    {
-                        "href": "https://www.channelnewsasia.com/news/world/new-zealand-s-pm-says-australia-s-deportation-policy-is--corrosive--12480010",
-                        "rel": "alternate",
-                        "type": "text/html"
-                    }
-                ],
-                "media_thumbnail": [
-                    {
-                        "height": "720",
-                        "url": "https://www.channelnewsasia.com/image/12480008/16x9/1280/720/435dfe9b69ba9e65cb42ad59e1d80d60/Be/new-zealand-prime-minister-ardern-and-australian-prime-minister-morrison-hold-a-joint-press-conference-at-admiralty-house-in-sydney-3.jpg",
-                        "width": "1280"
-                    }
-                ],
-                "published": "Fri, 28 Feb 2020 13:00:34 +0800",
-                "published_parsed": [
-                    2020,
-                    2,
-                    28,
-                    5,
-                    0,
-                    34,
-                    4,
-                    59,
-                    0
-                ],
-                "summary": "Australia's deportation policy is so \"corrosive\" that it has soured its bilateral relationship with New Zealand, Prime Minister Jacinda Ardern said on Friday, a rare bust-up between the two historic allies.",
-                "summary_detail": {
-                    "base": "https://www.channelnewsasia.com/rssfeeds/8395986",
-                    "language": "en-US",
-                    "type": "text/html",
-                    "value": "Australia's deportation policy is so \"corrosive\" that it has soured its bilateral relationship with New Zealand, Prime Minister Jacinda Ardern said on Friday, a rare bust-up between the two historic allies."
+                    "value": "Vice President Mike Pence traveled to the state of Washington on Thursday to pledge federal support to one of the areas hardest hit by the coronavirus and defended President Donald Trump's response amid tension with the state's governor over science."
                 },
                 "tags": [
                     {
@@ -1128,22 +1285,22 @@
                         "term": "World"
                     }
                 ],
-                "title": "New Zealand's PM says Australia's deportation policy is 'corrosive'",
+                "title": "Pence visits COVID-19 hot spot Washington state amid tension with governor",
                 "title_detail": {
                     "base": "https://www.channelnewsasia.com/rssfeeds/8395986",
                     "language": "en-US",
                     "type": "text/plain",
-                    "value": "New Zealand's PM says Australia's deportation policy is 'corrosive'"
+                    "value": "Pence visits COVID-19 hot spot Washington state amid tension with governor"
                 }
             },
             {
                 "guidislink": false,
                 "href": "",
-                "id": "https://www.channelnewsasia.com/news/singapore/covid-19-bonus-for-public-officers-on-front-line-political-12479970",
-                "link": "https://www.channelnewsasia.com/news/singapore/covid-19-bonus-for-public-officers-on-front-line-political-12479970",
+                "id": "https://www.channelnewsasia.com/news/business/trump-says-us-economy-could-take-hit-from-coronavirus-12507872",
+                "link": "https://www.channelnewsasia.com/news/business/trump-says-us-economy-could-take-hit-from-coronavirus-12507872",
                 "links": [
                     {
-                        "href": "https://www.channelnewsasia.com/news/singapore/covid-19-bonus-for-public-officers-on-front-line-political-12479970",
+                        "href": "https://www.channelnewsasia.com/news/business/trump-says-us-economy-could-take-hit-from-coronavirus-12507872",
                         "rel": "alternate",
                         "type": "text/html"
                     }
@@ -1151,61 +1308,428 @@
                 "media_thumbnail": [
                     {
                         "height": "720",
-                        "url": "https://www.channelnewsasia.com/image/12439764/16x9/1280/720/6370218a74682de398db803a2f19ad8f/GT/patient-discharged-from-ncid-feb-16--2020.jpg",
+                        "url": "https://www.channelnewsasia.com/image/12507870/16x9/1280/720/228e259452011686a97906bbc5d6fd6f/lG/u-s--president-trump-departs-for-travel-to-scranton--pennsylvania-from-the-white-house-in-washington-1.jpg",
                         "width": "1280"
                     }
                 ],
-                "published": "Fri, 28 Feb 2020 14:19:55 +0800",
+                "published": "Fri, 06 Mar 2020 09:01:04 +0800",
                 "published_parsed": [
                     2020,
-                    2,
-                    28,
+                    3,
                     6,
-                    19,
-                    55,
+                    1,
+                    1,
                     4,
-                    59,
+                    4,
+                    66,
                     0
                 ],
-                "summary": "SINGAPORE: The Government will award public officers on the front line in the battle against\u00a0COVID-19 with a special bonus of\u00a0up to one month, Deputy Prime Minister Heng Swee Keat announced in Parliament on Friday (Feb 28).\n\n\u201cThis will include many healthcare officers in the Ministry of Health ...",
+                "summary": "President Donald Trump said on Thursday the U.S. economy might take a hit from the coronavirus outbreak but he predicted the challenge would eventually pass and defended his handling of the crisis.",
                 "summary_detail": {
                     "base": "https://www.channelnewsasia.com/rssfeeds/8395986",
                     "language": "en-US",
                     "type": "text/html",
-                    "value": "SINGAPORE: The Government will award public officers on the front line in the battle against\u00a0COVID-19 with a special bonus of\u00a0up to one month, Deputy Prime Minister Heng Swee Keat announced in Parliament on Friday (Feb 28).\n\n\u201cThis will include many healthcare officers in the Ministry of Health ..."
+                    "value": "President Donald Trump said on Thursday the U.S. economy might take a hit from the coronavirus outbreak but he predicted the challenge would eventually pass and defended his handling of the crisis."
                 },
                 "tags": [
                     {
                         "label": null,
                         "scheme": null,
-                        "term": "Singapore"
+                        "term": "Business"
                     }
                 ],
-                "title": "COVID-19: Bonus for public officers on front line; political leaders to take pay cuts",
+                "title": "Trump says US economy could take hit from coronavirus",
                 "title_detail": {
                     "base": "https://www.channelnewsasia.com/rssfeeds/8395986",
                     "language": "en-US",
                     "type": "text/plain",
-                    "value": "COVID-19: Bonus for public officers on front line; political leaders to take pay cuts"
+                    "value": "Trump says US economy could take hit from coronavirus"
+                }
+            },
+            {
+                "guidislink": false,
+                "href": "",
+                "id": "https://www.channelnewsasia.com/news/world/facebook-donald-trump-us-census-ads-take-down-12507498",
+                "link": "https://www.channelnewsasia.com/news/world/facebook-donald-trump-us-census-ads-take-down-12507498",
+                "links": [
+                    {
+                        "href": "https://www.channelnewsasia.com/news/world/facebook-donald-trump-us-census-ads-take-down-12507498",
+                        "rel": "alternate",
+                        "type": "text/html"
+                    }
+                ],
+                "media_thumbnail": [
+                    {
+                        "height": "720",
+                        "url": "https://www.channelnewsasia.com/image/12507496/16x9/1280/720/5aa180b86c2b9cb60fb617c32ad4a02e/kX/file-photo--a-facebook-logo-is-displayed-on-a-smartphone-in-this-illustration-1.jpg",
+                        "width": "1280"
+                    }
+                ],
+                "published": "Fri, 06 Mar 2020 07:00:45 +0800",
+                "published_parsed": [
+                    2020,
+                    3,
+                    5,
+                    23,
+                    0,
+                    45,
+                    3,
+                    65,
+                    0
+                ],
+                "summary": "Facebook Inc said on Thursday it was removing ads from President Donald Trump's re-election campaign that asked users to fill out an \"Official 2020 Congressional District Census\" because they violated its policies.",
+                "summary_detail": {
+                    "base": "https://www.channelnewsasia.com/rssfeeds/8395986",
+                    "language": "en-US",
+                    "type": "text/html",
+                    "value": "Facebook Inc said on Thursday it was removing ads from President Donald Trump's re-election campaign that asked users to fill out an \"Official 2020 Congressional District Census\" because they violated its policies."
+                },
+                "tags": [
+                    {
+                        "label": null,
+                        "scheme": null,
+                        "term": "World"
+                    }
+                ],
+                "title": "Facebook decides to take down Trump 2020 campaign's 'census' ads",
+                "title_detail": {
+                    "base": "https://www.channelnewsasia.com/rssfeeds/8395986",
+                    "language": "en-US",
+                    "type": "text/plain",
+                    "value": "Facebook decides to take down Trump 2020 campaign's 'census' ads"
+                }
+            },
+            {
+                "guidislink": false,
+                "id": "http://www.straitstimes.com/world/united-states/trump-says-us-economy-could-take-hit-from-coronavirus",
+                "link": "http://www.straitstimes.com/world/united-states/trump-says-us-economy-could-take-hit-from-coronavirus",
+                "links": [
+                    {
+                        "href": "http://www.straitstimes.com/world/united-states/trump-says-us-economy-could-take-hit-from-coronavirus",
+                        "rel": "alternate",
+                        "type": "text/html"
+                    }
+                ],
+                "published": "Fri, 06 Mar 2020 09:04:26 +0800",
+                "published_parsed": [
+                    2020,
+                    3,
+                    6,
+                    1,
+                    4,
+                    26,
+                    4,
+                    66,
+                    0
+                ],
+                "source": {
+                    "href": "https://www.straitstimes.com/news/world/rss.xml/20200306",
+                    "title": "The Straits Times"
+                },
+                "summary": "March 06, 2020 9:04 AM<br /><br />SCRANTON (REUTERS) - President Donald Trump said on Thursday (March 5) the US economy might take a hit from the coronavirus outbreak but he predicted the challenge would eventually pass and defended his handling of the crisis.",
+                "summary_detail": {
+                    "base": "https://www.straitstimes.com/",
+                    "language": "en",
+                    "type": "text/html",
+                    "value": "March 06, 2020 9:04 AM<br /><br />SCRANTON (REUTERS) - President Donald Trump said on Thursday (March 5) the US economy might take a hit from the coronavirus outbreak but he predicted the challenge would eventually pass and defended his handling of the crisis."
+                },
+                "title": "Trump says US economy could take hit from coronavirus",
+                "title_detail": {
+                    "base": "https://www.straitstimes.com/",
+                    "language": "en",
+                    "type": "text/plain",
+                    "value": "Trump says US economy could take hit from coronavirus"
+                }
+            },
+            {
+                "guidislink": false,
+                "id": "http://www.straitstimes.com/world/united-states/facebook-removes-trump-ad-disguised-as-census-message",
+                "link": "http://www.straitstimes.com/world/united-states/facebook-removes-trump-ad-disguised-as-census-message",
+                "links": [
+                    {
+                        "href": "http://www.straitstimes.com/world/united-states/facebook-removes-trump-ad-disguised-as-census-message",
+                        "rel": "alternate",
+                        "type": "text/html"
+                    }
+                ],
+                "published": "Fri, 06 Mar 2020 07:02:35 +0800",
+                "published_parsed": [
+                    2020,
+                    3,
+                    5,
+                    23,
+                    2,
+                    35,
+                    3,
+                    65,
+                    0
+                ],
+                "source": {
+                    "href": "https://www.straitstimes.com/news/world/rss.xml/20200306",
+                    "title": "The Straits Times"
+                },
+                "summary": "March 06, 2020 7:02 AM<br /><br />SAN FRANCISCO (AFP) - Facebook has taken down an ad from US President Donald Trump's campaign which critics said misled people into believing it was an official message about the US census.",
+                "summary_detail": {
+                    "base": "https://www.straitstimes.com/",
+                    "language": "en",
+                    "type": "text/html",
+                    "value": "March 06, 2020 7:02 AM<br /><br />SAN FRANCISCO (AFP) - Facebook has taken down an ad from US President Donald Trump's campaign which critics said misled people into believing it was an official message about the US census."
+                },
+                "title": "Facebook removes Trump ad disguised as census message",
+                "title_detail": {
+                    "base": "https://www.straitstimes.com/",
+                    "language": "en",
+                    "type": "text/plain",
+                    "value": "Facebook removes Trump ad disguised as census message"
                 }
             }
         ],
         "keywords": [
-            "new",
-            "friday",
-            "health",
-            "singapore",
-            "minister",
-            "covid",
-            "19",
+            "president",
+            "trump",
+            "donald",
+            "hit",
+            "defended",
             "said",
-            "prime",
-            "month",
-            "feb",
-            "zealand",
-            "announced",
-            "cases",
-            "28"
+            "economy",
+            "eventually",
+            "predicted",
+            "pass",
+            "challenge",
+            "handling",
+            "crisis",
+            "state",
+            "campaign"
+        ]
+    },
+    {
+        "articles": [
+            {
+                "guidislink": false,
+                "href": "",
+                "id": "https://www.channelnewsasia.com/news/business/hsbc-sends-home-100-london-staff--confirms-china-coronavirus-case-12508750",
+                "link": "https://www.channelnewsasia.com/news/business/hsbc-sends-home-100-london-staff--confirms-china-coronavirus-case-12508750",
+                "links": [
+                    {
+                        "href": "https://www.channelnewsasia.com/news/business/hsbc-sends-home-100-london-staff--confirms-china-coronavirus-case-12508750",
+                        "rel": "alternate",
+                        "type": "text/html"
+                    }
+                ],
+                "media_thumbnail": [
+                    {
+                        "height": "720",
+                        "url": "https://www.channelnewsasia.com/image/12508746/16x9/1280/720/e89a45ed250ffe69196ba30603125d79/Un/file-photo--the-hsbc-bank-is-seen-in-the-financial-district-of-canary-wharf-2.jpg",
+                        "width": "1280"
+                    }
+                ],
+                "published": "Fri, 06 Mar 2020 12:30:51 +0800",
+                "published_parsed": [
+                    2020,
+                    3,
+                    6,
+                    4,
+                    30,
+                    51,
+                    4,
+                    66,
+                    0
+                ],
+                "summary": "HSBC Holdings PLC  has sent home more than 100 staff in London after a worker tested positive for the coronavirus, the first known case at a major company in Europe's main financial hub.",
+                "summary_detail": {
+                    "base": "https://www.channelnewsasia.com/rssfeeds/8395986",
+                    "language": "en-US",
+                    "type": "text/html",
+                    "value": "HSBC Holdings PLC  has sent home more than 100 staff in London after a worker tested positive for the coronavirus, the first known case at a major company in Europe's main financial hub."
+                },
+                "tags": [
+                    {
+                        "label": null,
+                        "scheme": null,
+                        "term": "Business"
+                    }
+                ],
+                "title": "HSBC sends home 100 London staff, confirms China coronavirus case",
+                "title_detail": {
+                    "base": "https://www.channelnewsasia.com/rssfeeds/8395986",
+                    "language": "en-US",
+                    "type": "text/plain",
+                    "value": "HSBC sends home 100 London staff, confirms China coronavirus case"
+                }
+            },
+            {
+                "guidislink": false,
+                "id": "https://www.bbc.co.uk/news/uk-england-birmingham-51738246",
+                "link": "https://www.bbc.co.uk/news/uk-england-birmingham-51738246",
+                "links": [
+                    {
+                        "href": "https://www.bbc.co.uk/news/uk-england-birmingham-51738246",
+                        "rel": "alternate",
+                        "type": "text/html"
+                    }
+                ],
+                "published": "Fri, 06 Mar 2020 00:56:37 GMT",
+                "published_parsed": [
+                    2020,
+                    3,
+                    6,
+                    0,
+                    56,
+                    37,
+                    4,
+                    66,
+                    0
+                ],
+                "summary": "Missy, from Birmingham, had been living on the streets almost eight miles from her owner's home.",
+                "summary_detail": {
+                    "base": "http://feeds.bbci.co.uk/news/rss.xml",
+                    "language": null,
+                    "type": "text/html",
+                    "value": "Missy, from Birmingham, had been living on the streets almost eight miles from her owner's home."
+                },
+                "title": "Missing cat reunited with owner after 11 years on the street",
+                "title_detail": {
+                    "base": "http://feeds.bbci.co.uk/news/rss.xml",
+                    "language": null,
+                    "type": "text/plain",
+                    "value": "Missing cat reunited with owner after 11 years on the street"
+                }
+            },
+            {
+                "guidislink": false,
+                "id": "https://www.bbc.co.uk/news/entertainment-arts-51697553",
+                "link": "https://www.bbc.co.uk/news/entertainment-arts-51697553",
+                "links": [
+                    {
+                        "href": "https://www.bbc.co.uk/news/entertainment-arts-51697553",
+                        "rel": "alternate",
+                        "type": "text/html"
+                    }
+                ],
+                "published": "Fri, 06 Mar 2020 07:28:37 GMT",
+                "published_parsed": [
+                    2020,
+                    3,
+                    6,
+                    7,
+                    28,
+                    37,
+                    4,
+                    66,
+                    0
+                ],
+                "summary": "The actor and rapper makes an album about being dumped by an abusive lover - his home country.",
+                "summary_detail": {
+                    "base": "http://feeds.bbci.co.uk/news/rss.xml",
+                    "language": null,
+                    "type": "text/html",
+                    "value": "The actor and rapper makes an album about being dumped by an abusive lover - his home country."
+                },
+                "title": "Riz Ahmed on The Long Goodbye: Why he says 'Britain's broken up with me'",
+                "title_detail": {
+                    "base": "http://feeds.bbci.co.uk/news/rss.xml",
+                    "language": null,
+                    "type": "text/plain",
+                    "value": "Riz Ahmed on The Long Goodbye: Why he says 'Britain's broken up with me'"
+                }
+            },
+            {
+                "guidislink": false,
+                "id": "https://www.bbc.co.uk/news/world-europe-51751031",
+                "link": "https://www.bbc.co.uk/news/world-europe-51751031",
+                "links": [
+                    {
+                        "href": "https://www.bbc.co.uk/news/world-europe-51751031",
+                        "rel": "alternate",
+                        "type": "text/html"
+                    }
+                ],
+                "published": "Fri, 06 Mar 2020 02:47:22 GMT",
+                "published_parsed": [
+                    2020,
+                    3,
+                    6,
+                    2,
+                    47,
+                    22,
+                    4,
+                    66,
+                    0
+                ],
+                "summary": "Children being sent home from school and absent tourists leave Italy reeling from coronavirus.",
+                "summary_detail": {
+                    "base": "http://feeds.bbci.co.uk/news/rss.xml",
+                    "language": null,
+                    "type": "text/html",
+                    "value": "Children being sent home from school and absent tourists leave Italy reeling from coronavirus."
+                },
+                "title": "School's out: Parents stressed by Italy coronavirus shutdown",
+                "title_detail": {
+                    "base": "http://feeds.bbci.co.uk/news/rss.xml",
+                    "language": null,
+                    "type": "text/plain",
+                    "value": "School's out: Parents stressed by Italy coronavirus shutdown"
+                }
+            },
+            {
+                "guidislink": false,
+                "id": "http://www.straitstimes.com/world/europe/coronavirus-hsbc-sends-100-london-staff-home-confirms-china-case",
+                "link": "http://www.straitstimes.com/world/europe/coronavirus-hsbc-sends-100-london-staff-home-confirms-china-case",
+                "links": [
+                    {
+                        "href": "http://www.straitstimes.com/world/europe/coronavirus-hsbc-sends-100-london-staff-home-confirms-china-case",
+                        "rel": "alternate",
+                        "type": "text/html"
+                    }
+                ],
+                "published": "Fri, 06 Mar 2020 02:35:27 +0800",
+                "published_parsed": [
+                    2020,
+                    3,
+                    5,
+                    18,
+                    35,
+                    27,
+                    3,
+                    65,
+                    0
+                ],
+                "source": {
+                    "href": "https://www.straitstimes.com/news/world/rss.xml/20200306",
+                    "title": "The Straits Times"
+                },
+                "summary": "March 06, 2020 2:35 AM<br /><br />LONDON/MILAN (REUTERS) - HSBC has sent more than 100 of its London staff home after a worker tested positive for the coronavirus, the first known case at a major company in Europe's main financial hub.",
+                "summary_detail": {
+                    "base": "https://www.straitstimes.com/",
+                    "language": "en",
+                    "type": "text/html",
+                    "value": "March 06, 2020 2:35 AM<br /><br />LONDON/MILAN (REUTERS) - HSBC has sent more than 100 of its London staff home after a worker tested positive for the coronavirus, the first known case at a major company in Europe's main financial hub."
+                },
+                "title": "Coronavirus: HSBC sends 100 London staff home, confirms China case",
+                "title_detail": {
+                    "base": "https://www.straitstimes.com/",
+                    "language": "en",
+                    "type": "text/plain",
+                    "value": "Coronavirus: HSBC sends 100 London staff home, confirms China case"
+                }
+            }
+        ],
+        "keywords": [
+            "home",
+            "sent",
+            "makes",
+            "country",
+            "london",
+            "italy",
+            "company",
+            "children",
+            "europe",
+            "known",
+            "main",
+            "hsbc",
+            "hub",
+            "worker",
+            "coronavirus"
         ]
     }
 ]
