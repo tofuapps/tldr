@@ -8,8 +8,8 @@ class Fetcher:
     feeds = [
         'https://www.channelnewsasia.com/rssfeeds/8395986',
         'http://feeds.bbci.co.uk/news/rss.xml',
-        'https://www.straitstimes.com/news/world/rss.xml',
-        'https://news.google.com/rss/search?ceid=SG:en&gl=SG&hl=en-SG&q=apple'
+        'https://www.straitstimes.com/news/world/rss.xml'
+        #'https://news.google.com/rss/'
     ]
 
     """ Supplies the news articles """
