@@ -10,19 +10,17 @@ from sklearn.metrics import silhouette_score
 
 class Curator:
 
-    
-
     def __init__(self):
         pass
 
 
-    def curate(self, articles): 
+    def curate(self, articles):
         #return self.cluster(articles)
         return self.classify(articles)
 
 
     def classify(self, articles):
-        corpus = [ x.summary for x in articles ]
+        corpus = [ x.get("summary", x.get("short_summary", "")) for x in articles ]
 
         # number of topics to extract
         n_topics = round(len(articles) ** 0.5 * 0.5) # sqrt(n)/2 is hopefully a good estimate
