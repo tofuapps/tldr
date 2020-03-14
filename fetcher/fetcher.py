@@ -3,6 +3,7 @@ import json
 import requests
 import feedparser
 import utils.utils as utils
+import newspaper
 
 class Fetcher:
     feeds = [
@@ -72,7 +73,8 @@ class Fetcher:
         response = requests.get(url)
 
         if 200 <= response.status_code < 300:
-            return utils.clean_html(response.content, tag="article")
+            return newspaper.fulltext(response.text)
+            #return utils.clean_html(response.content, tag="article")
 
         #There's a problem.
         #TODO: throw an error instead.

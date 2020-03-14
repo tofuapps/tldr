@@ -18,27 +18,39 @@ if __name__ == '__main__':
     #print(args.accumulate(args.integers))
 
     #parser.add_argument('--verbosity', dest)
-    parser.add_argument('-b', '--body', action='store_true',
+    parser.add_argument('-b', '--body', action='store',
                         help="Body of article")
-    parser.add_argument('-t', '--title', action='store_true',
+    parser.add_argument('-t', '--title', action='store',
                         help="Title of article")
-    parser.add_argument('--summarise', action='store_true',
+    parser.add_argument('-l', '--link', action='store',
+                        help="Link to the article")
+    parser.add_argument('--summarize', action='store_true',
                         help='Outputs summary of given article')
     parser.add_argument('--curate', action='store_true',
                         help='Outputs list of curated articles')
     args = parser.parse_args()
 
-    print(args)
+    try:
+        fetcher = Fetcher()
+        if args.curate:
+            curator = Curator()
 
-    #fetcher = Fetcher()
-    #curator = Curator()
-    ##summarizer = Summarizer()
+            articles = fetcher.simple_fetch()
+            result = curator.curate(articles)
 
-    #articles = fetcher.fetch()
-    #result = curator.curate(articles)
+            with open('curated_articles.out', 'w') as output:
+                output.writelines(json.dumps(result, sort_keys=True, indent=4))
 
-    #with open('curated_articles.out', 'w') as output:
-    #    output.writelines(json.dumps(result, sort_keys=True, indent=4))
+            print(json.dumps(result, sort_keys=True))
+            sys.stdout.flush()
+        elif args.summarize:
+            summarizer = Summarizer()
+            if args.link is not None:
+                article_contents = fetcher.retrieve_article_contents(args.link)
+                result = summarizer.summarize(args.title, article_contents)
+                print(json.dumps(result, sort_keys=True))
+                sys.stdout.flush()
 
-    #print(json.dumps(result, sort_keys=True))
-    #sys.stdout.flush()
+    except Exception as e:
+        print(e)
+

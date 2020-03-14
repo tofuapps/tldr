@@ -117,6 +117,6 @@ if __name__ == '__main__':
     from fetcher.fetcher import Fetcher
     fetcher = Fetcher()
     curator = Curator()
-    articles = fetcher.fetch();
+    articles = fetcher.simple_fetch();
     #print(curator.cluster(articles))
     print(curator.curate(articles))
