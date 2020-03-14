@@ -12,6 +12,8 @@ feedparser = "*"
 scikit-learn = "*"
 matplotlib = "*"
 nltk = "*"
+newspaper3k = "*"
+setuptools = "*"
 
 [requires]
 python_version = "3.7"
