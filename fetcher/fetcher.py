@@ -46,7 +46,7 @@ class Fetcher:
         Fetches list of news from an rss feed, and returns it in a simplified form with basic types.
 
         An array of news in the form of dictionaries with keys:
-           - link (string)
+           - url (string)
            - title (plain text string)
            - published_on (time struct)
            - short_summary (plain text string)
