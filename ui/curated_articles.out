@@ -2,1734 +2,724 @@
     {
         "articles": [
             {
-                "guidislink": false,
-                "id": "http://www.straitstimes.com/world/united-states/three-coronavirus-cases-confirmed-in-maryland-governor",
-                "link": "http://www.straitstimes.com/world/united-states/three-coronavirus-cases-confirmed-in-maryland-governor",
-                "links": [
-                    {
-                        "href": "http://www.straitstimes.com/world/united-states/three-coronavirus-cases-confirmed-in-maryland-governor",
-                        "rel": "alternate",
-                        "type": "text/html"
-                    }
-                ],
-                "published": "Fri, 06 Mar 2020 08:32:28 +0800",
-                "published_parsed": [
+                "published_on": [
                     2020,
                     3,
-                    6,
-                    0,
-                    32,
-                    28,
-                    4,
-                    66,
-                    0
-                ],
-                "source": {
-                    "href": "https://www.straitstimes.com/news/world/rss.xml/20200306",
-                    "title": "The Straits Times"
-                },
-                "summary": "March 06, 2020 8:32 AM<br /><br />WASHINGTON (REUTERS) - Maryland's public health laboratory has confirmed three coronavirus cases, Governor Larry Hogan said in a statement on Thursday (March 5).",
-                "summary_detail": {
-                    "base": "https://www.straitstimes.com/",
-                    "language": "en",
-                    "type": "text/html",
-                    "value": "March 06, 2020 8:32 AM<br /><br />WASHINGTON (REUTERS) - Maryland's public health laboratory has confirmed three coronavirus cases, Governor Larry Hogan said in a statement on Thursday (March 5)."
-                },
-                "title": "Three coronavirus cases confirmed in Maryland: Governor",
-                "title_detail": {
-                    "base": "https://www.straitstimes.com/",
-                    "language": "en",
-                    "type": "text/plain",
-                    "value": "Three coronavirus cases confirmed in Maryland: Governor"
-                }
-            },
-            {
-                "guidislink": false,
-                "id": "http://www.straitstimes.com/world/while-you-were-sleeping-5-stories-you-might-have-missed-march-6-1",
-                "link": "http://www.straitstimes.com/world/while-you-were-sleeping-5-stories-you-might-have-missed-march-6-1",
-                "links": [
-                    {
-                        "href": "http://www.straitstimes.com/world/while-you-were-sleeping-5-stories-you-might-have-missed-march-6-1",
-                        "rel": "alternate",
-                        "type": "text/html"
-                    }
-                ],
-                "published": "Fri, 06 Mar 2020 06:00:00 +0800",
-                "published_parsed": [
-                    2020,
-                    3,
-                    5,
+                    13,
                     22,
                     0,
                     0,
-                    3,
-                    65,
+                    4,
+                    73,
                     0
                 ],
-                "source": {
-                    "href": "https://www.straitstimes.com/news/world/rss.xml/20200306",
-                    "title": "The Straits Times"
-                },
-                "summary": "March 06, 2020 6:00 AM<br /><br />A selection of news stories that happened overnight, March 6, 2020.",
-                "summary_detail": {
-                    "base": "https://www.straitstimes.com/",
-                    "language": "en",
-                    "type": "text/html",
-                    "value": "March 06, 2020 6:00 AM<br /><br />A selection of news stories that happened overnight, March 6, 2020."
-                },
-                "title": "While You Were Sleeping: 5 stories you might have missed, March 6",
-                "title_detail": {
-                    "base": "https://www.straitstimes.com/",
-                    "language": "en",
-                    "type": "text/plain",
-                    "value": "While You Were Sleeping: 5 stories you might have missed, March 6"
-                }
+                "short_summary": "March 14, 2020 6:00 AM A selection of news stories that happened overnight, March 14, 2020.",
+                "title": "While You Were Sleeping: 5 stories you might have missed, March 14",
+                "url": "http://www.straitstimes.com/world/while-you-were-sleeping-5-stories-you-might-have-missed-march-14-1"
             }
         ],
         "keywords": [
-            "br",
             "march",
+            "14",
             "2020",
-            "06",
-            "reuters",
             "00",
-            "thursday",
+            "reuters",
             "afp",
-            "coronavirus",
+            "13",
+            "pm",
             "washington",
-            "health",
-            "nytimes",
-            "people",
+            "12",
             "said",
-            "pm"
+            "week",
+            "coronavirus",
+            "overnight",
+            "foreign"
         ]
     },
     {
         "articles": [
             {
-                "guidislink": false,
-                "href": "",
-                "id": "https://www.channelnewsasia.com/news/asia/covid19-coronavirus-new-cases-philippines-manila-12509070",
-                "link": "https://www.channelnewsasia.com/news/asia/covid19-coronavirus-new-cases-philippines-manila-12509070",
-                "links": [
-                    {
-                        "href": "https://www.channelnewsasia.com/news/asia/covid19-coronavirus-new-cases-philippines-manila-12509070",
-                        "rel": "alternate",
-                        "type": "text/html"
-                    }
-                ],
-                "media_thumbnail": [
-                    {
-                        "height": "720",
-                        "url": "https://www.channelnewsasia.com/image/12447218/16x9/1280/720/1c45d757b80071f1f9c063b274c4a50c/VM/a-woman-wearing-a-protective-mask-rides-a-crowded-train-in-manila-1.jpg",
-                        "width": "1280"
-                    }
-                ],
-                "published": "Fri, 06 Mar 2020 15:20:38 +0800",
-                "published_parsed": [
+                "published_on": [
                     2020,
                     3,
-                    6,
-                    7,
-                    20,
-                    38,
-                    4,
-                    66,
-                    0
-                ],
-                "summary": "MANILA: Philippines announced two more COVID-19 cases on Friday (Mar 6),\u00a0bringing the country\u2019s total number of infections up to five, the department of health said.\u00a0\n\n\nIn a press release, the health department said the fourth case was a 48-year-old\u00a0Filipino man with a travel history to Japan.\u00a0The ...",
-                "summary_detail": {
-                    "base": "https://www.channelnewsasia.com/rssfeeds/8395986",
-                    "language": "en-US",
-                    "type": "text/html",
-                    "value": "MANILA: Philippines announced two more COVID-19 cases on Friday (Mar 6),\u00a0bringing the country\u2019s total number of infections up to five, the department of health said.\u00a0\n\n\nIn a press release, the health department said the fourth case was a 48-year-old\u00a0Filipino man with a travel history to Japan.\u00a0The ..."
-                },
-                "tags": [
-                    {
-                        "label": null,
-                        "scheme": null,
-                        "term": "Asia"
-                    }
-                ],
-                "title": "2 new COVID-19 cases in Philippines, including man who had travelled to Japan",
-                "title_detail": {
-                    "base": "https://www.channelnewsasia.com/rssfeeds/8395986",
-                    "language": "en-US",
-                    "type": "text/plain",
-                    "value": "2 new COVID-19 cases in Philippines, including man who had travelled to Japan"
-                }
-            },
-            {
-                "guidislink": false,
-                "href": "",
-                "id": "https://www.channelnewsasia.com/news/singapore/coronavirus-temperature-screening-important-but-not-foolproof-12507898",
-                "link": "https://www.channelnewsasia.com/news/singapore/coronavirus-temperature-screening-important-but-not-foolproof-12507898",
-                "links": [
-                    {
-                        "href": "https://www.channelnewsasia.com/news/singapore/coronavirus-temperature-screening-important-but-not-foolproof-12507898",
-                        "rel": "alternate",
-                        "type": "text/html"
-                    }
-                ],
-                "media_thumbnail": [
-                    {
-                        "height": "720",
-                        "url": "https://www.channelnewsasia.com/image/12507914/16x9/1280/720/e57c3103d0ceff650656db71dfa171a5/pE/entire-panel.png",
-                        "width": "1280"
-                    }
-                ],
-                "published": "Fri, 06 Mar 2020 14:30:08 +0800",
-                "published_parsed": [
-                    2020,
-                    3,
-                    6,
-                    6,
-                    30,
-                    8,
-                    4,
-                    66,
-                    0
-                ],
-                "summary": "SINGAPORE: Temperature screening is an important tool in detecting\u00a0COVID-19 cases, but it is not a foolproof measure and should not be regarded as the only way to identify people who are unwell, health authorities said on Friday (Mar 6).\n\n\"Temperature tests are\u00a0very important because many of our ...",
-                "summary_detail": {
-                    "base": "https://www.channelnewsasia.com/rssfeeds/8395986",
-                    "language": "en-US",
-                    "type": "text/html",
-                    "value": "SINGAPORE: Temperature screening is an important tool in detecting\u00a0COVID-19 cases, but it is not a foolproof measure and should not be regarded as the only way to identify people who are unwell, health authorities said on Friday (Mar 6).\n\n\"Temperature tests are\u00a0very important because many of our ..."
-                },
-                "tags": [
-                    {
-                        "label": null,
-                        "scheme": null,
-                        "term": "Singapore"
-                    }
-                ],
-                "title": "Temperature screening 'important' but not 'foolproof' in detecting COVID-19: Gan Kim Yong",
-                "title_detail": {
-                    "base": "https://www.channelnewsasia.com/rssfeeds/8395986",
-                    "language": "en-US",
-                    "type": "text/plain",
-                    "value": "Temperature screening 'important' but not 'foolproof' in detecting COVID-19: Gan Kim Yong"
-                }
-            },
-            {
-                "guidislink": false,
-                "href": "",
-                "id": "https://www.channelnewsasia.com/news/singapore/coronavirus-pets-spread-possibility-singapore-moh-covid-19-12508030",
-                "link": "https://www.channelnewsasia.com/news/singapore/coronavirus-pets-spread-possibility-singapore-moh-covid-19-12508030",
-                "links": [
-                    {
-                        "href": "https://www.channelnewsasia.com/news/singapore/coronavirus-pets-spread-possibility-singapore-moh-covid-19-12508030",
-                        "rel": "alternate",
-                        "type": "text/html"
-                    }
-                ],
-                "media_thumbnail": [
-                    {
-                        "height": "720",
-                        "url": "https://www.channelnewsasia.com/image/8170294/16x9/1280/720/87226d2747a00110f69177f55b55ce44/kT/yishun-cat---2451240.png",
-                        "width": "1280"
-                    }
-                ],
-                "published": "Fri, 06 Mar 2020 13:21:57 +0800",
-                "published_parsed": [
-                    2020,
-                    3,
-                    6,
-                    5,
-                    21,
-                    57,
-                    4,
-                    66,
-                    0
-                ],
-                "summary": "SINGAPORE: There is a \"theoretical possibility\" that COVID-19 could spread from animals to humans, the Ministry of Health (MOH) said on Friday (Mar 6), although it assessed that pets are not a \"serious vector\" of transmission.\n\nIn a news conference, MOH's director of Medical Services Kenneth Mak ...",
-                "summary_detail": {
-                    "base": "https://www.channelnewsasia.com/rssfeeds/8395986",
-                    "language": "en-US",
-                    "type": "text/html",
-                    "value": "SINGAPORE: There is a \"theoretical possibility\" that COVID-19 could spread from animals to humans, the Ministry of Health (MOH) said on Friday (Mar 6), although it assessed that pets are not a \"serious vector\" of transmission.\n\nIn a news conference, MOH's director of Medical Services Kenneth Mak ..."
-                },
-                "tags": [
-                    {
-                        "label": null,
-                        "scheme": null,
-                        "term": "Singapore"
-                    }
-                ],
-                "title": "'Theoretical possibility' that COVID-19 can spread from animals to humans, but pets not a serious vector of transmission: MOH",
-                "title_detail": {
-                    "base": "https://www.channelnewsasia.com/rssfeeds/8395986",
-                    "language": "en-US",
-                    "type": "text/plain",
-                    "value": "'Theoretical possibility' that COVID-19 can spread from animals to humans, but pets not a serious vector of transmission: MOH"
-                }
-            },
-            {
-                "guidislink": false,
-                "href": "",
-                "id": "https://www.channelnewsasia.com/news/singapore/coronavirus-covid-19-clean-taskforce-12507868",
-                "link": "https://www.channelnewsasia.com/news/singapore/coronavirus-covid-19-clean-taskforce-12507868",
-                "links": [
-                    {
-                        "href": "https://www.channelnewsasia.com/news/singapore/coronavirus-covid-19-clean-taskforce-12507868",
-                        "rel": "alternate",
-                        "type": "text/html"
-                    }
-                ],
-                "media_thumbnail": [
-                    {
-                        "height": "720",
-                        "url": "https://www.channelnewsasia.com/image/12507902/16x9/1280/720/a2fa16da6338c96de0812b97c624aee3/Fd/masagos.png",
-                        "width": "1280"
-                    }
-                ],
-                "published": "Fri, 06 Mar 2020 14:35:39 +0800",
-                "published_parsed": [
-                    2020,
-                    3,
-                    6,
-                    6,
-                    35,
-                    39,
-                    4,
-                    66,
-                    0
-                ],
-                "summary": "SINGAPORE: A multi-agency task force has been formed to step up public hygiene standards in Singapore beyond the COVID-19 outbreak, authorities said on Friday (Mar 6).\n\nThe new SG Clean Taskforce, chaired by Minister for the Environment and Water Resources Masagos Zulkifli, is\u00a0under the purview of ...",
-                "summary_detail": {
-                    "base": "https://www.channelnewsasia.com/rssfeeds/8395986",
-                    "language": "en-US",
-                    "type": "text/html",
-                    "value": "SINGAPORE: A multi-agency task force has been formed to step up public hygiene standards in Singapore beyond the COVID-19 outbreak, authorities said on Friday (Mar 6).\n\nThe new SG Clean Taskforce, chaired by Minister for the Environment and Water Resources Masagos Zulkifli, is\u00a0under the purview of ..."
-                },
-                "tags": [
-                    {
-                        "label": null,
-                        "scheme": null,
-                        "term": "Singapore"
-                    }
-                ],
-                "title": "Task force formed to raise public hygiene standards beyond COVID-19 outbreak",
-                "title_detail": {
-                    "base": "https://www.channelnewsasia.com/rssfeeds/8395986",
-                    "language": "en-US",
-                    "type": "text/plain",
-                    "value": "Task force formed to raise public hygiene standards beyond COVID-19 outbreak"
-                }
-            },
-            {
-                "guidislink": false,
-                "href": "",
-                "id": "https://www.channelnewsasia.com/news/asia/covid19-china-reports-more-deaths-infections-coronavirus-12508004",
-                "link": "https://www.channelnewsasia.com/news/asia/covid19-china-reports-more-deaths-infections-coronavirus-12508004",
-                "links": [
-                    {
-                        "href": "https://www.channelnewsasia.com/news/asia/covid19-china-reports-more-deaths-infections-coronavirus-12508004",
-                        "rel": "alternate",
-                        "type": "text/html"
-                    }
-                ],
-                "media_thumbnail": [
-                    {
-                        "height": "720",
-                        "url": "https://www.channelnewsasia.com/image/12507806/16x9/1280/720/4a6b43b0a5112a7a4ce4f97e7e07dff/Dv/a-man-wears-a-mask-as-he-crosses-a-street-in-a-business-district-in-beijing-1.jpg",
-                        "width": "1280"
-                    }
-                ],
-                "published": "Fri, 06 Mar 2020 10:53:11 +0800",
-                "published_parsed": [
-                    2020,
-                    3,
-                    6,
-                    2,
-                    53,
-                    11,
-                    4,
-                    66,
-                    0
-                ],
-                "summary": "BEIJING: China reported 30 more deaths from the COVID-19 outbreak on Friday (Mar 6), with fresh infections rising for a second straight day and 16 new cases imported from overseas.\n\nIn total 3,042 people have died from the disease in China, the National Health Commission said.\n\nREAD:\u00a0COVID-19 cases ...",
-                "summary_detail": {
-                    "base": "https://www.channelnewsasia.com/rssfeeds/8395986",
-                    "language": "en-US",
-                    "type": "text/html",
-                    "value": "BEIJING: China reported 30 more deaths from the COVID-19 outbreak on Friday (Mar 6), with fresh infections rising for a second straight day and 16 new cases imported from overseas.\n\nIn total 3,042 people have died from the disease in China, the National Health Commission said.\n\nREAD:\u00a0COVID-19 cases ..."
-                },
-                "tags": [
-                    {
-                        "label": null,
-                        "scheme": null,
-                        "term": "Asia"
-                    }
-                ],
-                "title": "China reports 30 COVID-19 deaths, rise in new infections and imported cases",
-                "title_detail": {
-                    "base": "https://www.channelnewsasia.com/rssfeeds/8395986",
-                    "language": "en-US",
-                    "type": "text/plain",
-                    "value": "China reports 30 COVID-19 deaths, rise in new infections and imported cases"
-                }
-            }
-        ],
-        "keywords": [
-            "singapore",
-            "mar",
-            "friday",
-            "said",
-            "covid",
-            "19",
-            "cases",
-            "health",
-            "total",
-            "country",
-            "authorities",
-            "announced",
-            "number",
-            "minister",
-            "reported"
-        ]
-    },
-    {
-        "articles": [
-            {
-                "guidislink": false,
-                "href": "",
-                "id": "https://www.channelnewsasia.com/news/business/facebook--google-ask-san-francisco-staff-to-work-from-home-amid-coronavirus-12509094",
-                "link": "https://www.channelnewsasia.com/news/business/facebook--google-ask-san-francisco-staff-to-work-from-home-amid-coronavirus-12509094",
-                "links": [
-                    {
-                        "href": "https://www.channelnewsasia.com/news/business/facebook--google-ask-san-francisco-staff-to-work-from-home-amid-coronavirus-12509094",
-                        "rel": "alternate",
-                        "type": "text/html"
-                    }
-                ],
-                "media_thumbnail": [
-                    {
-                        "height": "720",
-                        "url": "https://www.channelnewsasia.com/image/12509090/16x9/1280/720/17dce8cc005ae72df1de0616f7faabc/hk/file-photo--facebook-logos-1.jpg",
-                        "width": "1280"
-                    }
-                ],
-                "published": "Fri, 06 Mar 2020 14:30:29 +0800",
-                "published_parsed": [
-                    2020,
-                    3,
-                    6,
-                    6,
-                    30,
-                    29,
-                    4,
-                    66,
-                    0
-                ],
-                "summary": "Social media giant Facebook Inc and Alphabet Inc's  Google on Thursday recommended their San Francisco Bay area employees to work from home to minimize the risk of spreading Covid-19.",
-                "summary_detail": {
-                    "base": "https://www.channelnewsasia.com/rssfeeds/8395986",
-                    "language": "en-US",
-                    "type": "text/html",
-                    "value": "Social media giant Facebook Inc and Alphabet Inc's  Google on Thursday recommended their San Francisco Bay area employees to work from home to minimize the risk of spreading Covid-19."
-                },
-                "tags": [
-                    {
-                        "label": null,
-                        "scheme": null,
-                        "term": "Business"
-                    }
-                ],
-                "title": "Facebook, Google ask San Francisco staff to work from home amid coronavirus",
-                "title_detail": {
-                    "base": "https://www.channelnewsasia.com/rssfeeds/8395986",
-                    "language": "en-US",
-                    "type": "text/plain",
-                    "value": "Facebook, Google ask San Francisco staff to work from home amid coronavirus"
-                }
-            },
-            {
-                "guidislink": false,
-                "href": "",
-                "id": "https://www.channelnewsasia.com/news/sport/golfer-piercy-loses-sponsors-over-homophobic-buttigieg-meme---reports-12508544",
-                "link": "https://www.channelnewsasia.com/news/sport/golfer-piercy-loses-sponsors-over-homophobic-buttigieg-meme---reports-12508544",
-                "links": [
-                    {
-                        "href": "https://www.channelnewsasia.com/news/sport/golfer-piercy-loses-sponsors-over-homophobic-buttigieg-meme---reports-12508544",
-                        "rel": "alternate",
-                        "type": "text/html"
-                    }
-                ],
-                "media_thumbnail": [
-                    {
-                        "height": "720",
-                        "url": "https://www.channelnewsasia.com/image/12508542/16x9/1280/720/3160b5a70537eea139bc6fefdbb4836a/Mh/pga--at-amp-t-pebble-beach-pro-am---third-round-1.jpg",
-                        "width": "1280"
-                    }
-                ],
-                "published": "Fri, 06 Mar 2020 11:25:27 +0800",
-                "published_parsed": [
-                    2020,
-                    3,
-                    6,
-                    3,
-                    25,
-                    27,
-                    4,
-                    66,
-                    0
-                ],
-                "summary": "Former U.S. Open runner-up Scott Piercy has lost major sponsors after he posted a homophobic meme on social media about openly-gay former U.S. presidential candidate Pete Buttigieg, several media reported.",
-                "summary_detail": {
-                    "base": "https://www.channelnewsasia.com/rssfeeds/8395986",
-                    "language": "en-US",
-                    "type": "text/html",
-                    "value": "Former U.S. Open runner-up Scott Piercy has lost major sponsors after he posted a homophobic meme on social media about openly-gay former U.S. presidential candidate Pete Buttigieg, several media reported."
-                },
-                "tags": [
-                    {
-                        "label": null,
-                        "scheme": null,
-                        "term": "Sport"
-                    }
-                ],
-                "title": "Golfer Piercy loses sponsors over homophobic Buttigieg meme - reports",
-                "title_detail": {
-                    "base": "https://www.channelnewsasia.com/rssfeeds/8395986",
-                    "language": "en-US",
-                    "type": "text/plain",
-                    "value": "Golfer Piercy loses sponsors over homophobic Buttigieg meme - reports"
-                }
-            },
-            {
-                "guidislink": false,
-                "id": "https://www.bbc.co.uk/news/world-us-canada-51762753",
-                "link": "https://www.bbc.co.uk/news/world-us-canada-51762753",
-                "links": [
-                    {
-                        "href": "https://www.bbc.co.uk/news/world-us-canada-51762753",
-                        "rel": "alternate",
-                        "type": "text/html"
-                    }
-                ],
-                "published": "Thu, 05 Mar 2020 21:38:40 GMT",
-                "published_parsed": [
-                    2020,
-                    3,
-                    5,
-                    21,
-                    38,
-                    40,
-                    3,
-                    65,
-                    0
-                ],
-                "summary": "A social media video showed D'Adrien Anderson licking ice cream and putting it back.",
-                "summary_detail": {
-                    "base": "http://feeds.bbci.co.uk/news/rss.xml",
-                    "language": null,
-                    "type": "text/html",
-                    "value": "A social media video showed D'Adrien Anderson licking ice cream and putting it back."
-                },
-                "title": "Texas ice cream licker jailed for social media joke",
-                "title_detail": {
-                    "base": "http://feeds.bbci.co.uk/news/rss.xml",
-                    "language": null,
-                    "type": "text/plain",
-                    "value": "Texas ice cream licker jailed for social media joke"
-                }
-            },
-            {
-                "guidislink": false,
-                "id": "https://www.bbc.co.uk/news/disability-51726896",
-                "link": "https://www.bbc.co.uk/news/disability-51726896",
-                "links": [
-                    {
-                        "href": "https://www.bbc.co.uk/news/disability-51726896",
-                        "rel": "alternate",
-                        "type": "text/html"
-                    }
-                ],
-                "published": "Fri, 06 Mar 2020 04:02:57 GMT",
-                "published_parsed": [
-                    2020,
-                    3,
-                    6,
-                    4,
-                    2,
-                    57,
-                    4,
-                    66,
-                    0
-                ],
-                "summary": "They can hula hoop and inject insulin at the same time. Meet the duo who are using social media to destigmatise diabetes.",
-                "summary_detail": {
-                    "base": "http://feeds.bbci.co.uk/news/rss.xml",
-                    "language": null,
-                    "type": "text/html",
-                    "value": "They can hula hoop and inject insulin at the same time. Meet the duo who are using social media to destigmatise diabetes."
-                },
-                "title": "The TikTok stars giving diabetes the needle",
-                "title_detail": {
-                    "base": "http://feeds.bbci.co.uk/news/rss.xml",
-                    "language": null,
-                    "type": "text/plain",
-                    "value": "The TikTok stars giving diabetes the needle"
-                }
-            },
-            {
-                "guidislink": false,
-                "id": "https://www.bbc.co.uk/news/stories-51591410",
-                "link": "https://www.bbc.co.uk/news/stories-51591410",
-                "links": [
-                    {
-                        "href": "https://www.bbc.co.uk/news/stories-51591410",
-                        "rel": "alternate",
-                        "type": "text/html"
-                    }
-                ],
-                "published": "Sat, 22 Feb 2020 01:01:19 GMT",
-                "published_parsed": [
-                    2020,
-                    2,
-                    22,
-                    1,
-                    1,
-                    19,
-                    5,
-                    53,
-                    0
-                ],
-                "summary": "More young people are turning to social media to explore their faith.",
-                "summary_detail": {
-                    "base": "http://feeds.bbci.co.uk/news/rss.xml",
-                    "language": null,
-                    "type": "text/html",
-                    "value": "More young people are turning to social media to explore their faith."
-                },
-                "title": "What happens when a Hindu and Muslim YouTuber meet?",
-                "title_detail": {
-                    "base": "http://feeds.bbci.co.uk/news/rss.xml",
-                    "language": null,
-                    "type": "text/plain",
-                    "value": "What happens when a Hindu and Muslim YouTuber meet?"
-                }
-            },
-            {
-                "guidislink": false,
-                "id": "http://www.straitstimes.com/world/united-states/facebook-google-ask-san-francisco-staff-to-work-from-home-amid-coronavirus",
-                "link": "http://www.straitstimes.com/world/united-states/facebook-google-ask-san-francisco-staff-to-work-from-home-amid-coronavirus",
-                "links": [
-                    {
-                        "href": "http://www.straitstimes.com/world/united-states/facebook-google-ask-san-francisco-staff-to-work-from-home-amid-coronavirus",
-                        "rel": "alternate",
-                        "type": "text/html"
-                    }
-                ],
-                "published": "Fri, 06 Mar 2020 14:28:45 +0800",
-                "published_parsed": [
-                    2020,
-                    3,
-                    6,
-                    6,
-                    28,
+                    14,
+                    12,
                     45,
-                    4,
-                    66,
-                    0
-                ],
-                "source": {
-                    "href": "https://www.straitstimes.com/news/world/rss.xml/20200306",
-                    "title": "The Straits Times"
-                },
-                "summary": "March 06, 2020 2:28 PM<br /><br />SAN FRANCISCO (REUTERS) - Social media giant Facebook and Alphabet's Google on Thursday (March 5) recommended that their San Francisco Bay area employees to work from home to minimise the risk of spreading Covid-19.",
-                "summary_detail": {
-                    "base": "https://www.straitstimes.com/",
-                    "language": "en",
-                    "type": "text/html",
-                    "value": "March 06, 2020 2:28 PM<br /><br />SAN FRANCISCO (REUTERS) - Social media giant Facebook and Alphabet's Google on Thursday (March 5) recommended that their San Francisco Bay area employees to work from home to minimise the risk of spreading Covid-19."
-                },
-                "title": "Coronavirus: Facebook, Google ask San Francisco staff to work from home",
-                "title_detail": {
-                    "base": "https://www.straitstimes.com/",
-                    "language": "en",
-                    "type": "text/plain",
-                    "value": "Coronavirus: Facebook, Google ask San Francisco staff to work from home"
-                }
-            }
-        ],
-        "keywords": [
-            "media",
-            "social",
-            "people",
-            "video",
-            "duo",
-            "san",
-            "francisco",
-            "using",
-            "spreading",
-            "work",
-            "gay",
-            "time",
-            "alphabet",
-            "giant",
-            "google"
-        ]
-    },
-    {
-        "articles": [
-            {
-                "guidislink": false,
-                "href": "",
-                "id": "https://www.channelnewsasia.com/news/sport/football-ighalo-s-double-denies-rooney-as-man-utd-move-into-fa-12507558",
-                "link": "https://www.channelnewsasia.com/news/sport/football-ighalo-s-double-denies-rooney-as-man-utd-move-into-fa-12507558",
-                "links": [
-                    {
-                        "href": "https://www.channelnewsasia.com/news/sport/football-ighalo-s-double-denies-rooney-as-man-utd-move-into-fa-12507558",
-                        "rel": "alternate",
-                        "type": "text/html"
-                    }
-                ],
-                "media_thumbnail": [
-                    {
-                        "height": "720",
-                        "url": "https://www.channelnewsasia.com/image/12507556/16x9/1280/720/697cc1ed38c3cdca298e2dad0c8fb364/gI/manchester-united-striker-odion-ighalo-scored-his-team-s-second-goal-against-derby-1583444857335-8.jpg",
-                        "width": "1280"
-                    }
-                ],
-                "published": "Fri, 06 Mar 2020 07:19:26 +0800",
-                "published_parsed": [
-                    2020,
-                    3,
+                    10,
                     5,
-                    23,
-                    19,
-                    26,
-                    3,
-                    65,
+                    74,
                     0
                 ],
-                "summary": "DERBY: Ole Gunnar Solskjaer has challenged Manchester United to compete on three fronts after they moved into the FA Cup quarter-finals with a 3-0 win at Wayne Rooney's Derby on Thursday (Mar 5).\n\nSolskjaer's side were never in danger of a shock fifth round exit against the second tier Rams as Luke ...",
-                "summary_detail": {
-                    "base": "https://www.channelnewsasia.com/rssfeeds/8395986",
-                    "language": "en-US",
-                    "type": "text/html",
-                    "value": "DERBY: Ole Gunnar Solskjaer has challenged Manchester United to compete on three fronts after they moved into the FA Cup quarter-finals with a 3-0 win at Wayne Rooney's Derby on Thursday (Mar 5).\n\nSolskjaer's side were never in danger of a shock fifth round exit against the second tier Rams as Luke ..."
-                },
-                "tags": [
-                    {
-                        "label": null,
-                        "scheme": null,
-                        "term": "Sport"
-                    }
-                ],
-                "title": "Football: Ighalo's double denies Rooney as Man Utd move into FA Cup quarter-finals",
-                "title_detail": {
-                    "base": "https://www.channelnewsasia.com/rssfeeds/8395986",
-                    "language": "en-US",
-                    "type": "text/plain",
-                    "value": "Football: Ighalo's double denies Rooney as Man Utd move into FA Cup quarter-finals"
-                }
+                "short_summary": "MADRID: Spain confirmed more than 1,500 new cases of coronavirus between Friday (Mar 13)\u00a0and Saturday (Mar 14) raising its total to 5,753 cases, the second-highest number in Europe after Italy.\u00a0\nThe country was expected to declare a state of emergency on Saturday to try to mobilise resources to ...",
+                "title": "Spain counts 1,500 new COVID-19 cases in one day",
+                "url": "https://www.channelnewsasia.com/news/world/spain-counts-1-500-new-covid-19-cases-in-one-day-12538636"
             },
             {
-                "guidislink": false,
-                "href": "",
-                "id": "https://www.channelnewsasia.com/news/sport/football-rapinoe-adjusting-to-life-in-the-spotlight-12507338",
-                "link": "https://www.channelnewsasia.com/news/sport/football-rapinoe-adjusting-to-life-in-the-spotlight-12507338",
-                "links": [
-                    {
-                        "href": "https://www.channelnewsasia.com/news/sport/football-rapinoe-adjusting-to-life-in-the-spotlight-12507338",
-                        "rel": "alternate",
-                        "type": "text/html"
-                    }
-                ],
-                "media_thumbnail": [
-                    {
-                        "height": "720",
-                        "url": "https://www.channelnewsasia.com/image/12253430/16x9/1280/720/376417f26e662645b3d2c14a365d1044/rQ/us-football-star-megan-rapinoe-here-receiving-sports-illustrated-s-sportsperson-of-the-year-award-for-2019-vowed-athletes-won-t-be-silenced-after-the-ioc-warned-against-politica-protests-at-the-2020-t-1578698773487-2.jpg",
-                        "width": "1280"
-                    }
-                ],
-                "published": "Fri, 06 Mar 2020 03:55:52 +0800",
-                "published_parsed": [
+                "published_on": [
                     2020,
                     3,
-                    5,
-                    19,
-                    55,
-                    52,
-                    3,
-                    65,
-                    0
-                ],
-                "summary": "ORLANDO: Megan Rapinoe's life has changed before her very eyes.\n\nEight months after helping the United States win a fourth women's World Cup crown, Rapinoe is in high demand, on and off the pitch.\n\nThe 34-year-old swept the individual prizes at the World Cup, scooping the Golden Boot for top-scorer ...",
-                "summary_detail": {
-                    "base": "https://www.channelnewsasia.com/rssfeeds/8395986",
-                    "language": "en-US",
-                    "type": "text/html",
-                    "value": "ORLANDO: Megan Rapinoe's life has changed before her very eyes.\n\nEight months after helping the United States win a fourth women's World Cup crown, Rapinoe is in high demand, on and off the pitch.\n\nThe 34-year-old swept the individual prizes at the World Cup, scooping the Golden Boot for top-scorer ..."
-                },
-                "tags": [
-                    {
-                        "label": null,
-                        "scheme": null,
-                        "term": "Sport"
-                    }
-                ],
-                "title": "Football: Rapinoe adjusting to life in the spotlight",
-                "title_detail": {
-                    "base": "https://www.channelnewsasia.com/rssfeeds/8395986",
-                    "language": "en-US",
-                    "type": "text/plain",
-                    "value": "Football: Rapinoe adjusting to life in the spotlight"
-                }
-            },
-            {
-                "guidislink": false,
-                "id": "https://www.bbc.co.uk/sport/football/51726490",
-                "link": "https://www.bbc.co.uk/sport/football/51726490",
-                "links": [
-                    {
-                        "href": "https://www.bbc.co.uk/sport/football/51726490",
-                        "rel": "alternate",
-                        "type": "text/html"
-                    }
-                ],
-                "published": "Thu, 05 Mar 2020 22:42:11 GMT",
-                "published_parsed": [
-                    2020,
-                    3,
-                    5,
-                    22,
-                    42,
-                    11,
-                    3,
-                    65,
-                    0
-                ],
-                "summary": "Odion Ighalo scores twice as Manchester United cruise past Derby County and their record goalscorer Wayne Rooney.",
-                "summary_detail": {
-                    "base": "http://feeds.bbci.co.uk/news/rss.xml",
-                    "language": null,
-                    "type": "text/html",
-                    "value": "Odion Ighalo scores twice as Manchester United cruise past Derby County and their record goalscorer Wayne Rooney."
-                },
-                "title": "Ighalo double sees off Rooney's Derby and sends Man Utd into FA Cup quarters",
-                "title_detail": {
-                    "base": "http://feeds.bbci.co.uk/news/rss.xml",
-                    "language": null,
-                    "type": "text/plain",
-                    "value": "Ighalo double sees off Rooney's Derby and sends Man Utd into FA Cup quarters"
-                }
-            },
-            {
-                "guidislink": false,
-                "id": "https://www.bbc.co.uk/sport/av/football/51714983",
-                "link": "https://www.bbc.co.uk/sport/av/football/51714983",
-                "links": [
-                    {
-                        "href": "https://www.bbc.co.uk/sport/av/football/51714983",
-                        "rel": "alternate",
-                        "type": "text/html"
-                    }
-                ],
-                "published": "Thu, 05 Mar 2020 22:11:24 GMT",
-                "published_parsed": [
-                    2020,
-                    3,
-                    5,
-                    22,
-                    11,
+                    14,
+                    12,
                     24,
-                    3,
-                    65,
+                    7,
+                    5,
+                    74,
                     0
                 ],
-                "summary": "Watch highlights as Odion Ighalo's brace helps Manchester United to a comfortable victory over Wayne Rooney's Derby County in the FA Cup fifth round.",
-                "summary_detail": {
-                    "base": "http://feeds.bbci.co.uk/news/rss.xml",
-                    "language": null,
-                    "type": "text/html",
-                    "value": "Watch highlights as Odion Ighalo's brace helps Manchester United to a comfortable victory over Wayne Rooney's Derby County in the FA Cup fifth round."
-                },
-                "title": "FA Cup highlights: Derby County 0-3 Manchester United",
-                "title_detail": {
-                    "base": "http://feeds.bbci.co.uk/news/rss.xml",
-                    "language": null,
-                    "type": "text/plain",
-                    "value": "FA Cup highlights: Derby County 0-3 Manchester United"
-                }
-            }
-        ],
-        "keywords": [
-            "united",
-            "new",
-            "manchester",
-            "cup",
-            "derby",
-            "world",
-            "wayne",
-            "york",
-            "rooney",
-            "time",
-            "thursday",
-            "county",
-            "round",
-            "states",
-            "ighalo"
-        ]
-    },
-    {
-        "articles": [
+                "short_summary": "KUALA LUMPUR: Malaysia reported 41 new cases of the new coronavirus on Saturday (Mar 14), most linked to a religious event on the outskirts of Kuala Lumpur that was attended by about 10,000 people from several countries.\nThe new cases bring the total number of cases in the country to 238.\u00a0\nThe ...",
+                "title": "Malaysia reports 41 new cases of COVID-19, most linked to religious event",
+                "url": "https://www.channelnewsasia.com/news/asia/covid19-malaysia-reports-41-new-cases-coronavirus-12538554"
+            },
             {
-                "guidislink": false,
-                "href": "",
-                "id": "https://www.channelnewsasia.com/news/commentary/covid-10-coronavirus-impact-us-workers-gig-economy-worst-hit-12508558",
-                "link": "https://www.channelnewsasia.com/news/commentary/covid-10-coronavirus-impact-us-workers-gig-economy-worst-hit-12508558",
-                "links": [
-                    {
-                        "href": "https://www.channelnewsasia.com/news/commentary/covid-10-coronavirus-impact-us-workers-gig-economy-worst-hit-12508558",
-                        "rel": "alternate",
-                        "type": "text/html"
-                    }
-                ],
-                "media_thumbnail": [
-                    {
-                        "height": "720",
-                        "url": "https://www.channelnewsasia.com/image/9246646/16x9/1280/720/6b4dc3fc8f089f6fb2fcd0613bc13bb/td/file-photo--a-cyclist-rides-a-bicyle-as-he-delivers-food-for-deliveroo--an-example-of-the-emergence-of-what-is-known-as-the--gig-economy---in-paris-2.jpg",
-                        "width": "1280"
-                    }
-                ],
-                "published": "Fri, 06 Mar 2020 15:20:37 +0800",
-                "published_parsed": [
+                "published_on": [
                     2020,
                     3,
-                    6,
-                    7,
+                    14,
+                    11,
+                    39,
+                    27,
+                    5,
+                    74,
+                    0
+                ],
+                "short_summary": "DUBAI: The death toll from coronavirus infections in Iran rose on Saturday (Mar 14) to 611, as it claimed 97 more lives.\u00a0\nHealth ministry spokesman Kianoush Jahanpour said that \"1,365 fresh cases have been added to the number of confirmed infections in the past 24 hours\", bringing the total to 12 ...",
+                "title": "Iran coronavirus death toll rises by nearly one hundred to 611",
+                "url": "https://www.channelnewsasia.com/news/world/covid19-iran-coronavirus-death-toll-rises-to-611-12538588"
+            },
+            {
+                "published_on": [
+                    2020,
+                    3,
+                    14,
+                    8,
+                    9,
+                    5,
+                    5,
+                    74,
+                    0
+                ],
+                "short_summary": "BANGKOK: Thailand reported seven new coronavirus cases on Saturday (Mar 14), bringing the total number of cases in the Southeast Asian country to 82, health officials said.\nAmong the new COVID-19 cases is a 63-year-old woman who had close contact with a patient infected with the virus, according ...",
+                "title": "Thailand reports seven new coronavirus cases, bringing total to 82",
+                "url": "https://www.channelnewsasia.com/news/asia/covid19-thailand-seven-new-coronavirus-cases-12538144"
+            },
+            {
+                "published_on": [
+                    2020,
+                    3,
+                    14,
+                    3,
+                    28,
+                    26,
+                    5,
+                    74,
+                    0
+                ],
+                "short_summary": "Mainland China had 11 new confirmed cases of coronavirus infections on March 13, the country's National Health Commission said on Saturday, up from eight cases a day earlier.",
+                "title": "New COVID-19 infections in China's Hubei province continue to fall",
+                "url": "https://www.channelnewsasia.com/news/asia/new-covid-19-infections-in-china-s-hubei-province-continue-to-12538034"
+            },
+            {
+                "published_on": [
+                    2020,
+                    3,
+                    13,
+                    23,
                     20,
                     37,
                     4,
-                    66,
+                    73,
                     0
                 ],
-                "summary": "If the outbreak sparks a lasting downturn, low-paid contingent workers are most vulnerable, says the Financial Times\u2019 Gillian Tett.",
-                "summary_detail": {
-                    "base": "https://www.channelnewsasia.com/rssfeeds/8395986",
-                    "language": "en-US",
-                    "type": "text/html",
-                    "value": "If the outbreak sparks a lasting downturn, low-paid contingent workers are most vulnerable, says the Financial Times\u2019 Gillian Tett."
-                },
-                "tags": [
-                    {
-                        "label": null,
-                        "scheme": null,
-                        "term": "Commentary"
-                    }
-                ],
-                "title": "Commentary: COVID-19 will hit gig workers particularly hard",
-                "title_detail": {
-                    "base": "https://www.channelnewsasia.com/rssfeeds/8395986",
-                    "language": "en-US",
-                    "type": "text/plain",
-                    "value": "Commentary: COVID-19 will hit gig workers particularly hard"
-                }
-            },
+                "short_summary": "Mauritania has confirmed its first case of novel coronavirus, the country's health minister said on Friday (Mar 13), adding to the growing number of cases in West Africa.",
+                "title": "Mauritania confirms first coronavirus case",
+                "url": "https://www.channelnewsasia.com/news/world/mauritania-confirms-first-covid-19-coronavirus-case-12537688"
+            }
+        ],
+        "keywords": [
+            "cases",
+            "new",
+            "mar",
+            "saturday",
+            "number",
+            "country",
+            "health",
+            "confirmed",
+            "reported",
+            "said",
+            "infections",
+            "total",
+            "day",
+            "coronavirus",
+            "china"
+        ]
+    },
+    {
+        "articles": [
             {
-                "guidislink": false,
-                "href": "",
-                "id": "https://www.channelnewsasia.com/news/business/how-lipper-award-winning-fund-managers-are-playing-coronavirus-scare-12509054",
-                "link": "https://www.channelnewsasia.com/news/business/how-lipper-award-winning-fund-managers-are-playing-coronavirus-scare-12509054",
-                "links": [
-                    {
-                        "href": "https://www.channelnewsasia.com/news/business/how-lipper-award-winning-fund-managers-are-playing-coronavirus-scare-12509054",
-                        "rel": "alternate",
-                        "type": "text/html"
-                    }
-                ],
-                "media_thumbnail": [
-                    {
-                        "height": "720",
-                        "url": "https://www.channelnewsasia.com/image/12509052/16x9/1280/720/e8009ffc5a73731a56590a54408512fb/Fx/file-photo--a-trader-works-on-the-floor-at-the-new-york-stock-exchange--nyse--in-new-york-city-1.jpg",
-                        "width": "1280"
-                    }
-                ],
-                "published": "Fri, 06 Mar 2020 14:10:30 +0800",
-                "published_parsed": [
+                "published_on": [
                     2020,
                     3,
-                    6,
-                    6,
-                    10,
-                    30,
-                    4,
-                    66,
-                    0
-                ],
-                "summary": "Uncertainty over the economic impact of the coronavirus outbreak has prompted at least some winners of the U.S. Lipper Fund Awards to look for companies that can withstand a prolonged pullback.",
-                "summary_detail": {
-                    "base": "https://www.channelnewsasia.com/rssfeeds/8395986",
-                    "language": "en-US",
-                    "type": "text/html",
-                    "value": "Uncertainty over the economic impact of the coronavirus outbreak has prompted at least some winners of the U.S. Lipper Fund Awards to look for companies that can withstand a prolonged pullback."
-                },
-                "tags": [
-                    {
-                        "label": null,
-                        "scheme": null,
-                        "term": "Business"
-                    }
-                ],
-                "title": "How Lipper Award-winning fund managers are playing coronavirus scare",
-                "title_detail": {
-                    "base": "https://www.channelnewsasia.com/rssfeeds/8395986",
-                    "language": "en-US",
-                    "type": "text/plain",
-                    "value": "How Lipper Award-winning fund managers are playing coronavirus scare"
-                }
-            },
-            {
-                "guidislink": false,
-                "href": "",
-                "id": "https://www.channelnewsasia.com/news/business/us-employment-report-expected-to-show-strength-before-coronavirus-spread-12508962",
-                "link": "https://www.channelnewsasia.com/news/business/us-employment-report-expected-to-show-strength-before-coronavirus-spread-12508962",
-                "links": [
-                    {
-                        "href": "https://www.channelnewsasia.com/news/business/us-employment-report-expected-to-show-strength-before-coronavirus-spread-12508962",
-                        "rel": "alternate",
-                        "type": "text/html"
-                    }
-                ],
-                "media_thumbnail": [
-                    {
-                        "height": "720",
-                        "url": "https://www.channelnewsasia.com/image/12508960/16x9/1280/720/509baf7572404d6212ebd75b5e73c4d3/jB/file-photo--x-model-suvs-being-built-on-the-assembly-line-at-the-bmw-manufacturing-facility-in-greer-1.jpg",
-                        "width": "1280"
-                    }
-                ],
-                "published": "Fri, 06 Mar 2020 13:20:16 +0800",
-                "published_parsed": [
-                    2020,
-                    3,
-                    6,
+                    14,
+                    12,
+                    40,
+                    17,
                     5,
-                    20,
-                    16,
-                    4,
-                    66,
+                    74,
                     0
                 ],
-                "summary": "U.S. job growth likely slowed in February, but the pace probably remained consistent with a healthy labor market despite the coronavirus outbreak, which stoked financial market fears of a recession and prompted an emergency interest rate cut from the Federal Reserve.",
-                "summary_detail": {
-                    "base": "https://www.channelnewsasia.com/rssfeeds/8395986",
-                    "language": "en-US",
-                    "type": "text/html",
-                    "value": "U.S. job growth likely slowed in February, but the pace probably remained consistent with a healthy labor market despite the coronavirus outbreak, which stoked financial market fears of a recession and prompted an emergency interest rate cut from the Federal Reserve."
-                },
-                "tags": [
-                    {
-                        "label": null,
-                        "scheme": null,
-                        "term": "Business"
-                    }
-                ],
-                "title": "US employment report expected to show strength before coronavirus spread",
-                "title_detail": {
-                    "base": "https://www.channelnewsasia.com/rssfeeds/8395986",
-                    "language": "en-US",
-                    "type": "text/plain",
-                    "value": "US employment report expected to show strength before coronavirus spread"
-                }
+                "short_summary": "REUTERS: The SportAccord World Sport and Business Summit has been cancelled due to the coronavirus outbreak, organisers said on Saturday.\nThe international conference, which attracts top sports administrators, international sports federations, Olympic officials, sponsors and major sports ...",
+                "title": "SportAccord meeting cancelled due to coronavirus",
+                "url": "https://www.channelnewsasia.com/news/sport/sportaccord-meeting-cancelled-due-to-coronavirus-12538668"
             },
             {
-                "guidislink": false,
-                "href": "",
-                "id": "https://www.channelnewsasia.com/news/business/us-financial-companies-prep-for-new-normal-amid-coronavirus-outbreak-12507726",
-                "link": "https://www.channelnewsasia.com/news/business/us-financial-companies-prep-for-new-normal-amid-coronavirus-outbreak-12507726",
-                "links": [
-                    {
-                        "href": "https://www.channelnewsasia.com/news/business/us-financial-companies-prep-for-new-normal-amid-coronavirus-outbreak-12507726",
-                        "rel": "alternate",
-                        "type": "text/html"
-                    }
-                ],
-                "media_thumbnail": [
-                    {
-                        "height": "720",
-                        "url": "https://www.channelnewsasia.com/image/12507722/16x9/1280/720/89b7452c2a69a560df48b214b74e6efa/lM/jp-morgan-chase--amp--co--corporate-headquarters-in-new-york-1.jpg",
-                        "width": "1280"
-                    }
-                ],
-                "published": "Fri, 06 Mar 2020 07:20:30 +0800",
-                "published_parsed": [
+                "published_on": [
                     2020,
                     3,
+                    14,
+                    12,
+                    19,
+                    33,
                     5,
-                    23,
-                    20,
-                    30,
-                    3,
-                    65,
+                    74,
                     0
                 ],
-                "summary": "U.S. financial companies are doubling down on travel restrictions to include domestic trips, replacing meetings with video calls, and webcasting events as the coronavirus outbreak starts to alter business-as-usual across the sector.",
-                "summary_detail": {
-                    "base": "https://www.channelnewsasia.com/rssfeeds/8395986",
-                    "language": "en-US",
-                    "type": "text/html",
-                    "value": "U.S. financial companies are doubling down on travel restrictions to include domestic trips, replacing meetings with video calls, and webcasting events as the coronavirus outbreak starts to alter business-as-usual across the sector."
-                },
-                "tags": [
-                    {
-                        "label": null,
-                        "scheme": null,
-                        "term": "Business"
-                    }
-                ],
-                "title": "US financial companies prep for new normal amid coronavirus outbreak",
-                "title_detail": {
-                    "base": "https://www.channelnewsasia.com/rssfeeds/8395986",
-                    "language": "en-US",
-                    "type": "text/plain",
-                    "value": "US financial companies prep for new normal amid coronavirus outbreak"
-                }
+                "short_summary": "Several major sporting events were cancelled or postponed by the coronavirus outbreak on an unprecedented day. What sport is on and off?",
+                "title": "Coronavirus wipes out most of world's major sports events on an unprecedented day",
+                "url": "https://www.bbc.co.uk/sport/51880582"
             },
             {
-                "guidislink": false,
-                "href": "",
-                "id": "https://www.channelnewsasia.com/news/commentary/covid-19-coronavirus-united-states-china-how-dealing-with-it-12505256",
-                "link": "https://www.channelnewsasia.com/news/commentary/covid-19-coronavirus-united-states-china-how-dealing-with-it-12505256",
-                "links": [
-                    {
-                        "href": "https://www.channelnewsasia.com/news/commentary/covid-19-coronavirus-united-states-china-how-dealing-with-it-12505256",
-                        "rel": "alternate",
-                        "type": "text/html"
-                    }
-                ],
-                "media_thumbnail": [
-                    {
-                        "height": "720",
-                        "url": "https://www.channelnewsasia.com/image/11931522/16x9/1280/720/14ad14f036a973d11b32e7dab802056e/hp/us-president-donald-trump-proclaims-friendship-with-china-s-president-xi-jinping-but-their-trade-war-is-giving-the-world-jitters-1569117382568-3.jpg",
-                        "width": "1280"
-                    }
-                ],
-                "published": "Fri, 06 Mar 2020 06:10:38 +0800",
-                "published_parsed": [
+                "published_on": [
                     2020,
                     3,
+                    14,
+                    12,
+                    15,
+                    29,
                     5,
-                    22,
-                    10,
-                    38,
-                    3,
-                    65,
+                    74,
                     0
                 ],
-                "summary": "Hopefully, its defeat will show the worth of intelligent and honest government, says the Financial Times\u2019 Philip Stephens.",
-                "summary_detail": {
-                    "base": "https://www.channelnewsasia.com/rssfeeds/8395986",
-                    "language": "en-US",
-                    "type": "text/html",
-                    "value": "Hopefully, its defeat will show the worth of intelligent and honest government, says the Financial Times\u2019 Philip Stephens."
-                },
-                "tags": [
-                    {
-                        "label": null,
-                        "scheme": null,
-                        "term": "Commentary"
-                    }
-                ],
-                "title": "Commentary: COVID-19 has laid a political minefield for many major countries",
-                "title_detail": {
-                    "base": "https://www.channelnewsasia.com/rssfeeds/8395986",
-                    "language": "en-US",
-                    "type": "text/plain",
-                    "value": "Commentary: COVID-19 has laid a political minefield for many major countries"
-                }
+                "short_summary": "Japan is still preparing to host the Olympics, Prime Minister Shinzo Abe said on Saturday, despite rising global concern about the viability of the summer Games due to the coronavirus outbreak.",
+                "title": "Japan still preparing for Olympics, prime minister says as virus concerns rise",
+                "url": "https://www.channelnewsasia.com/news/sport/japan-still-preparing-for-olympics--prime-minister-says-as-virus-concerns-rise-12538326"
             },
             {
-                "guidislink": false,
-                "id": "https://www.bbc.co.uk/news/explainers-51738687",
-                "link": "https://www.bbc.co.uk/news/explainers-51738687",
-                "links": [
-                    {
-                        "href": "https://www.bbc.co.uk/news/explainers-51738687",
-                        "rel": "alternate",
-                        "type": "text/html"
-                    }
-                ],
-                "published": "Thu, 05 Mar 2020 15:28:13 GMT",
-                "published_parsed": [
+                "published_on": [
                     2020,
                     3,
-                    5,
+                    14,
+                    11,
                     15,
                     28,
-                    13,
-                    3,
-                    65,
+                    5,
+                    74,
                     0
                 ],
-                "summary": "Music, sports and other events could be called off because of the coronavirus outbreak.",
-                "summary_detail": {
-                    "base": "http://feeds.bbci.co.uk/news/rss.xml",
-                    "language": null,
-                    "type": "text/html",
-                    "value": "Music, sports and other events could be called off because of the coronavirus outbreak."
-                },
-                "title": "Coronavirus: Will I get a refund on my ticket if events are cancelled?",
-                "title_detail": {
-                    "base": "http://feeds.bbci.co.uk/news/rss.xml",
-                    "language": null,
-                    "type": "text/plain",
-                    "value": "Coronavirus: Will I get a refund on my ticket if events are cancelled?"
-                }
+                "short_summary": "The International Triathlon Union (ITU) has suspended all activity until April 30 including all events in the World Triathlon and Continental calendars due to the coronavirus outbreak, the governing body said on Saturday.",
+                "title": "Triathlon - World body suspends all events due to coronavirus",
+                "url": "https://www.channelnewsasia.com/news/sport/triathlon---world-body-suspends-all-events-due-to-coronavirus-12538604"
             },
             {
-                "guidislink": false,
-                "id": "https://www.bbc.co.uk/news/explainers-51632801",
-                "link": "https://www.bbc.co.uk/news/explainers-51632801",
-                "links": [
-                    {
-                        "href": "https://www.bbc.co.uk/news/explainers-51632801",
-                        "rel": "alternate",
-                        "type": "text/html"
-                    }
-                ],
-                "published": "Thu, 05 Mar 2020 12:56:08 GMT",
-                "published_parsed": [
+                "published_on": [
                     2020,
                     3,
+                    14,
+                    10,
                     5,
-                    12,
-                    56,
-                    8,
-                    3,
-                    65,
+                    28,
+                    5,
+                    74,
                     0
                 ],
-                "summary": "What will the government do if there is a major UK coronavirus outbreak and how prepared is the NHS?",
-                "summary_detail": {
-                    "base": "http://feeds.bbci.co.uk/news/rss.xml",
-                    "language": null,
-                    "type": "text/html",
-                    "value": "What will the government do if there is a major UK coronavirus outbreak and how prepared is the NHS?"
-                },
-                "title": "Coronavirus: How is the UK planning for an outbreak?",
-                "title_detail": {
-                    "base": "http://feeds.bbci.co.uk/news/rss.xml",
-                    "language": null,
-                    "type": "text/plain",
-                    "value": "Coronavirus: How is the UK planning for an outbreak?"
-                }
+                "short_summary": "Japan continues to prepare to host the Olympic Games in Tokyo this summer, Prime Minister Shinzo Abe said on Saturday, despite widening concern about the viability of the Games given the global coronavirus outbreak.",
+                "title": "Japan continues to prepare for Olympics, PM Abe says",
+                "url": "https://www.channelnewsasia.com/news/sport/japan-continues-to-prepare-for-olympics--pm-abe-says-12538544"
+            },
+            {
+                "published_on": [
+                    2020,
+                    3,
+                    13,
+                    17,
+                    36,
+                    9,
+                    4,
+                    73,
+                    0
+                ],
+                "short_summary": "CAPE TOWN: Two rounds of 2021 Africa Cup of Nations qualifiers scheduled for March have been postponed due to the coronavirus outbreak, the Confederation of African Football (CAF) said on Friday.\nRounds three and four of the pool qualifiers were due to be played in the international window from ...",
+                "title": "African Nations Cup qualifiers postponed over coronavirus",
+                "url": "https://www.channelnewsasia.com/news/sport/african-nations-cup-qualifiers-postponed-over-coronavirus-12537236"
             }
         ],
         "keywords": [
             "outbreak",
             "coronavirus",
-            "financial",
-            "says",
-            "times",
-            "events",
+            "said",
+            "international",
+            "postponed",
+            "world",
             "sports",
-            "government",
-            "despite",
-            "china",
-            "impact",
-            "economic",
-            "nhs",
-            "paid",
-            "world"
+            "saturday",
+            "global",
+            "football",
+            "friday",
+            "events",
+            "prime",
+            "minister",
+            "major"
         ]
     },
     {
         "articles": [
             {
-                "guidislink": false,
-                "href": "",
-                "id": "https://www.channelnewsasia.com/news/world/pence-visits-covid19-hot-spot-washington-state-amid-tension-12508552",
-                "link": "https://www.channelnewsasia.com/news/world/pence-visits-covid19-hot-spot-washington-state-amid-tension-12508552",
-                "links": [
-                    {
-                        "href": "https://www.channelnewsasia.com/news/world/pence-visits-covid19-hot-spot-washington-state-amid-tension-12508552",
-                        "rel": "alternate",
-                        "type": "text/html"
-                    }
-                ],
-                "media_thumbnail": [
-                    {
-                        "height": "720",
-                        "url": "https://www.channelnewsasia.com/image/12508550/16x9/1280/720/955d8bc303acdfe01b5f2e7411583db6/ED/u-s--vice-president-mike-pence--who-heads-the-government-s-coronavirus-task-force--speaks-during-a-press-conference-at-the-pierce-county-readiness-center-at-camp-murray-near-tacoma-1.jpg",
-                        "width": "1280"
-                    }
-                ],
-                "published": "Fri, 06 Mar 2020 13:31:43 +0800",
-                "published_parsed": [
+                "published_on": [
                     2020,
                     3,
-                    6,
+                    14,
+                    7,
+                    58,
+                    7,
                     5,
-                    31,
-                    43,
-                    4,
-                    66,
+                    74,
                     0
                 ],
-                "summary": "Vice President Mike Pence traveled to the state of Washington on Thursday to pledge federal support to one of the areas hardest hit by the coronavirus and defended President Donald Trump's response amid tension with the state's governor over science.",
-                "summary_detail": {
-                    "base": "https://www.channelnewsasia.com/rssfeeds/8395986",
-                    "language": "en-US",
-                    "type": "text/html",
-                    "value": "Vice President Mike Pence traveled to the state of Washington on Thursday to pledge federal support to one of the areas hardest hit by the coronavirus and defended President Donald Trump's response amid tension with the state's governor over science."
-                },
-                "tags": [
-                    {
-                        "label": null,
-                        "scheme": null,
-                        "term": "World"
-                    }
-                ],
-                "title": "Pence visits COVID-19 hot spot Washington state amid tension with governor",
-                "title_detail": {
-                    "base": "https://www.channelnewsasia.com/rssfeeds/8395986",
-                    "language": "en-US",
-                    "type": "text/plain",
-                    "value": "Pence visits COVID-19 hot spot Washington state amid tension with governor"
-                }
+                "short_summary": "For reasons unknown, children rarely have severe symptoms when infected by COVID-19 and may even be a bit less likely to get the disease in the first place, experts told AFP.",
+                "title": "Children less sick from COVID-19, but may still spread the coronavirus: Experts",
+                "url": "https://www.channelnewsasia.com/news/world/children-less-sick-covid-19-but-still-spread-the-coronavirus-12537834"
             },
             {
-                "guidislink": false,
-                "href": "",
-                "id": "https://www.channelnewsasia.com/news/business/trump-says-us-economy-could-take-hit-from-coronavirus-12507872",
-                "link": "https://www.channelnewsasia.com/news/business/trump-says-us-economy-could-take-hit-from-coronavirus-12507872",
-                "links": [
-                    {
-                        "href": "https://www.channelnewsasia.com/news/business/trump-says-us-economy-could-take-hit-from-coronavirus-12507872",
-                        "rel": "alternate",
-                        "type": "text/html"
-                    }
-                ],
-                "media_thumbnail": [
-                    {
-                        "height": "720",
-                        "url": "https://www.channelnewsasia.com/image/12507870/16x9/1280/720/228e259452011686a97906bbc5d6fd6f/lG/u-s--president-trump-departs-for-travel-to-scranton--pennsylvania-from-the-white-house-in-washington-1.jpg",
-                        "width": "1280"
-                    }
-                ],
-                "published": "Fri, 06 Mar 2020 09:01:04 +0800",
-                "published_parsed": [
+                "published_on": [
                     2020,
                     3,
-                    6,
-                    1,
-                    1,
+                    14,
                     4,
-                    4,
-                    66,
-                    0
-                ],
-                "summary": "President Donald Trump said on Thursday the U.S. economy might take a hit from the coronavirus outbreak but he predicted the challenge would eventually pass and defended his handling of the crisis.",
-                "summary_detail": {
-                    "base": "https://www.channelnewsasia.com/rssfeeds/8395986",
-                    "language": "en-US",
-                    "type": "text/html",
-                    "value": "President Donald Trump said on Thursday the U.S. economy might take a hit from the coronavirus outbreak but he predicted the challenge would eventually pass and defended his handling of the crisis."
-                },
-                "tags": [
-                    {
-                        "label": null,
-                        "scheme": null,
-                        "term": "Business"
-                    }
-                ],
-                "title": "Trump says US economy could take hit from coronavirus",
-                "title_detail": {
-                    "base": "https://www.channelnewsasia.com/rssfeeds/8395986",
-                    "language": "en-US",
-                    "type": "text/plain",
-                    "value": "Trump says US economy could take hit from coronavirus"
-                }
-            },
-            {
-                "guidislink": false,
-                "href": "",
-                "id": "https://www.channelnewsasia.com/news/world/facebook-donald-trump-us-census-ads-take-down-12507498",
-                "link": "https://www.channelnewsasia.com/news/world/facebook-donald-trump-us-census-ads-take-down-12507498",
-                "links": [
-                    {
-                        "href": "https://www.channelnewsasia.com/news/world/facebook-donald-trump-us-census-ads-take-down-12507498",
-                        "rel": "alternate",
-                        "type": "text/html"
-                    }
-                ],
-                "media_thumbnail": [
-                    {
-                        "height": "720",
-                        "url": "https://www.channelnewsasia.com/image/12507496/16x9/1280/720/5aa180b86c2b9cb60fb617c32ad4a02e/kX/file-photo--a-facebook-logo-is-displayed-on-a-smartphone-in-this-illustration-1.jpg",
-                        "width": "1280"
-                    }
-                ],
-                "published": "Fri, 06 Mar 2020 07:00:45 +0800",
-                "published_parsed": [
-                    2020,
-                    3,
-                    5,
                     23,
+                    36,
+                    5,
+                    74,
+                    0
+                ],
+                "short_summary": "March 14, 2020 12:23 PM PARIS (AFP) - For reasons unknown, children rarely have severe symptoms when infected by Covid-19 and may even be a bit less likely to get the disease in the first place, experts told AFP.",
+                "title": "Children less sick from Covid-19, but still spread the virus, say experts",
+                "url": "http://www.straitstimes.com/world/europe/children-less-sick-from-covid-19-but-still-spread-the-virus-say-experts"
+            },
+            {
+                "published_on": [
+                    2020,
+                    3,
+                    14,
+                    3,
+                    59,
+                    53,
+                    5,
+                    74,
+                    0
+                ],
+                "short_summary": "March 14, 2020 11:59 AM PARIS (AFP) - Can a single Covid-19 patient infect dozens of others? Although transmission rates in the current outbreak appear to be far lower, a variety of factors can lead to an individual infecting many.",
+                "title": "'Super-spreaders': Covid-19 myth or reality?",
+                "url": "http://www.straitstimes.com/world/europe/super-spreaders-covid-19-myth-or-reality"
+            },
+            {
+                "published_on": [
+                    2020,
+                    3,
+                    14,
+                    3,
                     0,
-                    45,
-                    3,
-                    65,
-                    0
-                ],
-                "summary": "Facebook Inc said on Thursday it was removing ads from President Donald Trump's re-election campaign that asked users to fill out an \"Official 2020 Congressional District Census\" because they violated its policies.",
-                "summary_detail": {
-                    "base": "https://www.channelnewsasia.com/rssfeeds/8395986",
-                    "language": "en-US",
-                    "type": "text/html",
-                    "value": "Facebook Inc said on Thursday it was removing ads from President Donald Trump's re-election campaign that asked users to fill out an \"Official 2020 Congressional District Census\" because they violated its policies."
-                },
-                "tags": [
-                    {
-                        "label": null,
-                        "scheme": null,
-                        "term": "World"
-                    }
-                ],
-                "title": "Facebook decides to take down Trump 2020 campaign's 'census' ads",
-                "title_detail": {
-                    "base": "https://www.channelnewsasia.com/rssfeeds/8395986",
-                    "language": "en-US",
-                    "type": "text/plain",
-                    "value": "Facebook decides to take down Trump 2020 campaign's 'census' ads"
-                }
-            },
-            {
-                "guidislink": false,
-                "id": "http://www.straitstimes.com/world/united-states/trump-says-us-economy-could-take-hit-from-coronavirus",
-                "link": "http://www.straitstimes.com/world/united-states/trump-says-us-economy-could-take-hit-from-coronavirus",
-                "links": [
-                    {
-                        "href": "http://www.straitstimes.com/world/united-states/trump-says-us-economy-could-take-hit-from-coronavirus",
-                        "rel": "alternate",
-                        "type": "text/html"
-                    }
-                ],
-                "published": "Fri, 06 Mar 2020 09:04:26 +0800",
-                "published_parsed": [
-                    2020,
-                    3,
-                    6,
-                    1,
-                    4,
-                    26,
-                    4,
-                    66,
-                    0
-                ],
-                "source": {
-                    "href": "https://www.straitstimes.com/news/world/rss.xml/20200306",
-                    "title": "The Straits Times"
-                },
-                "summary": "March 06, 2020 9:04 AM<br /><br />SCRANTON (REUTERS) - President Donald Trump said on Thursday (March 5) the US economy might take a hit from the coronavirus outbreak but he predicted the challenge would eventually pass and defended his handling of the crisis.",
-                "summary_detail": {
-                    "base": "https://www.straitstimes.com/",
-                    "language": "en",
-                    "type": "text/html",
-                    "value": "March 06, 2020 9:04 AM<br /><br />SCRANTON (REUTERS) - President Donald Trump said on Thursday (March 5) the US economy might take a hit from the coronavirus outbreak but he predicted the challenge would eventually pass and defended his handling of the crisis."
-                },
-                "title": "Trump says US economy could take hit from coronavirus",
-                "title_detail": {
-                    "base": "https://www.straitstimes.com/",
-                    "language": "en",
-                    "type": "text/plain",
-                    "value": "Trump says US economy could take hit from coronavirus"
-                }
-            },
-            {
-                "guidislink": false,
-                "id": "http://www.straitstimes.com/world/united-states/facebook-removes-trump-ad-disguised-as-census-message",
-                "link": "http://www.straitstimes.com/world/united-states/facebook-removes-trump-ad-disguised-as-census-message",
-                "links": [
-                    {
-                        "href": "http://www.straitstimes.com/world/united-states/facebook-removes-trump-ad-disguised-as-census-message",
-                        "rel": "alternate",
-                        "type": "text/html"
-                    }
-                ],
-                "published": "Fri, 06 Mar 2020 07:02:35 +0800",
-                "published_parsed": [
-                    2020,
-                    3,
+                    37,
                     5,
-                    23,
-                    2,
-                    35,
-                    3,
-                    65,
+                    74,
                     0
                 ],
-                "source": {
-                    "href": "https://www.straitstimes.com/news/world/rss.xml/20200306",
-                    "title": "The Straits Times"
-                },
-                "summary": "March 06, 2020 7:02 AM<br /><br />SAN FRANCISCO (AFP) - Facebook has taken down an ad from US President Donald Trump's campaign which critics said misled people into believing it was an official message about the US census.",
-                "summary_detail": {
-                    "base": "https://www.straitstimes.com/",
-                    "language": "en",
-                    "type": "text/html",
-                    "value": "March 06, 2020 7:02 AM<br /><br />SAN FRANCISCO (AFP) - Facebook has taken down an ad from US President Donald Trump's campaign which critics said misled people into believing it was an official message about the US census."
-                },
-                "title": "Facebook removes Trump ad disguised as census message",
-                "title_detail": {
-                    "base": "https://www.straitstimes.com/",
-                    "language": "en",
-                    "type": "text/plain",
-                    "value": "Facebook removes Trump ad disguised as census message"
-                }
+                "short_summary": "PARIS:\u00a0Can a single COVID-19 patient infect dozens of others? A\u00a0variety of factors can lead to an individual infecting many.\nThe concept of so-called \"super-spreaders\" - patients who typically infect far more people than the standard transmission rates -\u00a0emerged in previous outbreaks of diseases ...",
+                "title": "'Super-spreaders': COVID-19 myth or reality?",
+                "url": "https://www.channelnewsasia.com/news/world/super-spreaders-covid-19-coronavirus-myth-or-reality-12538030"
+            },
+            {
+                "published_on": [
+                    2020,
+                    3,
+                    13,
+                    22,
+                    20,
+                    40,
+                    4,
+                    73,
+                    0
+                ],
+                "short_summary": "COVID-19 presents a defining challenge for any government, says the Financial Times\u2019 Anjana Ahuja.",
+                "title": "Commentary: COVID-19 could force difficult choices on health systems",
+                "url": "https://www.channelnewsasia.com/news/commentary/covid-19-coronavirus-health-worker-government-hospital-test-kit-12534960"
+            },
+            {
+                "published_on": [
+                    2020,
+                    3,
+                    13,
+                    22,
+                    20,
+                    39,
+                    4,
+                    73,
+                    0
+                ],
+                "short_summary": "Despite being an air travel hub, the Emirates has controlled its number of COVID-19 cases through aggressive measures, says Mohammed Abdul Shihab.",
+                "title": "Commentary: UAE fights COVID-19 while the rest of the Middle East drags its feet",
+                "url": "https://www.channelnewsasia.com/news/commentary/covid-19-coronavirus-middle-east-uae-iran-cases-travel-school-12531104"
+            }
+        ],
+        "keywords": [
+            "19",
+            "covid",
+            "says",
+            "disease",
+            "home",
+            "afp",
+            "family",
+            "children",
+            "infect",
+            "place",
+            "severe",
+            "rarely",
+            "experts",
+            "unknown",
+            "likely"
+        ]
+    },
+    {
+        "articles": [
+            {
+                "published_on": [
+                    2020,
+                    3,
+                    14,
+                    5,
+                    2,
+                    45,
+                    5,
+                    74,
+                    0
+                ],
+                "short_summary": "March 14, 2020 1:02 PM WASHINGTON (REUTERS) - US President Donald Trump encountered a second individual last weekend who later tested positive for coronavirus, but the president did not require testing for the virus or quarantining, the White House physician said on Friday (March 13).",
+                "title": "Trump encountered second person who later tested positive for coronavirus: White House physician",
+                "url": "http://www.straitstimes.com/world/united-states/trump-encountered-second-person-who-later-tested-positive-for-coronavirus-white"
+            },
+            {
+                "published_on": [
+                    2020,
+                    3,
+                    14,
+                    3,
+                    1,
+                    56,
+                    5,
+                    74,
+                    0
+                ],
+                "short_summary": "March 14, 2020 11:01 AM RIO DE JANEIRO (REUTERS) - Brazilian President Jair Bolsonaro, who met with Donald Trump in the United States less than a week ago, will be retested for coronavirus following a negative test on Friday (March 13), Brazil's Estado de S.Paulo newspaper reported.",
+                "title": "Brazil's Bolsonaro to be tested again for coronavirus",
+                "url": "http://www.straitstimes.com/world/americas/brazils-bolsonaro-to-be-tested-again-for-coronavirus"
+            },
+            {
+                "published_on": [
+                    2020,
+                    3,
+                    14,
+                    0,
+                    33,
+                    54,
+                    5,
+                    74,
+                    0
+                ],
+                "short_summary": "March 14, 2020 8:33 AM SAN FRANCISCO (AFP) - US President Donald Trump announced Friday (March 13) that internet giant Alphabet is creating a website where people will be able to check whether they have symptoms of the novel coronavirus.",
+                "title": "Google building self-check website for coronavirus",
+                "url": "http://www.straitstimes.com/world/united-states/google-building-self-check-website-for-coronavirus"
+            },
+            {
+                "published_on": [
+                    2020,
+                    3,
+                    13,
+                    23,
+                    30,
+                    37,
+                    4,
+                    73,
+                    0
+                ],
+                "short_summary": "WASHINGTON: Corporate America joined the fight against the spread of coronavirus on Friday (Mar 13) , as President Donald Trump and executives announced that Google would offer a website to help people determine whether they needed tests and retailers set up drive-through tests in parking lots ...",
+                "title": "Google, Walmart join government effort to speed up coronavirus testing, Trump says",
+                "url": "https://www.channelnewsasia.com/news/world/google-walmart-covid-19-coronavirus-united-states-trump-12537708"
+            },
+            {
+                "published_on": [
+                    2020,
+                    3,
+                    13,
+                    21,
+                    58,
+                    46,
+                    4,
+                    73,
+                    0
+                ],
+                "short_summary": "US President Donald\u00a0Trump\u00a0announced a national state of emergency on Friday (Mar 13), freeing up US$50 billion in federal funds for the battle against the fast-spreading coronavirus pandemic.",
+                "title": "Trump declares coronavirus national emergency",
+                "url": "https://www.channelnewsasia.com/news/world/trump-declares-covid-19-coronavirus-national-emergency-12537432"
+            },
+            {
+                "published_on": [
+                    2020,
+                    3,
+                    13,
+                    21,
+                    28,
+                    25,
+                    4,
+                    73,
+                    0
+                ],
+                "short_summary": "A group representing major US airports on Friday revised upward its forecast for estimated losses this year to US$5.7 billion after President Donald Trump instituted new European travel curbs and as flight reductions rose.",
+                "title": "US airports up forecast losses this year to US$5.7 billion on sagging travel demand",
+                "url": "https://www.channelnewsasia.com/news/business/us-airports-up-forecast-losses-this-year-to-us-5-7-billion-on-12537598"
+            },
+            {
+                "published_on": [
+                    2020,
+                    3,
+                    13,
+                    20,
+                    50,
+                    19,
+                    4,
+                    73,
+                    0
+                ],
+                "short_summary": "Shares of Google parent Alphabet Inc closed up more than 9per cent after U.S. President Donald Trump said on Friday the search giant would create a website to help determine whether individuals need a coronavirus test or not.",
+                "title": "Alphabet shares surge 9per cent after Trump praises Google for coronavirus website",
+                "url": "https://www.channelnewsasia.com/news/business/alphabet-shares-surge-9-after-trump-praises-google-for-12537544"
             }
         ],
         "keywords": [
             "president",
             "trump",
             "donald",
-            "hit",
-            "defended",
-            "said",
-            "economy",
-            "eventually",
-            "predicted",
-            "pass",
-            "challenge",
-            "handling",
-            "crisis",
-            "state",
-            "campaign"
+            "friday",
+            "people",
+            "13",
+            "coronavirus",
+            "website",
+            "announced",
+            "billion",
+            "help",
+            "google",
+            "determine",
+            "test",
+            "need"
         ]
     },
     {
         "articles": [
             {
-                "guidislink": false,
-                "href": "",
-                "id": "https://www.channelnewsasia.com/news/business/hsbc-sends-home-100-london-staff--confirms-china-coronavirus-case-12508750",
-                "link": "https://www.channelnewsasia.com/news/business/hsbc-sends-home-100-london-staff--confirms-china-coronavirus-case-12508750",
-                "links": [
-                    {
-                        "href": "https://www.channelnewsasia.com/news/business/hsbc-sends-home-100-london-staff--confirms-china-coronavirus-case-12508750",
-                        "rel": "alternate",
-                        "type": "text/html"
-                    }
-                ],
-                "media_thumbnail": [
-                    {
-                        "height": "720",
-                        "url": "https://www.channelnewsasia.com/image/12508746/16x9/1280/720/e89a45ed250ffe69196ba30603125d79/Un/file-photo--the-hsbc-bank-is-seen-in-the-financial-district-of-canary-wharf-2.jpg",
-                        "width": "1280"
-                    }
-                ],
-                "published": "Fri, 06 Mar 2020 12:30:51 +0800",
-                "published_parsed": [
+                "published_on": [
                     2020,
                     3,
-                    6,
-                    4,
-                    30,
-                    51,
-                    4,
-                    66,
-                    0
-                ],
-                "summary": "HSBC Holdings PLC  has sent home more than 100 staff in London after a worker tested positive for the coronavirus, the first known case at a major company in Europe's main financial hub.",
-                "summary_detail": {
-                    "base": "https://www.channelnewsasia.com/rssfeeds/8395986",
-                    "language": "en-US",
-                    "type": "text/html",
-                    "value": "HSBC Holdings PLC  has sent home more than 100 staff in London after a worker tested positive for the coronavirus, the first known case at a major company in Europe's main financial hub."
-                },
-                "tags": [
-                    {
-                        "label": null,
-                        "scheme": null,
-                        "term": "Business"
-                    }
-                ],
-                "title": "HSBC sends home 100 London staff, confirms China coronavirus case",
-                "title_detail": {
-                    "base": "https://www.channelnewsasia.com/rssfeeds/8395986",
-                    "language": "en-US",
-                    "type": "text/plain",
-                    "value": "HSBC sends home 100 London staff, confirms China coronavirus case"
-                }
-            },
-            {
-                "guidislink": false,
-                "id": "https://www.bbc.co.uk/news/uk-england-birmingham-51738246",
-                "link": "https://www.bbc.co.uk/news/uk-england-birmingham-51738246",
-                "links": [
-                    {
-                        "href": "https://www.bbc.co.uk/news/uk-england-birmingham-51738246",
-                        "rel": "alternate",
-                        "type": "text/html"
-                    }
-                ],
-                "published": "Fri, 06 Mar 2020 00:56:37 GMT",
-                "published_parsed": [
-                    2020,
-                    3,
-                    6,
-                    0,
-                    56,
-                    37,
-                    4,
-                    66,
-                    0
-                ],
-                "summary": "Missy, from Birmingham, had been living on the streets almost eight miles from her owner's home.",
-                "summary_detail": {
-                    "base": "http://feeds.bbci.co.uk/news/rss.xml",
-                    "language": null,
-                    "type": "text/html",
-                    "value": "Missy, from Birmingham, had been living on the streets almost eight miles from her owner's home."
-                },
-                "title": "Missing cat reunited with owner after 11 years on the street",
-                "title_detail": {
-                    "base": "http://feeds.bbci.co.uk/news/rss.xml",
-                    "language": null,
-                    "type": "text/plain",
-                    "value": "Missing cat reunited with owner after 11 years on the street"
-                }
-            },
-            {
-                "guidislink": false,
-                "id": "https://www.bbc.co.uk/news/entertainment-arts-51697553",
-                "link": "https://www.bbc.co.uk/news/entertainment-arts-51697553",
-                "links": [
-                    {
-                        "href": "https://www.bbc.co.uk/news/entertainment-arts-51697553",
-                        "rel": "alternate",
-                        "type": "text/html"
-                    }
-                ],
-                "published": "Fri, 06 Mar 2020 07:28:37 GMT",
-                "published_parsed": [
-                    2020,
-                    3,
-                    6,
+                    14,
                     7,
-                    28,
-                    37,
-                    4,
-                    66,
+                    50,
+                    21,
+                    5,
+                    74,
                     0
                 ],
-                "summary": "The actor and rapper makes an album about being dumped by an abusive lover - his home country.",
-                "summary_detail": {
-                    "base": "http://feeds.bbci.co.uk/news/rss.xml",
-                    "language": null,
-                    "type": "text/html",
-                    "value": "The actor and rapper makes an album about being dumped by an abusive lover - his home country."
-                },
-                "title": "Riz Ahmed on The Long Goodbye: Why he says 'Britain's broken up with me'",
-                "title_detail": {
-                    "base": "http://feeds.bbci.co.uk/news/rss.xml",
-                    "language": null,
-                    "type": "text/plain",
-                    "value": "Riz Ahmed on The Long Goodbye: Why he says 'Britain's broken up with me'"
-                }
+                "short_summary": "Warren Buffett's Berkshire Hathaway Inc said on Friday that former American Express Co Chief Executive Officer Kenneth Chenault has been nominated to the conglomerate's board of directors, replacing Microsoft Corp co-founder Bill Gates.",
+                "title": "Buffett's Berkshire taps former AmEx CEO Kenneth Chenault for board, as Bill Gates steps aside",
+                "url": "https://www.channelnewsasia.com/news/business/buffett-s-berkshire-taps-former-amex-ceo-kenneth-chenault-for-board--as-bill-gates-steps-aside-12537574"
             },
             {
-                "guidislink": false,
-                "id": "https://www.bbc.co.uk/news/world-europe-51751031",
-                "link": "https://www.bbc.co.uk/news/world-europe-51751031",
-                "links": [
-                    {
-                        "href": "https://www.bbc.co.uk/news/world-europe-51751031",
-                        "rel": "alternate",
-                        "type": "text/html"
-                    }
-                ],
-                "published": "Fri, 06 Mar 2020 02:47:22 GMT",
-                "published_parsed": [
+                "published_on": [
                     2020,
                     3,
-                    6,
-                    2,
-                    47,
+                    14,
+                    1,
+                    55,
+                    44,
+                    5,
+                    74,
+                    0
+                ],
+                "short_summary": "Microsoft Corp co-founder Bill Gates, who made the company one of the world's most valuable technology firms, stepped down from the board on Friday to focus on philanthropic works related to global health, education and climate change.",
+                "title": "Bill Gates steps down from Microsoft board",
+                "url": "https://www.channelnewsasia.com/news/business/bill-gates-steps-down-from-microsoft-board-12537958"
+            },
+            {
+                "published_on": [
+                    2020,
+                    3,
+                    13,
+                    22,
+                    56,
+                    45,
+                    4,
+                    73,
+                    0
+                ],
+                "short_summary": "Microsoft Corp co-founder Bill Gates has stepped down from the company's board to dedicate more time to his philanthropic priorities including global health, education and tackling climate change, the company said on Friday.",
+                "title": "Bill Gates steps down from Microsoft board",
+                "url": "https://www.channelnewsasia.com/news/business/bill-gates-steps-down-from-microsoft-board-12537602"
+            },
+            {
+                "published_on": [
+                    2020,
+                    3,
+                    13,
                     22,
                     4,
-                    66,
+                    30,
+                    4,
+                    73,
                     0
                 ],
-                "summary": "Children being sent home from school and absent tourists leave Italy reeling from coronavirus.",
-                "summary_detail": {
-                    "base": "http://feeds.bbci.co.uk/news/rss.xml",
-                    "language": null,
-                    "type": "text/html",
-                    "value": "Children being sent home from school and absent tourists leave Italy reeling from coronavirus."
-                },
-                "title": "School's out: Parents stressed by Italy coronavirus shutdown",
-                "title_detail": {
-                    "base": "http://feeds.bbci.co.uk/news/rss.xml",
-                    "language": null,
-                    "type": "text/plain",
-                    "value": "School's out: Parents stressed by Italy coronavirus shutdown"
-                }
-            },
-            {
-                "guidislink": false,
-                "id": "http://www.straitstimes.com/world/europe/coronavirus-hsbc-sends-100-london-staff-home-confirms-china-case",
-                "link": "http://www.straitstimes.com/world/europe/coronavirus-hsbc-sends-100-london-staff-home-confirms-china-case",
-                "links": [
-                    {
-                        "href": "http://www.straitstimes.com/world/europe/coronavirus-hsbc-sends-100-london-staff-home-confirms-china-case",
-                        "rel": "alternate",
-                        "type": "text/html"
-                    }
-                ],
-                "published": "Fri, 06 Mar 2020 02:35:27 +0800",
-                "published_parsed": [
-                    2020,
-                    3,
-                    5,
-                    18,
-                    35,
-                    27,
-                    3,
-                    65,
-                    0
-                ],
-                "source": {
-                    "href": "https://www.straitstimes.com/news/world/rss.xml/20200306",
-                    "title": "The Straits Times"
-                },
-                "summary": "March 06, 2020 2:35 AM<br /><br />LONDON/MILAN (REUTERS) - HSBC has sent more than 100 of its London staff home after a worker tested positive for the coronavirus, the first known case at a major company in Europe's main financial hub.",
-                "summary_detail": {
-                    "base": "https://www.straitstimes.com/",
-                    "language": "en",
-                    "type": "text/html",
-                    "value": "March 06, 2020 2:35 AM<br /><br />LONDON/MILAN (REUTERS) - HSBC has sent more than 100 of its London staff home after a worker tested positive for the coronavirus, the first known case at a major company in Europe's main financial hub."
-                },
-                "title": "Coronavirus: HSBC sends 100 London staff home, confirms China case",
-                "title_detail": {
-                    "base": "https://www.straitstimes.com/",
-                    "language": "en",
-                    "type": "text/plain",
-                    "value": "Coronavirus: HSBC sends 100 London staff home, confirms China case"
-                }
+                "short_summary": "The company's 65-year-old co-founder will spend more time on philanthropic activities.",
+                "title": "Bill Gates steps down from Microsoft board to focus on philanthropy",
+                "url": "https://www.bbc.co.uk/news/business-51883377"
             }
         ],
         "keywords": [
-            "home",
-            "sent",
-            "makes",
-            "country",
-            "london",
-            "italy",
             "company",
-            "children",
-            "europe",
+            "founder",
+            "philanthropic",
+            "year",
+            "time",
+            "microsoft",
+            "corp",
+            "gates",
+            "board",
+            "health",
+            "change",
+            "climate",
+            "old",
+            "education",
+            "stepped"
+        ]
+    },
+    {
+        "articles": [
+            {
+                "published_on": [
+                    2020,
+                    3,
+                    14,
+                    1,
+                    45,
+                    14,
+                    5,
+                    74,
+                    0
+                ],
+                "short_summary": "Key maps and charts explain how the virus has impacted markets and businesses around the world so far.",
+                "title": "Coronavirus: Eight charts on how it has shaken economies",
+                "url": "https://www.bbc.co.uk/news/business-51706225"
+            },
+            {
+                "published_on": [
+                    2020,
+                    3,
+                    14,
+                    1,
+                    6,
+                    27,
+                    5,
+                    74,
+                    0
+                ],
+                "short_summary": "The Shincheonji Church is known for its secretive practices, which many say helped the virus spread.",
+                "title": "Shincheonji and coronavirus: The mysterious 'cult' church blamed for S Korea's outbreak",
+                "url": "https://www.bbc.co.uk/news/world-asia-51851250"
+            },
+            {
+                "published_on": [
+                    2020,
+                    3,
+                    13,
+                    16,
+                    59,
+                    35,
+                    4,
+                    73,
+                    0
+                ],
+                "short_summary": "Key graphics explaining how the respiratory virus has grown in the UK and the government's response.",
+                "title": "Coronavirus: How many cases are there in your area?",
+                "url": "https://www.bbc.co.uk/news/uk-51768274"
+            },
+            {
+                "published_on": [
+                    2020,
+                    3,
+                    13,
+                    15,
+                    39,
+                    50,
+                    4,
+                    73,
+                    0
+                ],
+                "short_summary": "As the virus spreads around the world, what measures are different countries implementing?",
+                "title": "Coronavirus: What measures are countries taking to stop it?",
+                "url": "https://www.bbc.co.uk/news/world-51737226"
+            },
+            {
+                "published_on": [
+                    2020,
+                    3,
+                    12,
+                    22,
+                    30,
+                    49,
+                    3,
+                    72,
+                    0
+                ],
+                "short_summary": "The UK government have issued the next stage of response to the virus, with added measures for the public.",
+                "title": "What does \u2018delay\u2019 mean for you?",
+                "url": "https://www.bbc.co.uk/news/uk-51865454"
+            },
+            {
+                "published_on": [
+                    2020,
+                    3,
+                    11,
+                    10,
+                    49,
+                    56,
+                    2,
+                    71,
+                    0
+                ],
+                "short_summary": "The virus is spreading around the world, but what is it and what are the symptoms?",
+                "title": "Coronavirus symptoms: What are they and how do I protect myself?",
+                "url": "https://www.bbc.co.uk/news/health-51048366"
+            }
+        ],
+        "keywords": [
+            "virus",
+            "government",
+            "uk",
+            "world",
+            "key",
+            "response",
+            "spread",
+            "measures",
+            "different",
             "known",
-            "main",
-            "hsbc",
-            "hub",
-            "worker",
-            "coronavirus"
+            "countries",
+            "week",
+            "businesses",
+            "spreads",
+            "markets"
         ]
     }
 ]
