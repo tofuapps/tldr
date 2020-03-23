@@ -4,6 +4,7 @@ const Modal = {
   data: function () {
     return {
       title: '',
+      url: '',
       bodyContent: ''
     }
   },
@@ -16,7 +17,7 @@ const Modal = {
         <div class="modal">
             <div class="content">
                 <div class="title">
-                  {{ title }}
+                  <a class="Link" :href=url>{{ title }}</a>
                 </div>
                 <form>
                     <div class="row">
@@ -41,7 +42,7 @@ const Modal = {
 var app = new Vue({
   el: '#app',
   data: {
-    activetab: 0,
+    activetab: 1,
     message: '', //'Hello Vue!',
     newsfeed: [],
   },
@@ -63,6 +64,7 @@ var app = new Vue({
       let modal = makeModal2(null);
       document.body.appendChild(modal.$el)
       modal.title = article.title;
+      modal.url = article.url;
 
       fetch(url, opts)
         .then(response => response.json())

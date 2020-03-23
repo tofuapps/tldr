@@ -44,7 +44,7 @@
                 <div class="message">Loading...</div>
               </div>
               <div v-else v-for="article in newsfeed.reduce((r,a) => {
-                return r.concat(a.articles); },[])" class="row">
+                return r.concat(a.articles); },[])" class="column">
                 <a> <!--:href=x.link>-->
                   <div class="card">
                     <div class="title">
@@ -65,7 +65,7 @@
                 -->
               </div>
             </div>
-            <div v-if="activetab === 1" class="column" style="flex: 1">
+            <div v-if="activetab === 1" class="column" style="flex: 1" id="topics-container">
               <div class="lined card">
                 <h1>Hot topics</h1>
                 Big things happening now
@@ -74,15 +74,21 @@
                 <div class="loader"></div>
                 <div class="message">Loading...</div>
               </div>
-              <div v-else v-for="x in newsfeed" class="row">
+              <div v-else v-for="x in newsfeed" class="column">
                 <a :href=x.link>
                   <div class="card">
                     <div class="title">
-                      {{ x.keywords }}
+                      <!-- {{ x.keywords }} -->
+                      <a class="Link" :href=x.articles[0].url>{{ x.articles[0].title }}</a>
                     </div>
                     <div class="body">
-                      <!--{{ x.articles.reduce((r,a) => {
-                        return r.concat(a.links); }, []); }}-->
+                      <!-- {{ x.articles.reduce((r,a) => { return r.concat(a.url); }, []) }} -->
+                      <p v-if="x.articles.length > 1" style="color: grey">Related:</p>
+                      <ul class="link-tree">
+                        <li class="item" v-for="article in x.articles.slice(1)">
+                          <a class="Link" :href=article.url>{{ article.title }}</a>
+                        </li>
+                      </ul>
                     </div>
                     <div class="secondary button">
                       More

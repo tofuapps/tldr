@@ -26,6 +26,8 @@ if __name__ == '__main__':
                         help="Link to the article")
     parser.add_argument('--summarize', action='store_true',
                         help='Outputs summary of given article')
+    parser.add_argument('-c', '--cluster', action='store_true',
+                        help='On: group by clusters; Off (default): group by topics')
     parser.add_argument('--curate', action='store_true',
                         help='Outputs list of curated articles')
     args = parser.parse_args()
@@ -36,7 +38,7 @@ if __name__ == '__main__':
             curator = Curator()
 
             articles = fetcher.simple_fetch()
-            result = curator.curate(articles)
+            result = curator.curate(articles, args.cluster)
 
             with open('curated_articles.out', 'w') as output:
                 output.writelines(json.dumps(result, sort_keys=True, indent=4))

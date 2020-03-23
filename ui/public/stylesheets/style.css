@@ -203,7 +203,55 @@ i {
 .sidebar > .item > .content {
 }
 
+.link-tree {
+  padding: 0 16px;
+  margin-top: 16px;
+}
+
+.link-tree > .item {
+  margin: 16px 0;
+}
+
 a {
   text-decoration: none;
   color: black;
+}
+
+.Link {
+  position: relative;
+  text-decoration: none;
+  display: inline-block;
+  color: black;
+  padding: 0 1px;
+  transition: color 0.3s ease 0.3s;
+}
+
+.Link:hover {
+  //color: white;
+}
+
+.Link::after {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  width: 0%;
+  height: 2px;
+  left: 0;
+  bottom: 0;
+  background: black;
+  //background: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
+  transition: width 0.3s ease, height 0.3s ease 0.3s;
+}
+
+.Link:hover::after {
+  width: 100%;
+  //height: 100%;
+}
+
+#headlines-container {
+  align-items: stretch;
+}
+
+#topics-container {
+  align-items: stretch;
 }
