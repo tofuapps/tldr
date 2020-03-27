@@ -79,14 +79,20 @@
                   <div class="card">
                     <div class="title">
                       <!-- {{ x.keywords }} -->
-                      <a class="Link" :href=x.articles[0].url>{{ x.articles[0].title }}</a>
+                      <a class="Link" :href=x.articles[0].url>{{ x.articles[0].title }}
+                        <div class="floating label">{{x.articles[0].variance}}</div>
+                        <!--<div class="floating label">{{x.articles[0].variance}} || {{x.articles[0].score}}</div>-->
+                      </a>
                     </div>
                     <div class="body">
                       <!-- {{ x.articles.reduce((r,a) => { return r.concat(a.url); }, []) }} -->
                       <p v-if="x.articles.length > 1" style="color: grey">Related:</p>
                       <ul class="link-tree">
                         <li class="item" v-for="article in x.articles.slice(1)">
-                          <a class="Link" :href=article.url>{{ article.title }}</a>
+                          <a class="Link" :href=article.url>{{ article.title }}
+                            <div class="floating label">{{article.variance}}</div>
+                            <!--<div class="floating label">{{article.variance}} || {{article.score}}</div>-->
+                          </a>
                         </li>
                       </ul>
                     </div>

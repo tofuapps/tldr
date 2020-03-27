@@ -70,18 +70,34 @@ class Curator:
         topic_labels = np.apply_along_axis(lambda row: row.argmax() if row[row.argmax()] >= FIT_VAL else -1, 1, topic_scores)   # for each row
         #print(topic_labels)
 
-        # sort articles into buckets
+        # categorise articles into buckets
         buckets = []
         for i, topic_vec in enumerate(cls.components_):
             buckets.append({
                 'keywords': [feature_names[fid] for fid in topic_vec.argsort()[-1:-n_top_words-1:-1].tolist()],
-                'articles': []
+                'articles': [],
+                'hotness': 0
             })
         for index, a in enumerate(articles):
             current_topic = topic_labels[index]
             if current_topic == -1:
                 continue
+            a['score'] = topic_scores[index][current_topic]
             buckets[current_topic]['articles'].append(a)
+
+        # remove empty buckets, sort articles within buckets by score and compute bucket score
+        for b in buckets:
+            l = len(b['articles'])
+            if l == 0:
+                buckets.remove(b);
+            else:
+                b['articles'].sort(key=lambda a: a['score'], reverse=True)
+                from sklearn.metrics.pairwise import euclidean_distances
+                variance = np.sum(euclidean_distances(features, features), axis=1)
+                for idx, a in enumerate(b['articles']):
+                    a['variance'] = variance[idx]
+                b['hotness'] = sum([a['score'] for a in b['articles']])  # TODO: consider length? similarity (ie reposts)?
+        buckets.sort(key=lambda b: b['hotness'], reverse=True)
 
         return buckets
 

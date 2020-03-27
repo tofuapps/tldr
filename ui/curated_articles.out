@@ -5,434 +5,662 @@
                 "published_on": [
                     2020,
                     3,
-                    22,
-                    22,
-                    0,
-                    0,
-                    6,
-                    82,
-                    0
-                ],
-                "short_summary": "March 23, 2020 6:00 AM A selection of news stories that happened overnight, March 23, 2020.",
-                "title": "While You Were Sleeping: 5 stories you might have missed, March 23",
-                "url": "http://www.straitstimes.com/world/while-you-were-sleeping-5-stories-you-might-have-missed-march-23-0"
-            }
-        ],
-        "keywords": [
-            "march",
-            "23",
-            "2020",
-            "00",
-            "reuters",
-            "yesterday",
-            "nytimes",
-            "morning",
-            "22",
-            "pm",
-            "barcelona",
-            "old",
-            "sunday",
-            "overnight",
-            "coronavirus"
-        ]
-    },
-    {
-        "articles": [
-            {
-                "published_on": [
-                    2020,
-                    3,
-                    23,
-                    8,
-                    18,
-                    31,
-                    0,
-                    83,
-                    0
-                ],
-                "short_summary": "TAIPEI: Taiwan's government announced 26 new cases of coronavirus on Monday (Mar 23), bringing the total number to 195.\nAll but one of the new cases was imported, in people with travel histories to the United States, Spain, the Netherlands, France, Switzerland and Britain, the government said in a ...",
-                "title": "Taiwan reports 26 new cases of coronavirus, total now 195",
-                "url": "https://www.channelnewsasia.com/news/world/coronavirus-covid-19-taiwan-cases-toll-12567156"
-            },
-            {
-                "published_on": [
-                    2020,
-                    3,
-                    23,
-                    5,
+                    24,
+                    12,
                     49,
-                    3,
-                    0,
-                    83,
-                    0
-                ],
-                "short_summary": "Cambodia reported two new coronavirus cases on Monday, bringing the total to 86, health authorities said.",
-                "title": "Cambodia reports two new COVID-19 cases, bringing total to 86",
-                "url": "https://www.channelnewsasia.com/news/world/coronavirus-covid-19-cambodia-cases-12566862"
-            },
-            {
-                "published_on": [
-                    2020,
-                    3,
-                    23,
-                    4,
-                    56,
-                    42,
-                    0,
-                    83,
-                    0
-                ],
-                "short_summary": "BANGKOK:\u00a0Thailand has 122 new coronavirus cases, raising the total to 721, a health ministry spokesman said on Monday (Mar 23) at a news conference.\nThe new cases include 20 patients linked to previous cases, 10 new imported cases, and 92 cases that tested positive and are awaiting investigation ...",
-                "title": "Thailand reports 122 new coronavirus cases, raising total to 721",
-                "url": "https://www.channelnewsasia.com/news/asia/coronavirus-covid-19-thailand-cases-toll-12566906"
-            },
-            {
-                "published_on": [
-                    2020,
-                    3,
-                    23,
+                    13,
                     1,
-                    30,
-                    37,
-                    0,
-                    83,
+                    84,
                     0
                 ],
-                "short_summary": "BEIJING:\u00a0Mainland China saw a drop in its daily tally of new coronavirus cases, reversing four straight days of gains, as the country's capital Beijing ramped up measures to contain the number of infections arriving from abroad.\nChina had 39 new confirmed cases on Sunday (Mar 22), the country's ...",
-                "title": "China sees drop in new COVID-19 cases; all new cases imported",
-                "url": "https://www.channelnewsasia.com/news/asia/coronavirus-covid-19-china-cases-toll-imported-12566264"
-            }
-        ],
-        "keywords": [
-            "new",
-            "cases",
-            "coronavirus",
-            "monday",
-            "health",
-            "country",
-            "confirmed",
-            "spread",
-            "number",
-            "york",
-            "infections",
-            "mar",
-            "said",
-            "22",
-            "total"
-        ]
-    },
-    {
-        "articles": [
-            {
-                "published_on": [
-                    2020,
-                    3,
-                    23,
-                    9,
-                    12,
-                    55,
-                    0,
-                    83,
-                    0
-                ],
-                "short_summary": "The Olympics rings are up and the cute wide-eyed mascots are plastered across billboards and commuter trains, but people in Tokyo are increasingly convinced the Games won't happen this summer.",
-                "title": "'No way we can hold it': Tokyo reacts to talk of Olympic delay",
-                "url": "https://www.channelnewsasia.com/news/sport/-no-way-we-can-hold-it---tokyo-reacts-to-talk-of-olympic-delay-12567568"
+                "score": 0.604983250143782,
+                "short_summary": "Bangladesh will release former prime minister and opposition leader Khaleda Zia, the country's law minister said on Tuesday.",
+                "title": "Bangladesh's opposition leader Khaleda Zia to be freed from jail: Minister",
+                "url": "https://www.channelnewsasia.com/news/asia/bangladesh-s-opposition-leader-khaleda-zia-to-be-freed-from-jail-12571486",
+                "variance": 282.53558327567214
             },
             {
                 "published_on": [
                     2020,
                     3,
-                    23,
-                    9,
-                    7,
-                    29,
-                    0,
-                    83,
-                    0
-                ],
-                "short_summary": "World Athletics president Lord Coe writes to the International Olympic Committee's chief to ask for Tokyo 2020 to be postponed.",
-                "title": "World Athletics boss Coe calls for Tokyo 2020 postponement",
-                "url": "https://www.bbc.co.uk/sport/athletics/52002474"
-            },
-            {
-                "published_on": [
-                    2020,
-                    3,
-                    23,
+                    24,
                     8,
-                    11,
-                    57,
-                    0,
-                    83,
-                    0
-                ],
-                "short_summary": "Former Olympic swimming champion Cameron van der Burgh has said he has been battling the new coronavirus for the last two weeks and that athletes who continue to train for the Tokyo Games are exposing themselves to \u201cunnecessary risk\u201d.",
-                "title": "Olympic gold medallist Van der Burgh battling coronavirus",
-                "url": "https://www.channelnewsasia.com/news/sport/coronavirus--no-joke--olympic-gold-medallist-van-der-burgh-warns-12566588"
-            },
-            {
-                "published_on": [
-                    2020,
-                    3,
-                    23,
-                    3,
-                    12,
-                    12,
-                    0,
-                    83,
-                    0
-                ],
-                "short_summary": "The Canadian Olympic Committee (COC) and Paralympic Committee (CPC) said on Sunday that Team Canada will not participate in the Olympic and Paralympic Games in the summer of 2020 due to concerns about the outbreak of the coronavirus.",
-                "title": "Canada pulls out of 2020 Games as pressure mounts on Tokyo",
-                "url": "https://www.channelnewsasia.com/news/world/canada-olympics-tokyo-participate-delay-covid-19-coronavirus-12566354"
-            },
-            {
-                "published_on": [
-                    2020,
-                    3,
-                    23,
-                    2,
-                    57,
-                    14,
-                    0,
-                    83,
-                    0
-                ],
-                "short_summary": "TORONTO:\u00a0The Canadian Olympic Committee (COC) and Paralympic Committee (CPC) said on Sunday (Mar 22) that Team Canada will not participate in the Olympic and Paralympic Games in the summer of 2020 due to concerns about the outbreak of the coronavirus.\nOpposition to holding the Games in July has ...",
-                "title": "Canada pulls out of 2020 Olympic Games as pressure mounts on Tokyo",
-                "url": "https://www.channelnewsasia.com/news/world/canada-olympics-tokyo-participate-delay-covid-19-coronavirus-12566354"
-            },
-            {
-                "published_on": [
-                    2020,
-                    3,
-                    23,
-                    2,
-                    54,
-                    42,
-                    0,
-                    83,
-                    0
-                ],
-                "short_summary": "TOKYO:\u00a0Postponing the Olympics over the coronavirus pandemic may become \"inevitable\", Japan's prime minister conceded on Monday (Mar 23), after the International Olympic Committee said a delay was being considered as pressure grows from athletes and sports bodies.\nThe comments from Shinzo Abe were ...",
-                "title": "Olympic postponement may be 'inevitable', Japan PM Abe says",
-                "url": "https://www.channelnewsasia.com/news/sport/olympics-postpone-coronavirus-tokyo-2020-japan-12566238"
-            },
-            {
-                "published_on": [
-                    2020,
-                    3,
-                    23,
-                    2,
-                    44,
-                    23,
-                    0,
-                    83,
-                    0
-                ],
-                "short_summary": "It is better to have a decision as early as possible on whether to postpone the Summer Olympics, although the final decision is up to the International Olympic Committee, Japanese Prime Minister Shinzo Abe said on Monday.",
-                "title": "Japan PM hopes for early decision on whether to postpone Olympics",
-                "url": "https://www.channelnewsasia.com/news/sport/olympics-postpone-coronavirus-tokyo-2020-japan-12566238"
-            },
-            {
-                "published_on": [
-                    2020,
-                    3,
-                    23,
-                    2,
-                    44,
-                    11,
-                    0,
-                    83,
-                    0
-                ],
-                "short_summary": "TOKYO: Japanese Prime Minister Shinzo Abe said for the first time on Monday that the Tokyo Olympic Games may need to be postponed if the event cannot be held in its \"complete form\" due to the coronavirus pandemic.\nThe International Olympic Committee (IOC) said on Sunday after an emergency meeting ...",
-                "title": "Japan says Tokyo Olympics may be postponed due to coronavirus",
-                "url": "https://www.channelnewsasia.com/news/sport/olympics-postpone-coronavirus-tokyo-2020-japan-12566238"
-            },
-            {
-                "published_on": [
-                    2020,
-                    3,
-                    22,
-                    22,
-                    15,
-                    23,
-                    6,
-                    82,
-                    0
-                ],
-                "short_summary": "Nine-times Olympic gold medallist Carl Lewis on Sunday called for the 2020 athletics season to be scrapped and July's Tokyo Games to be postponed until 2022 because of the coronavirus pandemic that has killed thousands.",
-                "title": "Carl Lewis calls for 2020 season to be wiped out, Olympics to be held in 2022",
-                "url": "https://www.channelnewsasia.com/news/sport/carl-lewis-calls-for-2020-season-to-be-wiped-out--olympics-to-be-held-in-2022-12566118"
-            },
-            {
-                "published_on": [
-                    2020,
-                    3,
-                    22,
-                    19,
-                    38,
-                    23,
-                    6,
-                    82,
-                    0
-                ],
-                "short_summary": "The International Olympic Committee is considering a postponement of Tokyo 2020, and has given itself a deadline of four weeks to make a decision.",
-                "title": "IOC gives itself four-week deadline to decide if Olympics will go ahead",
-                "url": "https://www.bbc.co.uk/sport/olympics/51997540"
-            }
-        ],
-        "keywords": [
-            "olympic",
-            "tokyo",
-            "committee",
-            "games",
-            "international",
-            "olympics",
-            "said",
-            "postponed",
-            "summer",
-            "paralympic",
-            "shinzo",
-            "abe",
-            "athletics",
-            "decision",
-            "2020"
-        ]
-    },
-    {
-        "articles": [
-            {
-                "published_on": [
-                    2020,
-                    3,
-                    23,
-                    8,
-                    50,
-                    38,
-                    0,
-                    83,
-                    0
-                ],
-                "short_summary": "SINGAPORE: The three\u00a0stations on the Thomson-East Coast Line (TEL) will have\u00a0shorter operating hours on Fridays, Saturdays and Sundays\u00a0between April and July this year, the Land Transport Authority (LTA) said on Monday (Mar 23).\nThe shorter operating hours are\u00a0part of efforts to prepare for the ...",
-                "title": "Shorter weekend operating hours for Thomson-East Coast Line stations from April to July",
-                "url": "https://www.channelnewsasia.com/news/singapore/woodlands-train-stations-thomson-east-coast-line-mrt-12567468"
-            },
-            {
-                "published_on": [
-                    2020,
-                    3,
-                    23,
-                    8,
-                    0,
-                    37,
-                    0,
-                    83,
-                    0
-                ],
-                "short_summary": "SINGAPORE: Singapore and Australia on Monday (Mar 23)\u00a0agreed to keep markets open and supply chains running amid the COVID-19 pandemic, said Singapore's Ministry of Foreign Affairs (MFA).\nSingapore's Prime Minister Lee Hsien Loong and his counterpart Scott Morrison\u00a0welcomed the conclusion of ...",
-                "title": "Singapore, Australia leaders hold virtual meeting, agree to keep markets open amid COVID-19 outbreak",
-                "url": "https://www.channelnewsasia.com/news/singapore/singapore-australia-leaders-meeting-covid-19-12566648"
-            },
-            {
-                "published_on": [
-                    2020,
-                    3,
-                    23,
-                    7,
-                    0,
-                    38,
-                    0,
-                    83,
-                    0
-                ],
-                "short_summary": "SINGAPORE: Singapore's main price gauge slipped into deflation\u00a0for the first time in more than\u00a0a decade in February, data showed\u00a0on Monday (Mar 23).\nPrices fell\u00a00.1 per cent\u00a0from a year earlier,\u00a0according to a joint release by the Monetary Authority of Singapore (MAS) and Ministry of Trade and ...",
-                "title": "Singapore core inflation falls into negative territory for the first time in a decade",
-                "url": "https://www.channelnewsasia.com/news/singapore/singapore-inflation-prices-fall-first-time-in-decade-mas-mti-12566938"
-            },
-            {
-                "published_on": [
-                    2020,
-                    3,
-                    23,
+                    25,
                     5,
-                    40,
-                    37,
-                    0,
-                    83,
+                    1,
+                    84,
                     0
                 ],
-                "short_summary": "SINGAPORE: A man raped his maid after asking her for a massage, going\u00a0on to molest another woman and assault a third while on court bail.\nThe 43-year-old man, who cannot be named due to a gag order, was sentenced on Monday (Mar 23) to about 11 years and seven months' jail and nine strokes of the ...",
-                "title": "Man gets jail, caning for raping maid after asking her for massage",
-                "url": "https://www.channelnewsasia.com/news/singapore/man-gets-jail-caning-for-raping-maid-after-asking-her-for-12566998"
+                "score": 0.49273724390187407,
+                "short_summary": "BANGKOK: Thailand will be in an emergency mode from Mar\u00a026 for a month to deal with the coronavirus outbreak, Prime Minister Prayut Chan-o-cha told a news conference on Tuesday (Mar 24).\nThe emergency decree will mean the prime minister will have the executive power to declare further measures to ...",
+                "title": "Thailand to declare 1-month emergency to deal with COVID-19 outbreak",
+                "url": "https://www.channelnewsasia.com/news/asia/covid19-thailand-declare-month-emergency-mar-26-prime-minister-12570984",
+                "variance": 279.34626269541
+            },
+            {
+                "published_on": [
+                    2020,
+                    3,
+                    24,
+                    7,
+                    39,
+                    13,
+                    1,
+                    84,
+                    0
+                ],
+                "score": 0.4553880924374051,
+                "short_summary": "The German government will return to its savings policy once the coronavirus crisis is over, Economy Minister Peter Altmaier told ZDF broadcaster on Tuesday, adding that Europe's largest economy had committed to paying debt back from 2023.",
+                "title": "Germany to return to austerity policy once coronavirus crisis over: Minister",
+                "url": "https://www.channelnewsasia.com/news/world/germany-to-return-to-austerity-policy-covid19-coronavirus-crisis-12570980",
+                "variance": 279.12466831819654
+            },
+            {
+                "published_on": [
+                    2020,
+                    3,
+                    24,
+                    8,
+                    45,
+                    7,
+                    1,
+                    84,
+                    0
+                ],
+                "score": 0.4511261975345672,
+                "short_summary": "BERLIN: The German government will return to its savings policy once the coronavirus crisis is over, Economy Minister Peter Altmaier told ZDF broadcaster on Tuesday (Mar 24), adding that Europe's largest economy had committed to paying debt back from 2023.\nGermany on Monday agreed a package worth ...",
+                "title": "Germany to return to austerity after coronavirus crisis: Minister",
+                "url": "https://www.channelnewsasia.com/news/world/germany-to-return-to-austerity-after-coronavirus-crisis-minister-12571010",
+                "variance": 279.1853995836154
+            },
+            {
+                "published_on": [
+                    2020,
+                    3,
+                    24,
+                    13,
+                    7,
+                    13,
+                    1,
+                    84,
+                    0
+                ],
+                "score": 0.44985984604716656,
+                "short_summary": "Egypt has declared a curfew from 7pm to 6am\u00a0for two weeks starting Wednesday to counter spread of coronavirus, the prime minister said.",
+                "title": "Egypt declares two-week curfew from 7pm to 6am to counter coronavirus",
+                "url": "https://www.channelnewsasia.com/news/world/egypt-declares-two-week-curfew-7pm-6am-coronavirus-covid-19-12571672",
+                "variance": 283.9150963421771
             },
             {
                 "published_on": [
                     2020,
                     3,
                     23,
-                    4,
+                    21,
+                    0,
+                    0,
+                    0,
+                    83,
+                    0
+                ],
+                "score": 0.40089833969906996,
+                "short_summary": "March 24, 2020 5:00 AM JERUSALEM \u2022 Citing a threat to Israeli democracy, opponents of Prime Minister Benjamin Netanyahu have asked the Supreme Court to block what they described as a power grab by the caretaker government under the guise of combating the coronavirus epidemic.",
+                "title": "Netanyahu in power grab, opponents say",
+                "url": "http://www.straitstimes.com/world/middle-east/netanyahu-in-power-grab-opponents-say",
+                "variance": 282.0936916996528
+            },
+            {
+                "published_on": [
+                    2020,
+                    3,
+                    23,
+                    21,
+                    13,
+                    58,
+                    0,
+                    83,
+                    0
+                ],
+                "score": 0.3738827647947793,
+                "short_summary": "March 24, 2020 5:13 AM PARIS (REUTERS) - Prime Minister Edouard Philippe said a virtual lockdown in France imposed to slow the spread of the coronavirus could last several more weeks and that his government was tightening restrictions even further.",
+                "title": "French PM Philippe says tightened coronavirus lockdown could last weeks",
+                "url": "http://www.straitstimes.com/world/europe/french-pm-philippe-says-tightened-coronavirus-lockdown-could-last-weeks",
+                "variance": 281.6419719842811
+            },
+            {
+                "published_on": [
+                    2020,
+                    3,
+                    24,
+                    12,
+                    45,
+                    15,
+                    1,
+                    84,
+                    0
+                ],
+                "score": 0.36831658715568794,
+                "short_summary": "Commuters pack into trains for a second day despite the prime minister banning non-essential travel.",
+                "title": "Coronavirus: Sadiq Khan warns 'stop Tube travel or more will die'",
+                "url": "https://www.bbc.co.uk/news/uk-england-london-52017910",
+                "variance": 280.0678247884783
+            }
+        ],
+        "hotness": 3.5971923217143322,
+        "keywords": [
+            "minister",
+            "prime",
+            "government",
+            "economy",
+            "opposition",
+            "said",
+            "told",
+            "power",
+            "spread",
+            "country",
+            "weeks",
+            "return",
+            "wednesday",
+            "policy",
+            "tuesday"
+        ]
+    },
+    {
+        "articles": [
+            {
+                "published_on": [
+                    2020,
+                    3,
+                    22,
+                    0,
+                    2,
+                    15,
+                    6,
+                    82,
+                    0
+                ],
+                "score": 0.4291743092730133,
+                "short_summary": "With soup kitchens closing and hostels 'like a Petri dish', homeless people are scared about the future.",
+                "title": "Coronavirus: The rough sleepers who can't self-isolate",
+                "url": "https://www.bbc.co.uk/news/uk-51950920",
+                "variance": 282.53558327567214
+            },
+            {
+                "published_on": [
+                    2020,
+                    3,
+                    23,
+                    12,
+                    21,
+                    33,
+                    0,
+                    83,
+                    0
+                ],
+                "score": 0.38894969945217367,
+                "short_summary": "From supermarkets to warehouses to pharmacies, these are the people keeping things running.",
+                "title": "The workers braving coronavirus",
+                "url": "https://www.bbc.co.uk/news/newsbeat-52003533",
+                "variance": 279.34626269541
+            },
+            {
+                "published_on": [
+                    2020,
+                    3,
+                    24,
+                    12,
+                    35,
+                    1,
+                    1,
+                    84,
+                    0
+                ],
+                "score": 0.3690308793167455,
+                "short_summary": "Harry Kane says he is on track to be fit when the Premier League returns as the Tottenham striker urged people to \"stay safe\" from the coronavirus.",
+                "title": "Football: Kane hopes to feature if Premier League returns after virus chaos",
+                "url": "https://www.channelnewsasia.com/news/sport/football-kane-hopes-to-feature-if-premier-league-returns-after-12571870",
+                "variance": 279.12466831819654
+            },
+            {
+                "published_on": [
+                    2020,
+                    3,
+                    24,
+                    12,
+                    30,
+                    34,
+                    1,
+                    84,
+                    0
+                ],
+                "score": 0.36092675023372256,
+                "short_summary": "A Bristol couple were among up to 150 people stranded in Egypt amid coronavirus flights confusion.",
+                "title": "EasyJet despicable over Egypt rescue flights, Bristol couple says",
+                "url": "https://www.bbc.co.uk/news/uk-england-bristol-52018623",
+                "variance": 279.1853995836154
+            },
+            {
+                "published_on": [
+                    2020,
+                    3,
+                    23,
+                    13,
+                    35,
+                    28,
+                    0,
+                    83,
+                    0
+                ],
+                "score": 0.35503632831149445,
+                "short_summary": "People most at risk of needing hospital treatment if they get coronavirus are being asked to stay home.",
+                "title": "What is shielding and what is it meant to do?",
+                "url": "https://www.bbc.co.uk/news/health-51997151",
+                "variance": 283.9150963421771
+            },
+            {
+                "published_on": [
+                    2020,
+                    3,
+                    24,
+                    0,
+                    1,
+                    29,
+                    1,
+                    84,
+                    0
+                ],
+                "score": 0.34692109546384214,
+                "short_summary": "Thousands of people have gone missing since the conflict started in 2014, according to the Red Cross.",
+                "title": "Ukraine's missing people amid ongoing conflict",
+                "url": "https://www.bbc.co.uk/news/world-europe-52009231",
+                "variance": 282.0936916996528
+            },
+            {
+                "published_on": [
+                    2020,
+                    3,
+                    23,
+                    0,
+                    10,
+                    21,
+                    0,
+                    83,
+                    0
+                ],
+                "score": 0.3420345356882249,
+                "short_summary": "The 102-year-old is one of the last people still alive who was named as a communist sympathiser.",
+                "title": "How Marsha Hunt fought Hollywood blacklisting",
+                "url": "https://www.bbc.co.uk/news/entertainment-arts-51979690",
+                "variance": 281.6419719842811
+            },
+            {
+                "published_on": [
+                    2020,
+                    3,
+                    23,
+                    16,
+                    44,
+                    18,
+                    0,
+                    83,
+                    0
+                ],
+                "score": 0.33414955800970175,
+                "short_summary": "Images from around the country as people adjust their lives as a response to Covid-19.",
+                "title": "In pictures: UK amid coronavirus pandemic",
+                "url": "https://www.bbc.co.uk/news/in-pictures-52008583",
+                "variance": 280.0678247884783
+            },
+            {
+                "published_on": [
+                    2020,
+                    3,
+                    24,
+                    10,
+                    30,
+                    0,
+                    1,
+                    84,
+                    0
+                ],
+                "score": 0.3117612391722246,
+                "short_summary": "March 24, 2020 6:30 PM SINGAPORE - Countries around the world are beefing up measures to confine people to their homes in a desparate bid to halt the spread of the coronavirus which causes the Covid-19 that has sicked more than 380,000 people in 196 countries and territories.",
+                "title": "Stopping the spread of coronavirus: What countries are doing to make people stay home",
+                "url": "http://www.straitstimes.com/world/stopping-the-spread-of-coronavirus-what-countries-are-doing-to-force-people-to-stay-home",
+                "variance": 278.25799538373997
+            }
+        ],
+        "hotness": 3.2379843949211424,
+        "keywords": [
+            "people",
+            "like",
+            "stay",
+            "coronavirus",
+            "future",
+            "lives",
+            "bristol",
+            "spread",
+            "running",
+            "home",
+            "supermarkets",
+            "red",
+            "named",
+            "track",
+            "says"
+        ]
+    },
+    {
+        "articles": [
+            {
+                "published_on": [
+                    2020,
+                    3,
+                    24,
+                    14,
                     27,
                     13,
-                    0,
-                    83,
+                    1,
+                    84,
                     0
                 ],
-                "short_summary": "SINGAPORE: The average sea level\u00a0has risen 14cm from \u201cpre-1970 levels\u201d for Singapore, said the\u00a0Meteorological Service Singapore (MSS) in its 2019 Annual Climate Assessment Report released on Monday (Mar 23).\n\"The sea level changes described in the (report) are based on tide gauge records available ...",
-                "title": "Singapore\u2019s average sea level now 14cm higher than \u2018pre-1970 levels\u2019: Met Service",
-                "url": "https://www.channelnewsasia.com/news/singapore/singapore-higher-sea-level-climate-change-met-service-12566618"
+                "score": 0.5417744154948531,
+                "short_summary": "The Tokyo 2020 Olympic and Paralympic Games are postponed until next year because of the worldwide coronavirus pandemic.",
+                "title": "Tokyo 2020: Olympic and Paralympic Games postponed because of coronavirus",
+                "url": "https://www.bbc.co.uk/sport/olympics/52020134",
+                "variance": 282.53558327567214
             },
             {
                 "published_on": [
                     2020,
                     3,
-                    23,
-                    3,
-                    16,
-                    15,
-                    0,
-                    83,
-                    0
-                ],
-                "short_summary": "SINGAPORE: Singapore and Australia on Monday (Mar 23) signed an upgraded treaty to\u00a0facilitate more training access in Australia for the\u00a0Singapore Armed Forces (SAF).\u00a0\nSingapore will also jointly develop military\u00a0training facilities in new and\u00a0bigger training areas there.\nDefence Minister Ng Eng ...",
-                "title": "Singapore and Australia sign upgraded treaty on military training, training area development",
-                "url": "https://www.channelnewsasia.com/news/singapore/singapore-australia-military-training-treaty-saf-12566336"
-            },
-            {
-                "published_on": [
-                    2020,
-                    3,
-                    23,
+                    24,
+                    13,
                     2,
-                    40,
-                    38,
-                    0,
-                    83,
+                    56,
+                    1,
+                    84,
                     0
                 ],
-                "short_summary": "SINGAPORE: Singapore Airlines (SIA) will cut\u00a096 per cent of its capacity that had been\u00a0scheduled up to the end of April, said the airline on Monday (Mar 23).\nThe decision was\u00a0made after\u00a0the further tightening of border controls around the world over the last week to stem the COVID-19 outbreak ...",
-                "title": "COVID-19: Singapore Airlines slashes 96% of capacity, grounds most planes",
-                "url": "https://www.channelnewsasia.com/news/business/covid-19-singapore-airlines-suspend-flights-coronavirus-12566248"
+                "score": 0.48574005556796396,
+                "short_summary": "TOKYO: Japan's prime minister and the head of the International Olympic Committee agreed to postpone the Tokyo 2020 Games by a year.\nThe\u00a0extraordinary move, unprecedented in peacetime, was made as the world battles the COVID-19 pandemic.\n\"I proposed to postpone for about a year and president Bach ...",
+                "title": "Japan, Olympics chief agree to postpone Tokyo Games over COVID-19",
+                "url": "https://www.channelnewsasia.com/news/sport/coronavirus-olympics-tokyo-postpone-2021-shinzo-abe-ioc-12571800",
+                "variance": 279.34626269541
+            },
+            {
+                "published_on": [
+                    2020,
+                    3,
+                    24,
+                    12,
+                    56,
+                    58,
+                    1,
+                    84,
+                    0
+                ],
+                "score": 0.4428750842099239,
+                "short_summary": "Japan and the Olympics movement decided on Tuesday to delay this year's Tokyo Games into 2021 as the coronavirus crisis obliterated the world's last major imminent sporting event.",
+                "title": "Tokyo Games delayed to 2021, easing athletes' angst",
+                "url": "https://www.channelnewsasia.com/news/sport/tokyo-games-delayed-to-2021--easing-athletes--angst-12570670",
+                "variance": 279.12466831819654
+            },
+            {
+                "published_on": [
+                    2020,
+                    3,
+                    24,
+                    9,
+                    7,
+                    5,
+                    1,
+                    84,
+                    0
+                ],
+                "score": 0.4256041180968946,
+                "short_summary": "The surest sign that the tide had turned definitively against plans to press ahead with the Tokyo Games this year might have come on Monday when the Australian Olympic Committee (AOC)instructed its athletes to prepare for 2021.",
+                "title": "Australia's Coates, the man in the middle stuck with a muddle",
+                "url": "https://www.channelnewsasia.com/news/sport/australia-s-coates--the-man-in-the-middle-stuck-with-a-muddle-12571072",
+                "variance": 279.1853995836154
+            },
+            {
+                "published_on": [
+                    2020,
+                    3,
+                    24,
+                    0,
+                    8,
+                    2,
+                    1,
+                    84,
+                    0
+                ],
+                "score": 0.4247933071452454,
+                "short_summary": "Thirteen-year-old Ornela has Down's syndrome and is training to compete in the World Games next year.",
+                "title": "Teen figure skater's Special Olympics dream",
+                "url": "https://www.bbc.co.uk/news/world-52008197",
+                "variance": 283.9150963421771
+            },
+            {
+                "published_on": [
+                    2020,
+                    3,
+                    24,
+                    7,
+                    57,
+                    46,
+                    1,
+                    84,
+                    0
+                ],
+                "score": 0.3681246610648374,
+                "short_summary": "Even though it was 56 years ago, Kazuo Goto still vividly remembers his pride as he carried the Olympic flame on the last day of the torch relay when Tokyo hosted the Games in 1964.",
+                "title": "1964 Olympic torchbearer frets about virus-hit Olympic relay",
+                "url": "https://www.channelnewsasia.com/news/sport/1964-olympic-torchbearer-frets-about-virus-hit-olympic-relay-12570258",
+                "variance": 282.0936916996528
+            },
+            {
+                "published_on": [
+                    2020,
+                    3,
+                    24,
+                    8,
+                    5,
+                    19,
+                    1,
+                    84,
+                    0
+                ],
+                "score": 0.35333392653732343,
+                "short_summary": "MELBOURNE: Australia coach Graham Arnold has called for the age limit at the Tokyo Olympics football tournament to be raised to ensure that players who helped their country qualify remain eligible if the Games are postponed to 2021.\nThe Olympic men's tournament is largely a youth affair, with ...",
+                "title": "Football: Australia coach calls for age flexibility if Olympics postponed",
+                "url": "https://www.channelnewsasia.com/news/sport/football-australia-coach-calls-for-age-flexibility-if-olympics-12570982",
+                "variance": 281.6419719842811
             }
         ],
+        "hotness": 3.0422455681170417,
+        "keywords": [
+            "year",
+            "tokyo",
+            "games",
+            "olympic",
+            "world",
+            "postponed",
+            "pandemic",
+            "2021",
+            "old",
+            "olympics",
+            "cup",
+            "japan",
+            "2020",
+            "committee",
+            "worldwide"
+        ]
+    },
+    {
+        "articles": [
+            {
+                "published_on": [
+                    2020,
+                    3,
+                    24,
+                    8,
+                    41,
+                    4,
+                    1,
+                    84,
+                    0
+                ],
+                "score": 0.40677959918003204,
+                "short_summary": "SINGAPORE: The Government will provide updates on Singapore's response to COVID-19 when Parliament sits on Wednesday (Mar 25).\u00a0\nMinister for Health Gan Kim Yong and Minister for National Development Lawrence Wong will be delivering ministerial statements on the issue.\u00a0\nREAD:\u00a0Singapore contributes ...",
+                "title": "Government to provide update in Parliament on Singapore's response to COVID-19",
+                "url": "https://www.channelnewsasia.com/news/singapore/covid-19-parliament-ministerial-statements-ministries-12570958",
+                "variance": 282.53558327567214
+            },
+            {
+                "published_on": [
+                    2020,
+                    3,
+                    24,
+                    14,
+                    0,
+                    38,
+                    1,
+                    84,
+                    0
+                ],
+                "score": 0.40607125237307995,
+                "short_summary": "SINGAPORE: The measures used to contain the spread of COVID-19 in Singapore are introduced in tiers and based on risk, said National Development Minister Lawrence Wong on Tuesday (Mar 24).\nWhen asked why Singapore did not shut schools and \u201cgo all the way\u201d into a lockdown like other countries, Mr ...",
+                "title": "Measures to contain COVID-19 introduced in tiers and 'based on risk': Lawrence Wong",
+                "url": "https://www.channelnewsasia.com/news/singapore/covid-19-coronavirus-singapore-why-no-lockdown-measures-12572000",
+                "variance": 279.34626269541
+            },
+            {
+                "published_on": [
+                    2020,
+                    3,
+                    24,
+                    10,
+                    0,
+                    37,
+                    1,
+                    84,
+                    0
+                ],
+                "score": 0.3973096003246243,
+                "short_summary": "SINGAPORE: Singapore's stock market rebounded along with its peers in Asia on Tuesday (Mar 24) as a pledge by the US Federal Reserve to spend whatever it takes\u00a0to stabilise the financial system lifted sentiment amid the COVID-19 outbreak.\nPolicymakers across the globe are looking to stave off a ...",
+                "title": "Singapore stock market bounces on Fed's bumper boost",
+                "url": "https://www.channelnewsasia.com/news/business/singapore-stock-market-bounces-fed--bumper-boost-12571042",
+                "variance": 279.12466831819654
+            },
+            {
+                "published_on": [
+                    2020,
+                    3,
+                    24,
+                    7,
+                    29,
+                    17,
+                    1,
+                    84,
+                    0
+                ],
+                "score": 0.395880677275578,
+                "short_summary": "SINGAPORE: A former National University of Singapore (NUS) student who had been taking upskirt videos of women for four months was caught by an observant schoolmate who notified both the dean and the police.\nLuah Chao Zhi, 23, was sentenced to eight weeks' jail on Tuesday (Mar 24) after pleading ...",
+                "title": "Upskirter jailed after schoolmate catches him trying to take video on NUS campus",
+                "url": "https://www.channelnewsasia.com/news/singapore/upskirter-jailed-after-schoolmate-catches-him-trying-to-take-12570664",
+                "variance": 279.1853995836154
+            },
+            {
+                "published_on": [
+                    2020,
+                    3,
+                    24,
+                    11,
+                    43,
+                    3,
+                    1,
+                    84,
+                    0
+                ],
+                "score": 0.37938149777092134,
+                "short_summary": "SINGAPORE: Mosques will be closed until further notice amid a \u201cheightened risk\u201d of COVID-19 transmission in the community, the Islamic Religious Council of Singapore (MUIS) announced on Tuesday (Mar 24).\n\u201cAs the risk to the community remains high, the Fatwa committee has recommended the continued ...",
+                "title": "MUIS to close mosques until further notice amid high risk of COVID-19 transmission",
+                "url": "https://www.channelnewsasia.com/news/singapore/mosques-closed-further-notice-muis-covid-19-12571504",
+                "variance": 283.9150963421771
+            },
+            {
+                "published_on": [
+                    2020,
+                    3,
+                    24,
+                    9,
+                    50,
+                    38,
+                    1,
+                    84,
+                    0
+                ],
+                "score": 0.37708654985767687,
+                "short_summary": "SINGAPORE:\u00a0Supermarkets in Singapore will introduce\u00a0dedicated shopping hours\u00a0for the elderly and other \"vulnerable segments\" of the community to get their essentials.\nNTUC FairPrice and Dairy Farm Singapore - which runs Cold Storage, Giant, Market Place and Jason's Deli -\u00a0announced on Tuesday ...",
+                "title": "COVID-19: Supermarkets launch dedicated shopping hours for 'vulnerable segments' of community",
+                "url": "https://www.channelnewsasia.com/news/singapore/covid-19-ntuc-fairprice-stores-priority-hour-shopping-12570956",
+                "variance": 282.0936916996528
+            },
+            {
+                "published_on": [
+                    2020,
+                    3,
+                    24,
+                    13,
+                    50,
+                    37,
+                    1,
+                    84,
+                    0
+                ],
+                "score": 0.34139482369565183,
+                "short_summary": "SINGAPORE: The Singapore National Olympic Council (SNOC) will \"regroup\" with affected National Sports Associations (NSAs) following the postponement of the 2020 Olympics, a spokesperson from the organisation said on\u00a0Tuesday (Mar 24).\nThis follows a joint-statement issued by\u00a0the International ...",
+                "title": "SNOC to 'regroup' with affected sports associations following Olympic postponement",
+                "url": "https://www.channelnewsasia.com/news/sport/olympics-tokyo2020-snoc-postponement-athletes-schooling-12572008",
+                "variance": 281.6419719842811
+            },
+            {
+                "published_on": [
+                    2020,
+                    3,
+                    24,
+                    14,
+                    5,
+                    36,
+                    1,
+                    84,
+                    0
+                ],
+                "score": 0.3320539894114617,
+                "short_summary": "SINGAPORE: Singapore Airlines (SIA) pilots will be required to take some days of\u00a0no-pay leave a month from April\u00a0as part of cost-cutting measures the national carrier is putting into place.\u00a0\nIn an internal email dated Mar 24, seen by CNA, the airline said it had signed agreements with the ...",
+                "title": "SIA to implement COVID-19 cost-cutting measures, up to 7 days no-pay leave a month for pilots",
+                "url": "https://www.channelnewsasia.com/news/singapore/sia-pilots-singapore-airlines-7-days-of-no-pay-leave-covid-19-12570962",
+                "variance": 280.0678247884783
+            }
+        ],
+        "hotness": 3.035957989889026,
         "keywords": [
             "singapore",
             "mar",
-            "monday",
-            "year",
-            "23",
-            "said",
-            "minister",
-            "19",
             "covid",
-            "australia",
-            "man",
-            "days",
-            "prime",
-            "ministry",
-            "level"
+            "19",
+            "national",
+            "24",
+            "community",
+            "tuesday",
+            "place",
+            "wong",
+            "months",
+            "police",
+            "market",
+            "said",
+            "days"
         ]
     },
     {
@@ -441,200 +669,38 @@
                 "published_on": [
                     2020,
                     3,
-                    23,
-                    8,
-                    51,
-                    8,
-                    0,
-                    83,
-                    0
-                ],
-                "short_summary": "With more employees working from home to help slow the spread of the coronavirus, demand is surging for laptops and network peripherals as well as components along the supply chain such as chips, as companies rush to build virtual offices.",
-                "title": "Home work triggers demand jump for chips, laptops and network goods",
-                "url": "https://www.channelnewsasia.com/news/business/home-work-triggers-demand-jump-for-chips--laptops-and-network-goods-12567584"
-            },
-            {
-                "published_on": [
-                    2020,
-                    3,
-                    23,
-                    7,
-                    8,
-                    7,
-                    0,
-                    83,
-                    0
-                ],
-                "short_summary": "Streets were deserted in Delhi on Monday and office buildings shuttered as a lockdown to halt the spread of the coronavirus began and Prime Minister Narendra Modi urged people to stay at home and save themselves.",
-                "title": "PM Modi tells Indians to save themselves from coronavirus as Delhi locks down",
-                "url": "https://www.channelnewsasia.com/news/asia/coronavirus-covid-19-india-modi-lockdown-12567230"
-            },
-            {
-                "published_on": [
-                    2020,
-                    3,
-                    23,
-                    6,
-                    25,
-                    45,
-                    0,
-                    83,
-                    0
-                ],
-                "short_summary": "Researchers at one of China's top universities have designed a robot they say could help save lives on the frontline during the coronavirus outbreak.",
-                "title": "Robot designed in China could help save lives on medical frontline",
-                "url": "https://www.channelnewsasia.com/news/asia/coronavirus-robotic-arm-designed-in-china-save-lives-frontline-12505274"
-            },
-            {
-                "published_on": [
-                    2020,
-                    3,
-                    23,
-                    0,
-                    9,
-                    19,
-                    0,
-                    83,
-                    0
-                ],
-                "short_summary": "The coronavirus outbreak has left many feeling trapped indoors, but for some help may not be far away.",
-                "title": "The volunteer army helping self-isolating neighbours",
-                "url": "https://www.bbc.co.uk/news/stories-51979390"
-            },
-            {
-                "published_on": [
-                    2020,
-                    3,
-                    22,
-                    23,
-                    14,
-                    27,
-                    6,
-                    82,
-                    0
-                ],
-                "short_summary": "\"If you choose to stay at home, you will save lives,\" say those on the front line in the coronavirus crisis.",
-                "title": "'Stay at home' - Doctors and nurses appeal to UK",
-                "url": "https://www.bbc.co.uk/news/uk-northern-ireland-51999437"
-            },
-            {
-                "published_on": [
-                    2020,
-                    3,
-                    22,
-                    20,
-                    1,
-                    6,
-                    6,
-                    82,
-                    0
-                ],
-                "short_summary": "People most at risk of needing hospital treatment if they get coronavirus are being asked to stay home.",
-                "title": "What is shielding and what is it meant to do?",
-                "url": "https://www.bbc.co.uk/news/health-51997151"
-            },
-            {
-                "published_on": [
-                    2020,
-                    3,
-                    22,
-                    15,
+                    24,
                     13,
-                    39,
-                    6,
-                    82,
+                    17,
+                    37,
+                    1,
+                    84,
                     0
                 ],
-                "short_summary": "Supermarkets are sharing resources to help meet demand quickly during the coronavirus outbreak.",
-                "title": "Coronavirus: What are shops doing about stockpiling?",
-                "url": "https://www.bbc.co.uk/news/business-51737030"
+                "score": 0.33028548124727186,
+                "short_summary": "France appealed on Tuesday to workers laid off by the coronavirus crisis to help farmers pick fruit and vegetables that will otherwise be left to rot in the fields due to a shortage of seasonal workers.",
+                "title": "France eyes 'shadow army' of fruit pickers as coronavirus bites",
+                "url": "https://www.channelnewsasia.com/news/world/france-eyes-shadow-army-of-fruit-pickers-as-coronavirus-bites-12571988",
+                "variance": 282.53558327567214
             }
         ],
+        "hotness": 0.33028548124727186,
         "keywords": [
             "coronavirus",
             "help",
-            "home",
-            "people",
-            "outbreak",
-            "lives",
-            "stay",
-            "save",
-            "say",
             "spread",
-            "working",
-            "demand",
-            "china",
-            "designed",
-            "social"
-        ]
-    },
-    {
-        "articles": [
-            {
-                "published_on": [
-                    2020,
-                    3,
-                    23,
-                    2,
-                    51,
-                    5,
-                    0,
-                    83,
-                    0
-                ],
-                "short_summary": "The US Department of Justice announced Sunday it had shut down a website claiming to sell a coronavirus vaccine, in its first act of federal enforcement against fraud in connection with the pandemic.",
-                "title": "US orders first shutdown of website over COVID-19 fraud",
-                "url": "https://www.channelnewsasia.com/news/world/us-says-website-offered-phony-coronavirus-vaccines-12566140"
-            },
-            {
-                "published_on": [
-                    2020,
-                    3,
-                    23,
-                    2,
-                    48,
-                    15,
-                    0,
-                    83,
-                    0
-                ],
-                "short_summary": "March 23, 2020 10:48 AM WASHINGTON (AFP) - The US Department of Justice announced Sunday (March 22) it had shut down a website claiming to sell a coronavirus vaccine, in its first act of federal enforcement against fraud in connection with the pandemic.",
-                "title": "US orders first shutdown of website over coronavirus fraud",
-                "url": "http://www.straitstimes.com/world/united-states/us-orders-first-shutdown-of-website-over-coronavirus-fraud"
-            },
-            {
-                "published_on": [
-                    2020,
-                    3,
-                    23,
-                    2,
-                    1,
-                    3,
-                    0,
-                    83,
-                    0
-                ],
-                "short_summary": "WASHINGTON: The US\u00a0Justice Department on Sunday (Mar 22) said it cracked down on a website that was fraudulently offering to sell vaccines for warding off the deadly coronavirus.\nThe department said the case marked its first action to fight fraud related to the coronavirus outbreak, which has ...",
-                "title": "US says website offered phony coronavirus vaccines",
-                "url": "https://www.channelnewsasia.com/news/world/us-says-website-offered-phony-coronavirus-vaccines-12566140"
-            }
-        ],
-        "keywords": [
-            "department",
-            "sunday",
-            "justice",
-            "fraud",
-            "sell",
-            "website",
-            "shut",
-            "enforcement",
-            "vaccine",
-            "claiming",
-            "federal",
-            "connection",
-            "act",
+            "workers",
             "pandemic",
-            "announced"
+            "government",
+            "tuesday",
+            "outbreak",
+            "said",
+            "measures",
+            "tackle",
+            "uk",
+            "new",
+            "city",
+            "left"
         ]
     },
     {
@@ -643,163 +709,71 @@
                 "published_on": [
                     2020,
                     3,
-                    23,
-                    3,
-                    34,
-                    51,
-                    0,
-                    83,
-                    0
-                ],
-                "short_summary": "Democratic presidential front-runner Joe Biden said on Sunday he needed to start vetting possible running mates \"in a matter of weeks\" and that he discussed the pick with former President Barack Obama.",
-                "title": "Biden to start considering running mates, consulted Obama",
-                "url": "https://www.channelnewsasia.com/news/world/united-states-election-democrats-joe-biden-running-mate-12566582"
-            },
-            {
-                "published_on": [
-                    2020,
-                    3,
-                    23,
-                    3,
-                    15,
-                    5,
-                    0,
-                    83,
-                    0
-                ],
-                "short_summary": "March 23, 2020 11:15 AM WASHINGTON (NYTIMES) - When US President Donald Trump took the podium at the White House briefing room one afternoon last week, his prepared remarks included a reference to the \"coronavirus.\"",
-                "title": "Coronavirus drives the US and China deeper into global power struggle",
-                "url": "http://www.straitstimes.com/world/united-states/coronavirus-drives-the-us-and-china-deeper-into-global-power-struggle"
-            },
-            {
-                "published_on": [
-                    2020,
-                    3,
-                    23,
-                    0,
-                    15,
-                    41,
-                    0,
-                    83,
-                    0
-                ],
-                "short_summary": "March 23, 2020 8:15 AM WASHINGTON (AFP) - US President Donald Trump said Sunday (March 22) that he is \"upset\" with China over a lack of cooperation and information early on in the coronavirus crisis.",
-                "title": "Trump 'a little upset with China' over coronavirus",
-                "url": "http://www.straitstimes.com/world/united-states/trump-says-a-little-upset-with-china-over-coronavirus"
-            },
-            {
-                "published_on": [
-                    2020,
-                    3,
-                    23,
-                    0,
-                    0,
-                    37,
-                    0,
-                    83,
-                    0
-                ],
-                "short_summary": "WASHINGTON:\u00a0President Donald Trump on Sunday (Mar 22) said he had ordered the deployment of emergency medical stations with capacity of 4,000 hospital beds to coronavirus hotspots around the United States.\nTrump told a news conference that he had told the FEMA emergency management agency to set up ...",
-                "title": "Trump orders emergency medical stations for coronavirus hotspots",
-                "url": "https://www.channelnewsasia.com/news/world/trump-orders-emergency-medical-stations-for-coronavirus-hotspots-12566202"
-            },
-            {
-                "published_on": [
-                    2020,
-                    3,
-                    22,
-                    23,
                     24,
-                    38,
-                    6,
-                    82,
-                    0
-                ],
-                "short_summary": "March 23, 2020 7:24 AM WASHINGTON (AFP) - US President Donald Trump on Sunday (March 22) said he had ordered the deployment of emergency medical stations with capacity of 4,000 hospital beds to coronavirus hotspots around the United States.",
-                "title": "Trump orders emergency medical stations for coronavirus hot spots",
-                "url": "http://www.straitstimes.com/world/united-states/trump-orders-emergency-medical-stations-for-coronavirus-hotspots"
-            },
-            {
-                "published_on": [
-                    2020,
-                    3,
-                    22,
-                    23,
-                    20,
+                    10,
+                    46,
                     32,
-                    6,
-                    82,
+                    1,
+                    84,
                     0
                 ],
-                "short_summary": "March 23, 2020 7:20 AM WASHINGTON (REUTERS) - Democratic presidential front-runner Joe Biden said on Sunday (March 22) he needed to start vetting possible running mates \"in a matter of weeks\" and that he discussed the pick with former President Barack Obama.",
-                "title": "Democratic US presidential candidate Joe Biden to start considering running mates, consulted Obama",
-                "url": "http://www.straitstimes.com/world/united-states/joe-biden-to-start-considering-running-mates-consulted-obama"
+                "score": 0.30365356998803783,
+                "short_summary": "The number of cases of coronavirus in Italy is probably 10 times higher than the official tally of almost 64,000, the head of the agency that is collating the data said on Tuesday.",
+                "title": "Italian coronavirus cases likely '10 times higher than reported'",
+                "url": "https://www.channelnewsasia.com/news/world/italian-coronavirus-cases-likely--10-times-higher-than-reported--12571450"
             },
             {
                 "published_on": [
                     2020,
                     3,
-                    22,
-                    21,
-                    0,
-                    0,
-                    6,
-                    82,
+                    24,
+                    9,
+                    13,
+                    5,
+                    1,
+                    84,
                     0
                 ],
-                "short_summary": "March 23, 2020 5:00 AM WASHINGTON \u2022 Inside the White House in recent days, a tense debate erupted among President Donald Trump and his top advisers on whether the United States should escalate military action against Iran.",
-                "title": "Tense debate in White House over military strike on Iran",
-                "url": "http://www.straitstimes.com/world/united-states/tense-debate-in-white-house-over-military-strike-on-iran"
+                "score": 0.4245851429330156,
+                "short_summary": "Indonesia on Tuesday confirmed 107 new coronavirus cases, the biggest daily increase to date in the Southeast Asian country, bringing the total number of cases to 686, Health Ministry official Achmad Yurianto said on Tuesday.",
+                "title": "Indonesia reports biggest daily rise in COVID-19 cases",
+                "url": "https://www.channelnewsasia.com/news/asia/coronavirus-covid19-indonesia-biggest-daily-rise-cases-12571102"
             },
             {
                 "published_on": [
                     2020,
                     3,
-                    22,
-                    21,
-                    0,
-                    0,
-                    6,
-                    82,
+                    24,
+                    9,
+                    11,
+                    19,
+                    1,
+                    84,
                     0
                 ],
-                "short_summary": "March 23, 2020 5:00 AM WASHINGTON \u2022 North Korea has welcomed what it said was a letter from United States President Donald Trump to North Korean leader Kim Jong Un, saying it was a sign of \"the special and very firm personal relations\" between the two leaders despite recent frictions.",
-                "title": "N. Korea says Trump's letter to Kim a sign of special relationship",
-                "url": "http://www.straitstimes.com/world/n-korea-says-trumps-letter-to-kim-a-sign-of-special-relationship"
-            },
-            {
-                "published_on": [
-                    2020,
-                    3,
-                    22,
-                    21,
-                    0,
-                    0,
-                    6,
-                    82,
-                    0
-                ],
-                "short_summary": "March 23, 2020 5:00 AM NEW YORK \u2022 Former United States vice-president Joe Biden has taken command of the Democratic primary for president despite running on a shoestring budget.",
-                "title": "Biden's cash-poor campaign beats the odds in primaries",
-                "url": "http://www.straitstimes.com/world/united-states/bidens-cash-poor-campaign-beats-the-odds-in-primaries"
+                "score": 0.341579221087062,
+                "short_summary": "The number of confirmed coronavirus cases in Germany has risen by 4,764 within a day to reach to 27,436, the Robert Koch Institute for infectious diseases said on Tuesday.",
+                "title": "German coronavirus cases rise by 4,764 cases to 27,436: Robert Koch Institute",
+                "url": "https://www.channelnewsasia.com/news/world/german-coronavirus-cases-rise-by-4-764-cases-to-27-436-robert-12570782"
             }
         ],
+        "hotness": 0,
         "keywords": [
-            "president",
-            "trump",
-            "donald",
-            "washington",
-            "states",
-            "united",
-            "recent",
-            "north",
-            "emergency",
-            "weeks",
-            "democratic",
-            "biden",
-            "joe",
+            "tuesday",
+            "cases",
             "said",
-            "running"
+            "number",
+            "health",
+            "confirmed",
+            "coronavirus",
+            "infections",
+            "new",
+            "official",
+            "death",
+            "country",
+            "24",
+            "ministry",
+            "toll"
         ]
     }
 ]
