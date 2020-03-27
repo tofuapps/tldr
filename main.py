@@ -54,5 +54,6 @@ if __name__ == '__main__':
                 sys.stdout.flush()
 
     except Exception as e:
-        print(e)
+        print('exception: ' + str(e))
+        raise e
 
