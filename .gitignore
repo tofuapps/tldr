@@ -1,3 +1,7 @@
+# Cache and output files
+fetcher__cached*
+curated_articles.out
+
 # Logs
 logs
 *.log
