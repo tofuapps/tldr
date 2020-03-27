@@ -66,19 +66,36 @@ class Fetcher:
 
         return final_data
 
+    def retrieve_article_info(self, url):
+        """
+        Retrieves the text contents of a url pointing to an article in a dictionary. Does not include the title of the article.
+
+        The dictionary consists of the following keys:
+            - text (string)
+            - plain_text (string)
+            - status_code (int)
+            - success (boolean)
+        """
+        response = requests.get(url)
+
+        result = {}
+        result["text"] = response.text
+        result["status_code"] = response.status_code
+        if 200 <= response.status_code < 300:
+            result["success"] = True
+            result["plain_text"] = newspaper.fulltext(response.text)
+        else:
+            result["success"] = False
+
+        return result
 
     def retrieve_article_contents(self, url):
         """Retrieves the text contents of a url pointing to an article. Does not include the title of the article."""
-
-        response = requests.get(url)
-
-        if 200 <= response.status_code < 300:
-            return newspaper.fulltext(response.text)
-            #return utils.clean_html(response.content, tag="article")
-
-        #There's a problem.
-        #TODO: throw an error instead.
-        return "Error " + str(response.status_code)
+        print("WARNING: retrieve_article_contents used is deprecated.")
+        data = self.retrieve_article_info(url)
+        if not data["success"]:
+            return "Error " + str(data["status_code"]) + "."
+        return data["plain_text"]
 
 if __name__ == '__main__':
     fetcher = Fetcher()
