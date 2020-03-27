@@ -102,7 +102,7 @@ class Fetcher:
             response = requests.get(url)
 
             result = {}
-            result["text"] = response.text
+            result["text"] = response.text if response.text else None
             result["status_code"] = response.status_code
             if 200 <= response.status_code < 300:
                 result["success"] = True
@@ -118,10 +118,9 @@ class Fetcher:
 
     def retrieve_article_contents(self, url):
         """Retrieves the text contents of a url pointing to an article. """
-        print("WARNING: retrieve_article_contents method is deprecated.")
         data = self.retrieve_article_info(url)
         if not data["success"]:
-            return "Error " + str(data["status_code"]) + "."
+            return "Error " + str(data["status_code"])
         return data["plain_text"]
 
     def saveCacheToStorage(self):
