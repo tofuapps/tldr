@@ -25,6 +25,7 @@ class Curator:
 
     def classify_NMF(self, articles):
         corpus = [ x.get("summary", x.get("short_summary", "")) for x in articles ]
+        corpus = [ '' if x is None else x for x in corpus ]
 
         # number of topics to extract
         n_topics = round(len(articles) ** 0.5 * 0.5) # sqrt(n)/2 is hopefully a good estimate
@@ -138,5 +139,6 @@ if __name__ == '__main__':
     fetcher = Fetcher()
     curator = Curator()
     articles = fetcher.simple_fetch();
+    print(articles)
     #print(curator.cluster(articles))
-    print(curator.curate(articles))
+    print(curator.curate(articles,False))
