@@ -42,9 +42,10 @@ const Modal = {
 var app = new Vue({
   el: '#app',
   data: {
-    activetab: 1,
+    activetab: 0,
     message: '', //'Hello Vue!',
     newsfeed: [],
+    searchQuery: ''
   },
   methods: {
     displaySummary: function (article) {
@@ -71,6 +72,32 @@ var app = new Vue({
         .then(data => {
           console.log(JSON.stringify(data));
           console.log('displaying summary of article ' + data.summary);
+          modal.bodyContent = data.summary;
+        });
+    },
+
+    handleSubmit: function () {
+      let url = '/api/newsfeed/get_query_summary?'
+      var params = {
+        query: app.searchQuery.strip()
+      }
+      url += new URLSearchParams(params).toString();
+      console.log(url);
+      let opts = {
+        method: 'GET',
+        headers: {}
+      } 
+
+      let modal = makeModal2(null);
+      document.body.appendChild(modal.$el)
+      modal.title = `Related to "${app.searchQuery}"`;
+      modal.url = '#';
+
+      fetch(url, opts)
+        .then(response => response.json())
+        .then(data => {
+          console.log(JSON.stringify(data));
+          console.log('displaying summary of query ' + data.summary);
           modal.bodyContent = data.summary;
         });
     }

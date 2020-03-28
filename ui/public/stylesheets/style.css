@@ -77,8 +77,8 @@ html, body {
   min-width: 24px;
   width: auto;
   padding: 8px;
-  margin-top: 8px;
-  margin-bottom: 8px;
+  //margin-top: 8px;
+  //margin-bottom: 8px;
   border-radius: 4px;
   transition: all 0.2s ease-in;
 }
@@ -131,6 +131,9 @@ color: var(--color-3);
   box-shadow:
     inset   0px 0px 0px 1px #eeeeee,
     1px 1px 1px 1px #eeeeee;
+  max-height: 80%;
+  max-width: 80%;
+  overflow-y: scroll;
 }
 
 .modal > .content > .title {
@@ -267,4 +270,16 @@ a {
   right: 100%;
   bottom: 100%;
   margin: 1px;
+}
+
+#search-form {
+  margin: 8px 0;
+}
+
+#search-input {
+  flex: 1;
+}
+
+#search-button {
+  margin-left: 4px;
 }

@@ -1,29 +1,47 @@
 import json
 import nltk
-from .query_summarizer import QuerySummarizer
 
-class Summarizer:
-    """Summarizes a news article"""
+class QuerySummarizer:
+    """Performs multi-document (hopefully) query based summarization"""
+
+    
 
     def __init__(self):
         self.stopwords = nltk.corpus.stopwords.words('english')
 
 
-    def summarize(self, articles, query=None, debug=False):
-        if query is None:
-            if len(articles) == 1:
-                title = articles[0].title
-                passage = articles[0].passage
-                return self.single_summarize(title, passage, title_factor=3, num_sentences=5, debug=False)
-            else:
-                # TODO: multi-summarization
-                pass
-        else:
-            querySummarizer = QuerySummarizer()
-            return querySummarizer.run(articles, query)
+    def run(self, articles, query):
+        """
+        Articles: List of article objects, which should contain the following fields:
+                * title : string
+                * body: string
+
+        Algorithm:
+            We propose a pipeline to achieve query-focused multi-document abstractive summarisation. The
+            basic steps included are as follows:
+            1. Retrieve relevant documents for the given query from the entire corpus of documents.
+            2. Extract relevant passages from each document.
+            3. Extractive summarisation 
+            information need.
+            3. Perform redundancy removal to keep the length of such a collated document reasonable
+            This following sections describes each step in the proposed pipeline in detail.
+        """
+
+        relevant_articles = self.extract_articles(articles, query)
+        summary_raw = []
+        for article in relevant_articles:
+            summary_raw.append(self.summarize(article['title'], article['passage'], query))
+
+        summary = '\n\n'.join([ x['title'] + ':\n' + x['summary'] for x in self.redundancy_filter(summary_raw) ])
+        return { 'summary': summary }
+        
+
+    def extract_articles(self, articles, query):
+        return articles
+        pass
 
 
-    def single_summarize(self, title, passage, title_factor=3, num_sentences=5, debug=False):
+    def summarize(self, title, passage, query, title_factor=3, num_sentences=5, debug=False):
         """
         Returns a summary of the passage based upon the title.
 
@@ -60,6 +78,13 @@ class Summarizer:
         for word in word_freq:
             if word in title_words:
                 word_freq[word] *= title_factor
+
+        #preprocess the query: tokenize and calculate freq
+        #TODO current process calculates some kind of relevance score, but we need fidelity score
+        #Fidelity score: Score rel (sen) = RET ∗ n^2 /q, where
+        #   *RET is a constant (default 2), n is number of query terms in sentence, q is total number of query terms
+        #Paper's Relevance score: Score f id (sen) = SW^2 /TW, where
+        #   *SW is number of significant words in cluster, TW is total number of words in cluster
 
         #find weighted frequency
         max_freq = max(word_freq.values())
@@ -104,27 +129,17 @@ class Summarizer:
         }
 
 
+    def redundancy_filter(self, articles):
+        # TODO: implement cosine similarity test
+        return articles
+
 
 if __name__ == '__main__':
-    #dummy debug code
-    def read_input_file(filename):
-        text_file=open(filename,"r")
-        return text_file.read()
-
-    try:
-        summarizer = Summarizer()
-        while True:
-            print("\n")
-            try:
-                text = read_input_file(input("Read file at path [^C to cancel]: "))
-            except IOError:
-                print("IO Error. Try again.")
-                continue
-            spstr = text.split("\n")
-            print("assuming first line is title.")
-            ans = summarizer.summarize(spstr[0], "\n".join(spstr[1:]))
-            print("\nresult:\n")
-            print(json.dumps(ans, indent=4))
-            print("\n")
-    except KeyboardInterrupt:
-        pass
+    qs = QuerySummarizer()
+    articles = []
+    with open('test.in', 'r') as f:
+        s = f.readlines()
+        a = { 'title': s[0], 'body': s[1:] }
+        articles.append(a)
+    query = 'trump'
+    print(qs.run(articles, query))

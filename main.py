@@ -24,6 +24,8 @@ if __name__ == '__main__':
                         help="Title of article")
     parser.add_argument('-l', '--link', action='store',
                         help="Link to the article")
+    parser.add_argument('-q', '--query', action='store',
+                        help="Query to summarise by")
     parser.add_argument('--summarize', action='store_true',
                         help='Outputs summary of given article')
     parser.add_argument('-c', '--cluster', action='store_true',
@@ -47,11 +49,24 @@ if __name__ == '__main__':
             sys.stdout.flush()
         elif args.summarize:
             summarizer = Summarizer()
-            if args.link is not None:
+            filled = []
+            if args.title is not None and args.link is not None:
                 article_contents = fetcher.retrieve_article_contents(args.link)
-                result = summarizer.summarize(args.title, article_contents)
-                print(json.dumps(result, sort_keys=True))
-                sys.stdout.flush()
+                fillled.append({
+                    'title': args.title, 
+                    'passage': article_contents
+                })
+            else:
+                articles = fetcher.simple_fetch()
+                for a in articles[:5]:
+                    article_contents = fetcher.retrieve_article_contents(a['url'])
+                    filled.append({
+                        'title': a['title'],
+                        'passage': article_contents
+                    })
+            result = summarizer.summarize(filled, query=args.query)
+            print(json.dumps(result, sort_keys=True))
+            sys.stdout.flush()
 
     except Exception as e:
         print('exception: ' + str(e))

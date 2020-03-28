@@ -35,9 +35,13 @@
               <div class="lined card">
                 <h1>What's up?</h1>
                 Check out the hottest topics in the latest news.
-                <!--<div id="summarise-btn" class="primary button">
-                  Summarise it!
-                </div>-->
+                <form id="search-form" @submit.prevent="handleSubmit">
+                  <div class='row'>
+                    <input type="text" v-model="searchQuery" id="search-input" placeholder="Search anything..."/>
+                    <input type="submit" id="search-button" class="primary button" value="Summarise!">
+                    <!--<i data-feather="search"></i>-->
+                  </div>
+                </form>
               </div>
               <div v-if="newsfeed.length == 0" class="loader-box">
                 <div class="loader"></div>
