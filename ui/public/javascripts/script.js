@@ -79,7 +79,7 @@ var app = new Vue({
     handleSubmit: function () {
       let url = '/api/newsfeed/get_query_summary?'
       var params = {
-        query: app.searchQuery.strip()
+        query: app.searchQuery.trim()
       }
       url += new URLSearchParams(params).toString();
       console.log(url);
@@ -99,6 +99,10 @@ var app = new Vue({
           console.log(JSON.stringify(data));
           console.log('displaying summary of query ' + data.summary);
           modal.bodyContent = data.summary;
+        })
+        .catch(err => {
+          console.error(err);
+          modal.bodyContent = "An error has occurred."
         });
     }
   }

@@ -7,13 +7,25 @@ import newspaper
 from datetime import datetime
 import utils.utils as utils
 
+import traceback
+
+class Feed:
+    """ Class for newsfeeds """
+
+    
+    def __init__(self, name, url):
+        self.name = name
+        self.url = url
+
+
+
 class Fetcher:
     """ Supplies the news articles """
 
     feeds = [
-        'https://www.channelnewsasia.com/rssfeeds/8395986',
-        'http://feeds.bbci.co.uk/news/rss.xml',
-        'https://www.straitstimes.com/news/world/rss.xml'
+        Feed('CNA', 'https://www.channelnewsasia.com/rssfeeds/8395986'),
+        Feed('BBC', 'http://feeds.bbci.co.uk/news/rss.xml'),
+        Feed('StraitsTimes', 'https://www.straitstimes.com/news/world/rss.xml')
         #'https://news.google.com/rss/'
     ]
 
@@ -24,17 +36,17 @@ class Fetcher:
         if use_storage_for_cache:
             self.readCacheFromStorage()
 
-    def fetch(self, urls=None, debug=False):
+    def fetch(self, srcs=None, debug=False):
         """"Fetches list of news from a list of rss feeds and returns the raw result."""
-        if urls is None:
-            urls = Fetcher.feeds
+        if srcs is None:
+            srcs = Fetcher.feeds
 
-        if isinstance(urls, str):
-            urls = [urls]
+        if isinstance(srcs, Feed):
+            srcs = [src]
 
         res = []
-        for url in urls:
-            feed = feedparser.parse(url)
+        for src in srcs:
+            feed = feedparser.parse(src.url)
 
             if debug:
                 entry = feed.entries[1]
@@ -48,7 +60,7 @@ class Fetcher:
         return res
 
 
-    def simple_fetch(self, cached=False, url=None):
+    def simple_fetch(self, cached=False, src=None):
         """
         Fetches list of news from an rss feed, and returns it in a simplified form with basic types.
 
@@ -61,12 +73,12 @@ class Fetcher:
            - short_summary (plain text string)
         are returned.
         """
-        CACHE_KEY = ("URL<%s>" % str(url))
+        CACHE_KEY = ("URL<%s>" % str(None if src is None else src.url))
 
         if cached and CACHE_KEY in self.__cached_simple_fetch:
             final_data = self.__cached_simple_fetch[CACHE_KEY]
         else:
-            data = self.fetch(url)
+            data = self.fetch(src)
             final_data = list(map(lambda entry: \
                                   {
                                       "url": entry.links[0].href,
@@ -82,6 +94,11 @@ class Fetcher:
 
         return final_data
 
+
+    def get_url_domain(self, url):
+        return url.split('/')[2]
+
+
     def retrieve_article_info(self, url, cached=True):
         """
         Retrieves the article raw info from a url in a dictionary.
@@ -96,7 +113,7 @@ class Fetcher:
         """
         CACHE_KEY = ("URL<%s>" % str(url))
 
-        if CACHE_KEY in self.__cached_articles_info:
+        if cached and CACHE_KEY in self.__cached_articles_info:
             result = self.__cached_articles_info[CACHE_KEY]
         else:
             response = requests.get(url)
@@ -106,7 +123,20 @@ class Fetcher:
             result["status_code"] = response.status_code
             if 200 <= response.status_code < 300:
                 result["success"] = True
-                result["plain_text"] = newspaper.fulltext(response.text)
+                try:
+                    if 'channelnewsasia' in self.get_url_domain(url):
+                        result["plain_text"] = ''   # TODO: fix this to load dynamic content
+                    else:
+                        result["plain_text"] = newspaper.fulltext(response.text)
+                except Exception as e:
+                    result['plain_text'] = ''
+                    #print('bleh exception ', str(e))
+                    #tb = traceback.format_exc()
+                    #print(tb)
+                    #with open('rip.txt', 'w') as f:
+                    #    f.write(response.text)
+                    #raise e
+
                 if cached:
                     self.__cached_articles_info[CACHE_KEY] = result
                     if self.use_storage_for_cache:
@@ -140,3 +170,7 @@ class Fetcher:
 
 if __name__ == '__main__':
     fetcher = Fetcher()
+    #with open('ui/rip.txt', 'r') as f:
+    #    content = '\n'.join(f.readlines())
+    #    print(content)
+    #    print(newspaper.fulltext(content))
