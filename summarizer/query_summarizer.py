@@ -1,6 +1,9 @@
 import json
 import nltk
 
+from sklearn.feature_extraction.text import TfidfVectorizer
+from sklearn.metrics.pairwise import cosine_similarity
+
 class QuerySummarizer:
     """Performs multi-document (hopefully) query based summarization"""
 
@@ -30,15 +33,48 @@ class QuerySummarizer:
         relevant_articles = self.extract_articles(articles, query)
         summary_raw = []
         for article in relevant_articles:
-            summary_raw.append(self.summarize(article['title'], article['passage'], query))
+            summary_raw.append(self.summarize(article['title'], article['passage'], query, num_sentences=3))
 
-        summary = '\n\n'.join([ x['title'] + ':\n' + x['summary'] for x in self.redundancy_filter(summary_raw) ])
+        summary = ' [......] '.join([ x['title'] + ':\n' + ('<unavailable>' if x['summary'] is None else x['summary']) for x in self.redundancy_filter(summary_raw) ])
         return { 'summary': summary }
         
 
-    def extract_articles(self, articles, query):
-        return articles
-        pass
+    def extract_articles(self, articles, query, use_crisp=False):
+        if use_crisp:
+            corpus = [ x['passage'] for x in articles ]
+            corpus = [ '' if x is None else x for x in corpus ]
+
+            vec = TfidfVectorizer(max_features=5000, stop_words="english", max_df=0.95, min_df=2)
+            features = vec.fit_transform(corpus)
+
+            # list of unique words found by the vectorizer
+            feature_names = vec.get_feature_names()
+
+            filtered = []
+            query_words = [feature_names.index(x) for x in query.split() if x in feature_names]
+            for idx, article in enumerate(articles):
+                score = 0
+                for w in query_words:
+                    score += features[idx,w]
+                if score > 0:
+                    filtered.append(article)
+            return filtered
+        else:
+            corpus = [ x['passage'] for x in articles ]
+            corpus = [ '' if x is None else x for x in corpus ]
+            corpus.append(' '.join([query]*3))  # need to bump up its df to >= 2
+
+            vec = TfidfVectorizer(max_features=5000, stop_words="english", max_df=0.95, min_df=2)
+            features = vec.fit_transform(corpus)
+
+            filtered = []
+            FIT_VAL = 0
+            sim = cosine_similarity(features[-1,:],features[:-1,:])
+            for idx, article in enumerate(articles):
+                #print(sim[0,idx])
+                if sim[0,idx] > FIT_VAL:
+                    filtered.append(article)
+            return filtered
 
 
     def summarize(self, title, passage, query, title_factor=3, num_sentences=5, debug=False):
@@ -86,6 +122,11 @@ class QuerySummarizer:
         #Paper's Relevance score: Score f id (sen) = SW^2 /TW, where
         #   *SW is number of significant words in cluster, TW is total number of words in cluster
 
+        #for now, just amplify the importance of words contained in query
+        for word in word_freq:
+            if word in title_words:
+                word_freq[word] *= title_factor * title_factor
+
         #find weighted frequency
         max_freq = max(word_freq.values())
         for word in word_freq:
@@ -129,9 +170,27 @@ class QuerySummarizer:
         }
 
 
-    def redundancy_filter(self, articles):
-        # TODO: implement cosine similarity test
-        return articles
+    def redundancy_filter(self, summaries):
+        # cosine similarity test
+        if len(summaries) == 0:
+            return []
+
+        corpus = [ x['summary'] for x in summaries ] 
+        vec = TfidfVectorizer(max_features=5000, stop_words="english")
+        features = vec.fit_transform(corpus)
+
+        filtered = []
+        FIT_VAL = 0.1
+        sim = cosine_similarity(features,features)
+        for idx in range(len(summaries)):
+            ok = True
+            for j in filtered:
+                if sim[idx,j] < FIT_VAL:
+                    ok = False
+            if ok:
+                filtered.append(idx)
+        filtered = [ summaries[x] for x in filtered]
+        return filtered
 
 
 if __name__ == '__main__':
