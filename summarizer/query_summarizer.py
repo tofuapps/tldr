@@ -124,7 +124,7 @@ class QuerySummarizer:
 
         #for now, just amplify the importance of words contained in query
         for word in word_freq:
-            if word in title_words:
+            if word in query.split():
                 word_freq[word] *= title_factor * title_factor
 
         #find weighted frequency

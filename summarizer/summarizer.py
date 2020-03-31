@@ -12,8 +12,9 @@ class Summarizer:
     def summarize(self, articles, query=None, debug=False):
         if query is None:
             if len(articles) == 1:
-                title = articles[0].title
-                passage = articles[0].passage
+                title = articles[0]['title']
+                passage = articles[0]['passage']
+                print('boohoo im dying')
                 return self.single_summarize(title, passage, title_factor=3, num_sentences=5, debug=False)
             else:
                 # TODO: multi-summarization
