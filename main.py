@@ -6,7 +6,9 @@ from summarizer.summarizer import Summarizer
 import json
 import sys
 import argparse
+
 import traceback
+import time
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description='AI Backend for News Reader.')
@@ -49,6 +51,9 @@ if __name__ == '__main__':
             print(json.dumps(result, sort_keys=True))
             sys.stdout.flush()
         elif args.summarize:
+            t00 = time.time()
+            t0 = time.time()
+            print("[{}] starting ".format(time.time()-t0), file=sys.stderr); t0 = time.time();
             summarizer = Summarizer()
             filled = []
             if args.title is not None and args.link is not None:
@@ -59,18 +64,23 @@ if __name__ == '__main__':
                     'passage': article_contents
                 })
             else:
+                print("[{}] before simple_fetch ".format(time.time()-t0), file=sys.stderr)
                 articles = fetcher.simple_fetch()
+                print("[{}] did simple_fetch ".format(time.time()-t0), file=sys.stderr)
                 #for a in articles:
-                for a in articles[:5]:  # TODO: can we check through all the articles quickly?
+                for idx, a in enumerate(articles):  # TODO: can we check through all the articles quickly?
                     res = fetcher.retrieve_article_info(a['url'], cached=False)
                     article_contents = res['plain_text'] if res['success'] else None
                     filled.append({
                         'title': a['title'],
                         'passage': article_contents
                     })
+                    print("[{}] article {} done".format(time.time()-t0,idx), file=sys.stderr); t0 = time.time()
             result = summarizer.summarize(filled, query=args.query)
             print(json.dumps(result, sort_keys=True))
+            print("[{}] TOTAL ELAPSED END".format(time.time()-t00), file=sys.stderr)
             sys.stdout.flush()
+            sys.stderr.flush()
 
     except Exception as e:
         print('exception: ', e)
