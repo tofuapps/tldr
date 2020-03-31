@@ -20,10 +20,25 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 global.appRoot = __dirname;
+global.config = require('./config.js'); // config.js
 
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
-app.use('/api', apiRouter);
+const { createProxyMiddleware } = require('http-proxy-middleware');
+//app.use('/api', apiRouter);
+app.use('/api/v1.0/', createProxyMiddleware({
+  target: global.config.apiEndpoint, // target host
+  changeOrigin: true, // needed for virtual hosted sites
+  ws: true, // proxy websockets
+  pathRewrite: {
+    '^/api/v1.0': '' // remove base path
+  }
+  //, router: {
+  //  // when request.headers.host == 'dev.localhost:3000',
+  //  // override target 'http://www.example.org' to 'http://localhost:8000'
+  //  'dev.localhost:3000': 'http://localhost:8000'
+  //}
+}));
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

@@ -49,7 +49,7 @@ var app = new Vue({
   },
   methods: {
     displaySummary: function (article) {
-      var url = '/api/newsfeed/get_article_summary?'
+      var url = '/api/v1.0/newsfeed/get_article_summary?'
       var params = {
         title: article.title,
         link: article.url
@@ -77,7 +77,7 @@ var app = new Vue({
     },
 
     handleSubmit: function () {
-      let url = '/api/newsfeed/get_query_summary?'
+      let url = '/api/v1.0/newsfeed/get_query_summary?'
       var params = {
         query: app.searchQuery.trim()
       }
@@ -170,8 +170,9 @@ docReady(() => {
     method: 'GET',
     headers: {}
   };
-  fetch('/api/newsfeed/get', opts)
-    .then(response => response.json())
+
+  fetch('/api/v1.0/newsfeed/get', opts)
+    .then(response => { console.log(response); return response.json() })
     .then(data => {
       console.log(data);
       console.log(JSON.stringify(data));
