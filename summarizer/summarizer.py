@@ -45,7 +45,7 @@ class Summarizer:
 
         The number of sentences in the returned summary can be adjusted with the num_sentences parameter, which defaults to 5.
 
-        A dict with the keys 'title', 'summary_sentences'' and 'summary' will be returned.
+        A dict with the keys 'title', 'summary_sentences' and 'summary' will be returned.
 
         This is a wrapper for summarize_all method for a single article.
         """
@@ -123,19 +123,19 @@ class Summarizer:
         """
         #Merge all articles
         title = '\n'.join(list(map(
-            lambda article: article['title'] if isinstance(article, dict) else article[0],
+            lambda article: article.get('title','') if isinstance(article, dict) else article[0],
             articles
         )))
         passage = '\n\n'.join(list(map(
-            lambda article: article['passage'] if isinstance(article, dict) else article[1],
+            lambda article: article.get('passage','') if isinstance(article, dict) else article[1],
             articles
         )))
 
-        if not passage:
+        if not passage.rstrip():
             return {'title': title, 'summary_sentences': [], 'summary': None}
 
         #tokenize sentencess for each paragraph
-        paragraphs = passage.split("\n\n")
+        paragraphs = passage.rstrip().split("\n\n")
         sentences  = []
         for paragraph in paragraphs:
             sentences += nltk.sent_tokenize(paragraph)
