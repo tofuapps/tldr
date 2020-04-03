@@ -123,11 +123,11 @@ class Summarizer:
         """
         #Merge all articles
         title = '\n'.join(list(map(
-            lambda article: article.get('title','') if isinstance(article, dict) else article[0],
+            lambda article: article.get('title','') if isinstance(article, dict) else article[0] if article[0] else '',
             articles
         )))
         passage = '\n\n'.join(list(map(
-            lambda article: article.get('passage','') if isinstance(article, dict) else article[1],
+            lambda article: article.get('passage','') if isinstance(article, dict) else article[1] if article[1] else '',
             articles
         )))
 
