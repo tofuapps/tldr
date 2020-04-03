@@ -12,9 +12,12 @@
     <div id="app">
       <div class="row">
         <div class="sidebar">
+          <div class="image">
+            <img src="https://www.nasa.gov/centers/goddard/images/content/638831main_globe_east_2048.jpg">
+          </div>
           <div v-on:click="activetab=0" v-bind:class="[ activetab === 0 ? 'selected' : '']" class="item">
             <div class="icon">
-              <i data-feather="book"></i>
+              <i data-feather="activity"></i>
             </div>
             <div class="content">
               Headlines
@@ -22,10 +25,18 @@
           </div>
           <div v-on:click="activetab=1" v-bind:class="[ activetab === 1 ? 'selected' : '']" class="item">
             <div class="icon">
-              <i data-feather="circle"></i>
+              <i data-feather="book"></i>
             </div>
             <div class="content">
               Hot topics
+            </div>
+          </div>
+          <div v-on:click="activetab=2" v-bind:class="[ activetab === 2 ? 'selected' : '']" class="item">
+            <div class="icon">
+              <i data-feather="info"></i>
+            </div>
+            <div class="content">
+              About
             </div>
           </div>
         </div>
@@ -35,11 +46,10 @@
               <div class="lined card">
                 <h1>What's up?</h1>
                 Check out the hottest topics in the latest news.
-                <form id="search-form" @submit.prevent="handleSubmit">
+                <form class="search form" @submit.prevent="summariseQuery">
                   <div class='row'>
-                    <input type="text" v-model="searchQuery" id="search-input" placeholder="Search anything..."/>
-                    <input type="submit" id="search-button" class="primary button" value="Summarise!">
-                    <!--<i data-feather="search"></i>-->
+                    <input type="text" v-model="searchQuery" class="search input" placeholder="Search anything..."/>
+                    <input type="submit" class="primary search button" value="Summarise!">
                   </div>
                 </form>
               </div>
@@ -49,24 +59,19 @@
               </div>
               <div v-else v-for="article in newsfeed.reduce((r,a) => {
                 return r.concat(a.articles); },[])" class="column">
-                <a> <!--:href=x.link>-->
+                <a>
                   <div class="card">
                     <div class="title">
-                      {{ article.title }}
+                      <a class="animated link" :href=article.url>{{ article.title }}</a>
                     </div>
                     <div class="body">
                       {{ article.short_summary }}
                     </div>
-                    <div class="secondary button single-summary-btn" v-on:click="displaySummary(article)">
+                    <div class="secondary button single-summary-btn" v-on:click="summariseArticles([article])">
                       More
                     </div>
                   </div>
                 </a>
-                <!--
-                  <div class="card"></div>
-                  <div class="card"></div>
-                  <div class="card"></div>
-                -->
               </div>
             </div>
             <div v-if="activetab === 1" class="column" style="flex: 1" id="topics-container">
@@ -82,49 +87,61 @@
                 <a :href=x.link>
                   <div class="card">
                     <div class="title">
-                      <!-- {{ x.keywords }} -->
-                      <a class="Link" :href=x.articles[0].url>{{ x.articles[0].title }}
-                        <div class="floating label">{{x.articles[0].variance}}</div>
-                        <!--<div class="floating label">{{x.articles[0].variance}} || {{x.articles[0].score}}</div>-->
+                      <!--{{ x.keywords }}-->
+                      <a class="animated link" :href=x.articles[0].url>{{ x.articles[0].title }}
+                        <!--<div class="floating label">{{x.articles[0].variance}}</div>-->
                       </a>
                     </div>
                     <div class="body">
-                      <!-- {{ x.articles.reduce((r,a) => { return r.concat(a.url); }, []) }} -->
                       <p v-if="x.articles.length > 1" style="color: grey">Related:</p>
                       <ul class="link-tree">
                         <li class="item" v-for="article in x.articles.slice(1)">
-                          <a class="Link" :href=article.url>{{ article.title }}
-                            <div class="floating label">{{article.variance}}</div>
-                            <!--<div class="floating label">{{article.variance}} || {{article.score}}</div>-->
+                          <a class="animated link" :href=article.url>{{ article.title }}
+                            <!--<div class="floating label">{{article.variance}}</div>-->
                           </a>
                         </li>
                       </ul>
                     </div>
-                    <div class="secondary button">
+                    <div class="secondary button multi-summary-btn" v-on:click="summariseArticles(x.articles)">
                       More
                     </div>
                   </div>
                 </a>
-                <!--
-                  <div class="card"></div>
-                  <div class="card"></div>
-                  <div class="card"></div>
-                -->
               </div>
             </div>
-            <div class="column" style="max-width: 200px">
-              <div class="card">
+            <div v-if="activetab === 2" class="column" style="flex: 1">
+              <div class="lined card">
+                <div class="title">A CS5131 Project</div>
+                <div class="body">
+                  by Li Yue Chen and Lim Wern Jie (M20503)
+                </div>
+              </div>
+              <div class="lined card">
+                <div class="title">Acknowledgements</div>
+                <div class="body">
+                  <ul class="link-tree">
+                    <li class="item">
+                      <a class="animated link" href="feathericons.com">Feather Icons</a>
+                    </li>
+                    <li class="item">
+                      <a class="animated link" href="https://www.nasa.gov/centers/goddard/images/content/638831main_globe_east_2048.jpg">Earth Image from NASA</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="column" style="width: 280px">
+              <!--<div class="card">
                 <input type="checkbox"/>
                 some options for summariser
                 <div id=".join('\n').substring(0,200)summarise-btn" class="primary button">
                   Summarise it!
                 </div>
-              </div>
+              </div>-->
             </div>
           </div>
         </div>
       </div>
-      {{ message }}
     </div>
   </body>
 
