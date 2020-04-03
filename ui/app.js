@@ -32,7 +32,8 @@ app.use('/api/v1.0/', createProxyMiddleware({
   ws: true, // proxy websockets
   pathRewrite: {
     '^/api/v1.0': '' // remove base path
-  }
+  },
+  logLevel: 'debug'
   //, router: {
   //  // when request.headers.host == 'dev.localhost:3000',
   //  // override target 'http://www.example.org' to 'http://localhost:8000'

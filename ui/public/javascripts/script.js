@@ -48,32 +48,66 @@ var app = new Vue({
     searchQuery: ''
   },
   methods: {
-    displaySummary: function (article) {
-      var url = '/api/v1.0/newsfeed/get_article_summary?'
-      var params = {
-        title: article.title,
-        link: article.url
-      }
-      url += new URLSearchParams(params).toString();
-      console.log(url);
-
-      var opts = {
-        method: 'GET',
-        headers: {}
-      };
-
+    displaySummary: function (articles) {
       let modal = makeModal2(null);
       document.body.appendChild(modal.$el)
-      modal.title = article.title;
-      modal.url = article.url;
+      modal.title = articles[0].title;
+      //modal.url = article.url;
 
-      fetch(url, opts)
-        .then(response => response.json())
-        .then(data => {
-          console.log(JSON.stringify(data));
-          console.log('displaying summary of article ' + data.summary);
-          modal.bodyContent = data.summary;
-        });
+      console.log('posting articles ' + JSON.stringify(articles))
+      // REEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE
+      //let xhr = new XMLHttpRequest();
+      //xhr.open('POST', '/api/v1.0/newsfeed/get_article_summary');
+      //xhr.setRequestHeader('Content-Type', 'application/json');
+      ////xhr.send(JSON.stringify({articles: articles}));
+      //xhr.send(JSON.stringify({"articles": articles}));
+
+      //xhr.onload = function() {
+      //  alert(`Loaded: ${xhr.status} ${xhr.response}`);
+      //  let data = JSON.parse(xhr.response);
+      //  console.log(data);
+      //  console.log(JSON.stringify(data));
+      //  console.log('displaying summary of article ' + data.summary);
+      //  modal.bodyContent = data.summary;
+      //};
+
+      //xhr.onerror = function() { // only triggers if the request couldn't be made at all
+      //  alert(`Network Error`);
+      //};
+
+      fetch('/api/v1.0/newsfeed/get_article_summary', {
+        method: 'POST',
+        //make sure to serialize your JSON body
+        body: JSON.stringify({
+          articles: articles
+        }),
+        headers: {
+          //'Accept': 'application/json',
+          'content-type': 'application/json;',
+        }
+      })
+      .then(response => {
+        if (!response.ok) {                                  // ***
+          throw new Error("HTTP error " + response.status);  // ***
+        }                                                    // ***
+        console.log(response.json);
+        return response.json()
+      })
+      .then(data => {
+        //if (response.error || !response.success) {
+        //  throw new Error(response.error);  // ***
+        //}
+        // ...use `response.json`, `response.text`, etc. here
+        //let data = response.json();
+        console.log(data);
+        console.log(JSON.stringify(data));
+        console.log('displaying summary of article ' + data.summary);
+        modal.bodyContent = data.summary;
+      })
+      .catch(error => {
+        // ...handle/report error
+        console.log(error);
+      });
     },
 
     handleSubmit: function () {

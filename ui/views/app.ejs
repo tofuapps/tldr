@@ -57,7 +57,7 @@
                     <div class="body">
                       {{ article.short_summary }}
                     </div>
-                    <div class="secondary button single-summary-btn" v-on:click="displaySummary(article)">
+                    <div class="secondary button single-summary-btn" v-on:click="displaySummary([article])">
                       More
                     </div>
                   </div>
@@ -100,7 +100,7 @@
                         </li>
                       </ul>
                     </div>
-                    <div class="secondary button">
+                    <div class="secondary button multi-summary-btn" v-on:click="displaySummary(x.articles)">
                       More
                     </div>
                   </div>

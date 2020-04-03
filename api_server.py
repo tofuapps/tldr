@@ -1,5 +1,6 @@
 #!/usr/bin/python3
 from flask import Flask, jsonify, request, make_response
+from werkzeug.exceptions import HTTPException
 
 from fetcher.fetcher import Fetcher
 from curator.curator import Curator
@@ -9,6 +10,7 @@ import json
 import sys
 import argparse
 
+import pprint
 import traceback
 import time
 
@@ -28,6 +30,15 @@ def not_found(error):
     print(request)
     return make_response(jsonify({'error': 'Not found'}), 404)
 
+@app.errorhandler(Exception)
+def handle_error(e):
+    tb = traceback.format_exc()
+    print(tb)
+    code = 500
+    if isinstance(e, HTTPException):
+        code = e.code
+    return jsonify(error=str(e)), code
+
 @app.route('/api/v1.0/newsfeed/get', methods=['GET'])
 def get_newsfeed():
     #cluster = request.args.get('title')
@@ -38,26 +49,40 @@ def get_newsfeed():
     print(result)
     return jsonify(result)
 
-@app.route('/api/v1.0/newsfeed/get_article_summary', methods=['GET'])
+@app.route('/api/v1.0/newsfeed/get_article_summary', methods=['POST'])
 def get_article_summary():
-    title = request.args.get('title')
-    link = request.args.get('link')
+    #title = request.args.get('title')
+    #link = request.args.get('link')
+    print('got a request')
+    pp = pprint.PrettyPrinter(indent=4)
+    pp.pprint(request.data)
+    #pp.pprint(request.values)
+    print('hello ' , request.json['articles'][0])
+    articles = request.get_json()['articles']
+    print(articles)
 
-    print('got params ', title, link)
+    #print('got params ', title, link)
+    print('got request')
+    #print("AAAAAAAAAAAAAAAAAAAAAAA ", type(articles), articles)
     t00 = time.time()
     t0 = time.time()
     print("[{}] starting ".format(time.time()-t0), file=sys.stderr); t0 = time.time();
     filled = []
-    if title is not None and link is not None:
-        res = fetcher.retrieve_article_info(link)
-        print(res['success'])
-        article_contents = res['plain_text'] if res['success'] else None
-        filled.append({
-            'title': title, 
-            'passage': article_contents
-        })
+    if articles is not None:
+        for article in articles:
+            if article['url'] is not None:
+            #title is not None and link is not None:
+                res = fetcher.retrieve_article_info(article['url'])
+                print(res['success'])
+                article_contents = res['plain_text'] if res['success'] else None
+                filled.append({
+                    'title': article['title'],
+                    'passage': article_contents
+                })
     result = summarizer.summarize(filled, query=None)
     print("[{}] TOTAL ELAPSED END".format(time.time()-t00), file=sys.stderr)
+    print("RESULT ", result)
+    result['error'] = False
     return jsonify(result)
 
 @app.route('/api/v1.0/newsfeed/get_query_summary', methods=['GET'])
