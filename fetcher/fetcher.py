@@ -12,7 +12,6 @@ import traceback
 class Feed:
     """ Class for newsfeeds """
 
-    
     def __init__(self, name, url):
         self.name = name
         self.url = url
@@ -26,7 +25,6 @@ class Fetcher:
         Feed('CNA', 'https://www.channelnewsasia.com/rssfeeds/8395986'),
         Feed('BBC', 'http://feeds.bbci.co.uk/news/rss.xml'),
         Feed('StraitsTimes', 'https://www.straitstimes.com/news/world/rss.xml')
-        #'https://news.google.com/rss/'
     ]
 
     def __init__(self, use_storage_for_cache=True):
@@ -37,16 +35,19 @@ class Fetcher:
             self.readCacheFromStorage()
 
     def fetch(self, srcs=None, debug=False):
-        """"Fetches list of news from a list of rss feeds and returns the raw result."""
+        """"Fetches list of news from a list of rss feeds (list of Feed objects) and returns the raw result."""
         if srcs is None:
             srcs = Fetcher.feeds
 
         if isinstance(srcs, Feed):
-            srcs = [src]
+            srcs = [srcs]
 
         res = []
         for src in srcs:
-            feed = feedparser.parse(src.url)
+            try:
+                feed = feedparser.parse(src.url)
+            except:
+                continue
 
             if debug:
                 entry = feed.entries[1]
@@ -60,9 +61,9 @@ class Fetcher:
         return res
 
 
-    def simple_fetch(self, cached=False, src=None):
+    def simple_fetch(self, srcs=None, cached=False):
         """
-        Fetches list of news from an rss feed, and returns it in a simplified form with basic types.
+        Fetches list of news from rss feeds (list of Feed objects), and returns it in a simplified form with basic types.
 
         The results of the rss feed to avoid multiple requests by using the parameter cached=True. The default is False.
 
@@ -73,12 +74,12 @@ class Fetcher:
            - short_summary (plain text string)
         are returned.
         """
-        CACHE_KEY = ("URL<%s>" % str(None if src is None else src.url))
+        CACHE_KEY = ("URL<%s>" % str(None if not srcs else srcs.url))
 
         if cached and CACHE_KEY in self.__cached_simple_fetch:
             final_data = self.__cached_simple_fetch[CACHE_KEY]
         else:
-            data = self.fetch(src)
+            data = self.fetch(srcs)
             final_data = list(map(lambda entry: \
                                   {
                                       "url": entry.links[0].href,
@@ -96,7 +97,13 @@ class Fetcher:
 
 
     def get_url_domain(self, url):
-        return url.split('/')[2]
+        """Returns url domain if available, otherwise None."""
+        try:
+            comp = url.split('/')
+            if comp[1] == '' and (comp[0] == 'http' or comp[0] == 'https'):
+                return url.split('/')[2]
+        except IndexError:
+            pass
 
 
     def retrieve_article_info(self, url, cached=True):
@@ -106,9 +113,9 @@ class Fetcher:
         This method also returns the cached contents of the url if possible, and can be overriden via the parameter cached=False.
 
         The dictionary consists of the following keys:
-            - text (string)
-            - plain_text (string)
-            - status_code (int)
+            - text (string)       - if available, otherwise None.
+            - plain_text (string) - if available, otherwise key not included
+            - status_code (int)   - if available, otherwise key not included
             - success (boolean)
         """
         CACHE_KEY = ("URL<%s>" % str(url))
@@ -116,26 +123,24 @@ class Fetcher:
         if cached and CACHE_KEY in self.__cached_articles_info:
             result = self.__cached_articles_info[CACHE_KEY]
         else:
-            response = requests.get(url)
+            try:
+                response = requests.get(url)
+            except requests.exceptions.RequestException as e:
+                return {"text": str(e), "success": False}
 
             result = {}
-            result["text"] = response.text if response.text else None
+            result["text"] = response.text
             result["status_code"] = response.status_code
+
             if 200 <= response.status_code < 300:
                 result["success"] = True
                 try:
-                    if 'channelnewsasia' in self.get_url_domain(url):
-                        result["plain_text"] = ''   # TODO: fix this to load dynamic content
-                    else:
-                        result["plain_text"] = newspaper.fulltext(response.text)
+                    #if 'channelnewsasia' in self.get_url_domain(url):
+                    #    result["plain_text"] = ''   # TODO: fix this to load dynamic content
+                    #else:
+                    result["plain_text"] = newspaper.fulltext(response.text)
                 except Exception as e:
-                    result['plain_text'] = ''
-                    #print('bleh exception ', str(e))
-                    #tb = traceback.format_exc()
-                    #print(tb)
-                    #with open('rip.txt', 'w') as f:
-                    #    f.write(response.text)
-                    #raise e
+                    result["success"] = False
 
                 if cached:
                     self.__cached_articles_info[CACHE_KEY] = result
@@ -147,7 +152,7 @@ class Fetcher:
         return result
 
     def retrieve_article_contents(self, url):
-        """Retrieves the text contents of a url pointing to an article. """
+        """DEPRECATED: Retrieves the text contents of a url pointing to an article. """
         data = self.retrieve_article_info(url)
         if not data["success"]:
             return "Error " + str(data["status_code"])
