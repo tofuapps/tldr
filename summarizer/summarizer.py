@@ -5,7 +5,7 @@ import numpy as np
 from nltk.stem import WordNetLemmatizer
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
-from .query_summarizer import QuerySummarizer
+#from .query_summarizer import QuerySummarizer
 
 class Summarizer:
     """Summarizes news articles [WIP]"""
@@ -20,7 +20,7 @@ class Summarizer:
 
         def normalize(t):
             return [self.wordnet_lemmatizer.lemmatize(word.lower()) for word in self.tokenizer.tokenize(t)]
-        self.tfidf_vectorizer = TfidfVectorizer(tokenizer=normalize, stop_words="english")
+        self.tfidf_vectorizer = TfidfVectorizer(max_df=0.7, stop_words="english")
 
     def summarize(self, articles, query=None):
         """
@@ -32,18 +32,18 @@ class Summarizer:
         """
         if query is None:
             return self.summarize_all(articles)
-        else:
-            querySummarizer = QuerySummarizer()
-            return querySummarizer.run(articles, query)
+        #else:
+            #querySummarizer = QuerySummarizer()
+            #return querySummarizer.run(articles, query)
 
 
-    def single_summarize(self, title, passage, title_factor=3, num_sentences=5):
+    def single_summarize(self, title, passage, title_factor=3, num_sentences=None):
         """
         Returns a summary of the passage based upon the title.
 
         The importance of the title contents in the summary can be adjusted with the title_factor parameter, which defaults to 3.
 
-        The number of sentences in the returned summary can be adjusted with the num_sentences parameter, which defaults to 5.
+        The number of sentences in the returned summary can be adjusted with the num_sentences parameter, which defaults to None (auto-determine).
 
         A dict with the keys 'title', 'summary_sentences' and 'summary' will be returned.
 
@@ -82,16 +82,20 @@ class Summarizer:
                     )
         return (matrix[size_x - 1, size_y - 1])
 
-
-    def __sentence_distances_2d(self,*sentences):
+    def __sentence_lev_dist_2d(self,*sentences):
         """
         Calculate sentence distances based on Levenshtein distance of lemmatized words.
 
-        Returns a 2d array of distances of each sentence to all others.
+        This allows matching of similar to exact sentences.
+
+        Returns a 2d numpy array of distances of each sentence to all others.
 
         Note: if return_value[2,3]==1, it refers to sentences with indices 2 & 3 having a 1 word difference.
         """
-        sentence_list = list(map(lambda x: [self.wordnet_lemmatizer.lemmatize(word.lower()) for word in self.tokenizer.tokenize(x)], sentences))
+        sentence_list = list(map(lambda x:
+                                 list(filter(lambda y: y not in self.stopwords, [self.wordnet_lemmatizer.lemmatize(word.lower()) for word in self.tokenizer.tokenize(x)])),
+                                 sentences
+        ))
 
         #TODO: Check if considering stopwords would affect accuracy.
 
@@ -108,7 +112,23 @@ class Summarizer:
 
         return result
 
-    def summarize_all(self, articles, title_factor=3, num_sentences=10):
+    def __sentence_cos_sim_2d(self, *sentences):
+        """
+        Calculate sentence cosine similarities from tfdif vectorisation.
+
+        Returns a 2d numpy array of similarities of each sentence to all others.
+
+        Note: if return_value[2,3]==1, it refers to sentences with indices 2 & 3 having a cos sim of 1, i.e. exactly the same.
+        """
+        tfidf = self.tfidf_vectorizer.fit_transform(sentences)
+        pairwise_similarity = tfidf * tfidf.T
+        arr = pairwise_similarity.toarray()
+        return arr
+
+
+
+
+    def summarize_all(self, articles, title_factor=3, num_sentences=None):
         """
         Returns a summary of all articles, assuming them all to be relevant to each other.
 
@@ -117,28 +137,46 @@ class Summarizer:
 
         The importance of the title contents in the summary can be adjusted with the title_factor parameter, which defaults to 3.
 
-        The number of sentences in the returned summary can be adjusted with the num_sentences parameter, which defaults to 10.
+        The number of sentences in the returned summary can be adjusted with the num_sentences parameter, which defaults to None (auto-determine).
 
         A dict with the keys 'title', 'summary_sentences' and 'summary' will be returned.
         """
-        #Merge all articles
+
+        #stop if empty
+        if not articles:
+            return {'title': None, 'summary_sentences': [], 'summary': None}
+
+        #merge all article titles for processing
         title = '\n'.join(list(map(
-            lambda article: article.get('title','') if isinstance(article, dict) else article[0] if article[0] else '',
-            articles
-        )))
-        passage = '\n\n'.join(list(map(
-            lambda article: article.get('passage','') if isinstance(article, dict) else article[1] if article[1] else '',
+            lambda article: (article.get('title','') or '') if isinstance(article, dict) else (article[0] or ''),
             articles
         )))
 
-        if not passage.rstrip():
+        #tokenize sentencess for each paragraph in each article
+        idx_article_start = []
+        sentences  = []
+        for article in articles:
+            passage = (article.get('passage','') or '') if isinstance(article, dict) else (article[1] or '')
+            for paragraph in passage.rstrip().split("\n\n"):
+                sentences += nltk.sent_tokenize(paragraph)
+            idx_article_start.append(len(sentences))
+
+        #stop if empty
+        if not sentences:
             return {'title': title, 'summary_sentences': [], 'summary': None}
 
-        #tokenize sentencess for each paragraph
-        paragraphs = passage.rstrip().split("\n\n")
-        sentences  = []
-        for paragraph in paragraphs:
-            sentences += nltk.sent_tokenize(paragraph)
+        #check if number of sentences to return is given
+        if not num_sentences:
+            # dynamically compute sentence count for summary.
+            # uses 10% of content of the average length of the articles, or 5, whichever is larger, then
+            # add sentences proportionally w.r.t. article count increase until a max cap of 5 additional sentences.
+            num_sentences = max(
+                5,
+                len(sentences)//len(articles)//10
+            ) + min(5, len(articles) - 1)
+
+        if self.debug:
+            print("Summarizing: %d/%d of passage" % (num_sentences, len(sentences)))
 
         #tokenizes words for title and passage
         title_words = [word.lower() for word in self.tokenizer.tokenize(title)]
@@ -156,8 +194,7 @@ class Summarizer:
                 word_freq[word] = 1
 
         #amplify importance of words contained in title
-        for word in title_words:
-            word = self.wordnet_lemmatizer.lemmatize(word)
+        for word in [self.wordnet_lemmatizer.lemmatize(word) for word in title_words]:
             if word in word_freq:
                 word_freq[word] *= title_factor
 
@@ -167,7 +204,8 @@ class Summarizer:
             word_freq[word] /= max_freq
 
         #calculate sentence distance for redundancy removal later
-        sentence_dist = self.__sentence_distances_2d(*sentences)
+        sentence_lev_dist = self.__sentence_lev_dist_2d(*sentences)
+        sentence_cos_sim = self.__sentence_cos_sim_2d(*sentences)
 
         #calculate sentence info - saved in form (sentence, score, accepted)
         sentence_info_list = []
@@ -177,14 +215,22 @@ class Summarizer:
                 word = self.wordnet_lemmatizer.lemmatize(word)
                 score += word_freq.get(word, 0)
 
-            #get distances of this sentence among all others
-            distances = sentence_dist[idx,:]
+            #get comparison of this sentence among all others
+            levdis = sentence_lev_dist[idx,:]
+            cossim = sentence_cos_sim[idx,:]
 
             #search for close matches in sentences
-            idx_matches, = np.where((distances < 5))
+            idx_levdis, = np.where((levdis < 8))
+            idx_cossim, = np.where((cossim > 0.6))
+
+            #merge all matches
+            idx_consider = np.unique(np.concatenate((idx_levdis, idx_cossim)))
+
+            #if self.debug:
+                #print(idx_consider)
 
             #the sentence would only be similar to itself if it's unique. If it's not unique, it should only accept the sentence if it's the first to appear.
-            accepted = (idx_matches.shape[0]) == 1 or idx_matches[0] == idx
+            accepted = idx_consider.shape[0] <= 1 or idx_consider[0] == idx
 
             #add to list
             sentence_info_list.append((sentence, score, accepted))
@@ -193,8 +239,8 @@ class Summarizer:
         sentence_info_list.sort(key=lambda x: x[1], reverse=True)
         if self.debug:
             print("<accepted>[score] <sentence>")
-            for data in sentence_info_list:
-                print("%1s [%.6f]: %s" % ("+" if data[2] else "-", data[1], data[0]))
+            for data in sentence_info_list[0:min(len(sentence_info_list), 20)]:
+                print("%1s[%.6f]: %s" % ("+" if data[2] else "-", data[1], data[0]))
 
         #remove redundant sentences
         sentence_info_list = list(filter(lambda x: x[2], sentence_info_list))
@@ -203,15 +249,30 @@ class Summarizer:
         sentence_info_list = sentence_info_list[0:min(num_sentences, len(sentence_info_list))]
         sentence_info_list.sort(key=lambda x: sentences.index(x[0]))
 
-        #combine the summaries together, with [...] to indicate parts that are removed, if only one article is included.
+        #combine the summaries together, with [...] to indicate parts that are removed.
         last_index = -1
+        current_article_idx = 0
+        next_article_start_idx = idx_article_start[0]
         final_summary_str = ""
         for sen, _, _ in sentence_info_list:
             i = sentences.index(sen)
-            if last_index != -1 and i - 1 > last_index and len(articles) == 1:
-                final_summary_str += "\n[...]"
-            if last_index != -1:
-                final_summary_str += "\n"
+            if len(articles) == 1:
+                if last_index != -1 and i - 1 > last_index:
+                    final_summary_str += " [...] "
+            else:
+                appended = False
+                while i >= next_article_start_idx:
+                    if not appended and final_summary_str:
+                        final_summary_str += "\n[------]\n"
+                        appended = True
+
+                    current_article_idx += 1
+                    next_article_start_idx = idx_article_start[current_article_idx]
+
+
+            if final_summary_str:
+                final_summary_str += " "
+
             final_summary_str += sen.strip()
             last_index = i
 
@@ -231,7 +292,7 @@ if __name__ == '__main__':
         return text_file.read()
 
     try:
-        summarizer = Summarizer(debug=False)
+        summarizer = Summarizer(debug=True)
         articles = []
 
         while True:
