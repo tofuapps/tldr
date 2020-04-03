@@ -145,13 +145,12 @@ const Modal = {
                         <div class="loader"></div>
                         <div class="message">Loading...</div>
                       </div>
-                      <div v-else class="row">
+                      <div v-else class="row text">
                         {{ bodyContent }}
                       </div>
                     </div>
                     <div class="row submit">
-                        <input type="button" value="Ok" v-on:click="dismiss()">
-                        <input type="button" value="Cancel" v-on:click="dismiss()">
+                        <input class="button" type="button" value="Dismiss" v-on:click="dismiss()">
                     </div>
                 </form>
             </div>
