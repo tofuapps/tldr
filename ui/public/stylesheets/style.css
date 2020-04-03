@@ -25,6 +25,12 @@ html, body {
   flex-flow: column nowrap;
 }
 
+@media screen and (max-width: 1024px) {
+    .container > .row > .column:last-child {
+        display: none;
+    }
+}
+
 .focused.container {
   padding: 20px;
   //max-width: 600px;
@@ -69,8 +75,8 @@ html, body {
 }
 
 .primary.button:hover {
-  //background-color: var(--color-2-darker);
-  //color: var(--color-0);
+  /*background-color: var(--color-2-darker);
+  color: var(--color-0);*/
   background-color: var(--color-0);
   color: var(--color-2);
 }
@@ -85,6 +91,11 @@ html, body {
 .secondary.button:hover {
   background-color: var(--color-3);
   color: var(--color-0);
+}
+
+.content-text {
+  margin-top: 16px;
+  margin-bottom: 16px;
 }
 
 .modal {
@@ -103,7 +114,7 @@ html, body {
 .modal > .content {
   background-color: var(--color-0);
   padding: 32px;
-  //border: solid 4px var(--color-0);
+  /*border: solid 4px var(--color-0);*/
   border-radius: 4px;
   box-shadow:
     inset   0px 0px 0px 1px #eeeeee,
@@ -116,8 +127,19 @@ html, body {
 .modal > .content > .title {
   font-size: 1.5em;
   font-weight: bold;
-  margin-bottom: 16px;
 }
+
+.modal > .content > form > div > input[type='button'] {
+  background-color: var(--color-0);
+  border: solid 2px var(--color-2);
+  color: var(--color-2);
+}
+
+.modal > .content > form > div > input[type='button']:hover {
+  background-color: var(--color-2);
+  color: var(--color-0);
+}
+
 
 .loader-box {
   align-items: center;
@@ -144,10 +166,10 @@ html, body {
 }
 
 .card {
-  //flex: 1;
+  /*flex: 1;*/
   padding: 20px 40px;
   margin: 10px;
-  //min-width: 200px;
+  /*min-width: 200px;*/
   border-radius: 4px;
   box-shadow:
     inset   0px 0px 0px 1px #eeeeee,
@@ -257,11 +279,16 @@ html, body {
 .sidebar > .image {
   display: flex;
   padding: 16px;
+  align-items: flex-start;
 }
 
 .sidebar > .image > img {
   padding: -16px;
   border-radius: 50%;
+  display: block;
+  max-width: 100%;
+  width: 100%;
+  height: auto;
 }
 
 .sidebar > .item {
