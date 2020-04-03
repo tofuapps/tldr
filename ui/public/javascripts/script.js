@@ -145,7 +145,7 @@ const Modal = {
                         <div class="loader"></div>
                         <div class="message">Loading...</div>
                       </div>
-                      <div v-else class="row text">
+                      <div v-else class="row content-text">
                         {{ bodyContent }}
                       </div>
                     </div>

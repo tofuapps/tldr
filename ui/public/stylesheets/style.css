@@ -93,6 +93,11 @@ html, body {
   color: var(--color-0);
 }
 
+.content-text {
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+
 .modal {
   background-color: rgba(0,0,0,0.7);
   z-index: 9001;
@@ -122,11 +127,6 @@ html, body {
 .modal > .content > .title {
   font-size: 1.5em;
   font-weight: bold;
-}
-
-.modal > .content > form > div > .text {
-  margin-top: 16px; 
-  margin-bottom: 16px;
 }
 
 .modal > .content > form > div > input[type='button'] {
