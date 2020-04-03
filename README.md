@@ -1,6 +1,6 @@
 # cs5131-project
 
-## Installing
+## Installing & Setup
 You will need the following on your system:
 
 * Python3
@@ -10,6 +10,16 @@ You will need the following on your system:
 To install the dependencies, enter the following in the root directory
 ```
 pipenv sync
+```
+
+Additionally, you need to download the `stopwords` and `wordnet*` corpora from `nltk`.
+To do so, run the following in a python shell and a GUI will pop up. 
+```
+import nltk
+nltk.download()
+
+# Download the relevant datasets by going to the Corpora page.
+# Alternatively, you may download 'all-nltk' in the Collections page.
 ```
 
 ## Running
