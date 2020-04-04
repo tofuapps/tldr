@@ -37,17 +37,12 @@ class Summarizer:
             if not isinstance(article, dict):
                 raise ValueError("articles should only contain 'dict' elements, but %s found" % str(type(article)))
 
-        #process data
-        if not query:
-            return self.summarize_all(articles)
-        else:
-            relevant_articles = self.extract_articles_for_query(articles, query)
-            print(relevant_articles[0])
-            summaries_raw = []
-            for article in relevant_articles:
-                summaries_raw.append(self.summarize_all([article], focus_on=query, redundancy_checks=False))
-            summary = ' [......] '.join([ x['title'] + '\n' + ('<unavailable>' if x['summary'] is None else x['summary']) for x in self.__redundancy_filter_for_summaries(summaries_raw) ])
-            return {'title': query, 'summary': summary}
+        #process query if requested
+        if query:
+            articles = self.extract_articles_for_query(articles, query)
+
+        #summarize!
+        return self.__summarize_all(articles, focus_on=query)
 
     def extract_articles_for_query(self, articles: list, query: str, use_crisp: bool = False):
         """
@@ -89,42 +84,6 @@ class Summarizer:
                     filtered.append(article)
             return filtered
 
-    def __redundancy_filter_for_summaries(self, summaries):
-        # cosine similarity test
-        if len(summaries) == 0:
-            return []
-
-        corpus = [ x['summary'] for x in summaries ]
-        vec = TfidfVectorizer(max_features=5000, stop_words="english")
-        features = vec.fit_transform(corpus)
-
-        filtered = []
-        FIT_VAL = 0.1
-        sim = cosine_similarity(features,features)
-        for idx in range(len(summaries)):
-            ok = True
-            for j in filtered:
-                if sim[idx,j] < FIT_VAL:
-                    ok = False
-            if ok:
-                filtered.append(idx)
-        filtered = [ summaries[x] for x in filtered]
-        return filtered
-
-    def single_summarize(self, title: str, passage: str, title_factor: int = 3, num_sentences=None):
-        """
-        Returns a summary of the passage based upon the title.
-
-        The importance of the title contents in the summary can be adjusted with the title_factor parameter, which defaults to 3.
-
-        The number of sentences in the returned summary can be adjusted with the num_sentences parameter, which defaults to None (auto-determine).
-
-        A dict with the keys 'title', 'summary_sentences' and 'summary' will be returned.
-
-        This is a wrapper for summarize_all method for a single article.
-        """
-        return self.summarize_all([(title, passage)], title_factor, num_sentences)
-
     def __sentence_cos_sim_2d(self, *sentences):
         """
         Calculate sentence cosine similarities from tfdif vectorisation.
@@ -139,7 +98,7 @@ class Summarizer:
         return arr
 
 
-    def summarize_all(self, articles: list, title_factor: int = 3, separator: str = None, focus_on: str = None, num_sentences: str = None, redundancy_checks: bool = True):
+    def __summarize_all(self, articles: list, title_factor: int = 3, focus_factor: int = 5, separator: str = None, focus_on: str = None, num_sentences: str = None, redundancy_checks: bool = True):
         """
         Returns a summary of all articles, assuming them all to be relevant to each other.
 
@@ -221,7 +180,7 @@ class Summarizer:
         #amplify importance of words contained in focus
         for word in [self.wordnet_lemmatizer.lemmatize(word) for word in focus_words]:
             if word in word_freq:
-                word_freq[word] *= title_factor
+                word_freq[word] *= focus_factor
 
         #find weighted frequency
         max_freq = max(word_freq.values()) if word_freq else 0
