@@ -37,6 +37,8 @@ Now, in a separate shell in the current directory enter
 ```
 pipenv run python3 api_server.py
 ```
+Configuration:
+- Create a file `useCachedFeed` in the same directory as `api_server.py` to force the api server to always use the cached feed.
 
 ### Command-line Interface
 If you only want to test the AI component of this project, run

@@ -2,6 +2,9 @@
 fetcher__cached*
 curated_articles.out
 
+# custom config
+useCachedFeed
+
 # Logs
 logs
 *.log
