@@ -125,65 +125,6 @@ class Summarizer:
         """
         return self.summarize_all([(title, passage)], title_factor, num_sentences)
 
-
-    def __levenshtein(self, seq1, seq2):
-        """
-        Calculates Levenshtein distance of two sequences.
-
-        Retrieved from https://stackabuse.com/levenshtein-distance-and-text-similarity-in-python/
-        """
-        size_x = len(seq1) + 1
-        size_y = len(seq2) + 1
-        matrix = np.zeros ((size_x, size_y))
-        for x in range(size_x):
-            matrix [x, 0] = x
-        for y in range(size_y):
-            matrix [0, y] = y
-
-        for x in range(1, size_x):
-            for y in range(1, size_y):
-                if seq1[x-1] == seq2[y-1]:
-                    matrix [x,y] = min(
-                        matrix[x-1, y] + 1,
-                        matrix[x-1, y-1],
-                        matrix[x, y-1] + 1
-                    )
-                else:
-                    matrix [x,y] = min(
-                        matrix[x-1,y] + 1,
-                        matrix[x-1,y-1] + 1,
-                        matrix[x,y-1] + 1
-                    )
-        return (matrix[size_x - 1, size_y - 1])
-
-    def __sentence_lev_dist_2d(self,*sentences):
-        """
-        Calculate sentence distances based on Levenshtein distance of lemmatized words.
-
-        This allows matching of similar to exact sentences.
-
-        Returns a 2d numpy array of distances of each sentence to all others.
-
-        Note: if return_value[2,3]==1, it refers to sentences with indices 2 & 3 having a 1 word difference.
-        """
-        sentence_list = list(map(lambda x: \
-                                 list(filter(lambda y: y not in self.stopwords, [self.wordnet_lemmatizer.lemmatize(word.lower()) for word in self.tokenizer.tokenize(x)])), \
-                                 sentences \
-        ))
-
-        size = len(sentence_list)
-
-        result = np.zeros((size, size))
-        for i in range(size):
-            for j in range(i, size):
-                sent_a = sentence_list[i]
-                sent_b = sentence_list[j]
-                lev_dist = int(self.__levenshtein(sent_a, sent_b))
-                result[i, j] = lev_dist
-                result[j, i] = lev_dist
-
-        return result
-
     def __sentence_cos_sim_2d(self, *sentences):
         """
         Calculate sentence cosine similarities from tfdif vectorisation.
@@ -289,7 +230,6 @@ class Summarizer:
 
         #calculate sentence distance for redundancy removal later
         if redundancy_checks:
-            sentence_lev_dist = self.__sentence_lev_dist_2d(*sentences)
             sentence_cos_sim = self.__sentence_cos_sim_2d(*sentences)
 
         #calculate sentence info - saved in form (sentence, score, accepted)
@@ -302,18 +242,13 @@ class Summarizer:
 
             if redundancy_checks:
                 #get comparison of this sentence among all others
-                levdis = sentence_lev_dist[idx,:]
                 cossim = sentence_cos_sim[idx,:]
 
                 #search for close matches in sentences
-                idx_levdis, = np.where((levdis < 8))
                 idx_cossim, = np.where((cossim > 0.6))
 
-                #merge all matches
-                idx_consider = np.unique(np.concatenate((idx_levdis, idx_cossim)))
-
                 #the sentence would only be similar to itself if it's unique. If it's not unique, it should only accept the sentence if it's the first to appear.
-                accepted = idx_consider.shape[0] <= 1 or idx_consider[0] == idx
+                accepted = idx_cossim.shape[0] <= 1 or idx_cossim[0] == idx
             else:
                 accepted = True
 
