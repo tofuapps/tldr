@@ -1,5 +1,6 @@
 #!/usr/bin/python3
 import os
+import re
 import json
 import requests
 import feedparser
@@ -122,6 +123,10 @@ class Fetcher:
 
         if cached and CACHE_KEY in self.__cached_articles_info:
             result = self.__cached_articles_info[CACHE_KEY]
+            plain_text = result["plain_text"]
+
+
+            result["plain_text"] = plain_text
         else:
             try:
                 response = requests.get(url)
@@ -138,11 +143,27 @@ class Fetcher:
                     #if 'channelnewsasia' in self.get_url_domain(url):
                     #    result["plain_text"] = ''   # TODO: fix this to load dynamic content
                     #else:
-                    result["plain_text"] = newspaper.fulltext(response.text)
+
+                    #retrieve article plain text
+                    plain_text = newspaper.fulltext(response.text)
+
+                    #article text cleanup
+                    # CNA cleanup
+                    plain_text = plain_text.replace('\nAdvertisement\n', '')
+                    plain_text = re.sub(r'^Download our app or subscribe.*$', '', plain_text, flags=re.MULTILINE)
+                    # BBC cleanup
+                    plain_text = re.sub(r'^(Image copyright )(.*)( Image caption)[ ]?', '', plain_text, flags=re.MULTILINE)
+                    plain_text = re.sub(r'^(Image copyright )(.*)$', '', plain_text, flags=re.MULTILINE)
+                    # Generic cleanup
+                    plain_text = re.sub(r'^Follow [@]?\w+ on (Instagram|Twitter|Facebook|YouTube|and|[ ,.])+$', '', plain_text, flags=re.MULTILINE)
+
+                    #update result dict
+                    result["plain_text"] = plain_text
+
                 except Exception as e:
                     result["success"] = False
 
-                if cached:
+                if cached and result["success"]:
                     self.__cached_articles_info[CACHE_KEY] = result
                     if self.use_storage_for_cache:
                         self.saveCacheToStorage()
