@@ -18,11 +18,9 @@ class Summarizer:
         self.tokenizer = nltk.tokenize.RegexpTokenizer(r'\w+')
         self.wordnet_lemmatizer = WordNetLemmatizer()
 
-        def normalize(t):
-            return [self.wordnet_lemmatizer.lemmatize(word.lower()) for word in self.tokenizer.tokenize(t)]
         self.tfidf_vectorizer = TfidfVectorizer(max_df=0.7, stop_words="english")
 
-    def summarize(self, articles, query=None):
+    def summarize(self, articles: list, query: str = None):
         """
         Returns a summary of the passage based upon the articles given.
 
@@ -30,14 +28,90 @@ class Summarizer:
 
         A dict with the keys 'title' and 'summary' will be returned.
         """
-        if query is None:
+
+        #type checking
+        if not isinstance(articles, list):
+            raise ValueError("articles parameter accepts only a 'list' of elements, but '%s' was given" % str(type(articles)))
+
+        for article in articles:
+            if not isinstance(article, dict):
+                raise ValueError("articles should only contain 'dict' elements, but %s found" % str(type(article)))
+
+        #process data
+        if not query:
             return self.summarize_all(articles)
-        #else:
-            #querySummarizer = QuerySummarizer()
-            #return querySummarizer.run(articles, query)
+        else:
+            relevant_articles = self.extract_articles_for_query(articles, query)
+            print(relevant_articles[0])
+            summaries_raw = []
+            for article in relevant_articles:
+                summaries_raw.append(self.summarize_all([article], focus_on=query, redundancy_checks=False))
+            summary = ' [......] '.join([ x['title'] + '\n' + ('<unavailable>' if x['summary'] is None else x['summary']) for x in self.__redundancy_filter_for_summaries(summaries_raw) ])
+            return {'title': query, 'summary': summary}
 
+    def extract_articles_for_query(self, articles: list, query: str, use_crisp: bool = False):
+        """
+        Extracts relevant articles out of a list of articles for the given query
+        """
+        if use_crisp:
+            corpus = [ x['passage'] for x in articles ]
+            corpus = [ '' if x is None else x for x in corpus ]
 
-    def single_summarize(self, title, passage, title_factor=3, num_sentences=None):
+            vec = TfidfVectorizer(max_features=5000, stop_words="english", max_df=0.95, min_df=2)
+            features = vec.fit_transform(corpus)
+
+            # list of unique words found by the vectorizer
+            feature_names = vec.get_feature_names()
+
+            filtered = []
+            query_words = [feature_names.index(x) for x in query.split() if x in feature_names]
+            for idx, article in enumerate(articles):
+                score = 0
+                for w in query_words:
+                    score += features[idx,w]
+                if score > 0:
+                    filtered.append(article)
+            return filtered
+        else:
+            corpus = [ x['passage'] for x in articles ]
+            corpus = [ '' if x is None else x for x in corpus ]
+            corpus.append(' '.join([query]*3))  # need to bump up its df to >= 2
+
+            vec = TfidfVectorizer(max_features=5000, stop_words="english", max_df=0.95, min_df=2)
+            features = vec.fit_transform(corpus)
+
+            filtered = []
+            FIT_VAL = 0
+            sim = cosine_similarity(features[-1,:],features[:-1,:])
+            for idx, article in enumerate(articles):
+                #print(sim[0,idx])
+                if sim[0,idx] > FIT_VAL:
+                    filtered.append(article)
+            return filtered
+
+    def __redundancy_filter_for_summaries(self, summaries):
+        # cosine similarity test
+        if len(summaries) == 0:
+            return []
+
+        corpus = [ x['summary'] for x in summaries ]
+        vec = TfidfVectorizer(max_features=5000, stop_words="english")
+        features = vec.fit_transform(corpus)
+
+        filtered = []
+        FIT_VAL = 0.1
+        sim = cosine_similarity(features,features)
+        for idx in range(len(summaries)):
+            ok = True
+            for j in filtered:
+                if sim[idx,j] < FIT_VAL:
+                    ok = False
+            if ok:
+                filtered.append(idx)
+        filtered = [ summaries[x] for x in filtered]
+        return filtered
+
+    def single_summarize(self, title: str, passage: str, title_factor: int = 3, num_sentences=None):
         """
         Returns a summary of the passage based upon the title.
 
@@ -52,7 +126,7 @@ class Summarizer:
         return self.summarize_all([(title, passage)], title_factor, num_sentences)
 
 
-    def __levenshtein(self,seq1, seq2):
+    def __levenshtein(self, seq1, seq2):
         """
         Calculates Levenshtein distance of two sequences.
 
@@ -92,12 +166,10 @@ class Summarizer:
 
         Note: if return_value[2,3]==1, it refers to sentences with indices 2 & 3 having a 1 word difference.
         """
-        sentence_list = list(map(lambda x:
-                                 list(filter(lambda y: y not in self.stopwords, [self.wordnet_lemmatizer.lemmatize(word.lower()) for word in self.tokenizer.tokenize(x)])),
-                                 sentences
+        sentence_list = list(map(lambda x: \
+                                 list(filter(lambda y: y not in self.stopwords, [self.wordnet_lemmatizer.lemmatize(word.lower()) for word in self.tokenizer.tokenize(x)])), \
+                                 sentences \
         ))
-
-        #TODO: Check if considering stopwords would affect accuracy.
 
         size = len(sentence_list)
 
@@ -126,9 +198,7 @@ class Summarizer:
         return arr
 
 
-
-
-    def summarize_all(self, articles, title_factor=3, num_sentences=None):
+    def summarize_all(self, articles: list, title_factor: int = 3, separator: str = None, focus_on: str = None, num_sentences: str = None, redundancy_checks: bool = True):
         """
         Returns a summary of all articles, assuming them all to be relevant to each other.
 
@@ -145,6 +215,14 @@ class Summarizer:
         #stop if empty
         if not articles:
             return {'title': None, 'summary_sentences': [], 'summary': None}
+
+        #type checking to avoid weird errors later
+        if not isinstance(articles, list):
+            raise ValueError("articles parameter accepts only a 'list' of elements, but '%s' was given" % str(type(articles)))
+
+        for article in articles:
+            if not isinstance(article, dict) and not isinstance(article, tuple):
+                raise ValueError("articles should only contain 'dict' or 'tuple' elements, but %s found" % str(type(article)))
 
         #merge all article titles for processing
         title = '\n'.join(list(map(
@@ -180,6 +258,7 @@ class Summarizer:
 
         #tokenizes words for title and passage
         title_words = [word.lower() for word in self.tokenizer.tokenize(title)]
+        focus_words = [word.lower() for word in self.tokenizer.tokenize(focus_on if focus_on else '')]
         words       = [word.lower() for word in self.tokenizer.tokenize(passage)]
 
         #calculate word use frequency
@@ -198,14 +277,20 @@ class Summarizer:
             if word in word_freq:
                 word_freq[word] *= title_factor
 
+        #amplify importance of words contained in focus
+        for word in [self.wordnet_lemmatizer.lemmatize(word) for word in focus_words]:
+            if word in word_freq:
+                word_freq[word] *= title_factor
+
         #find weighted frequency
-        max_freq = max(word_freq.values())
+        max_freq = max(word_freq.values()) if word_freq else 0
         for word in word_freq:
             word_freq[word] /= max_freq
 
         #calculate sentence distance for redundancy removal later
-        sentence_lev_dist = self.__sentence_lev_dist_2d(*sentences)
-        sentence_cos_sim = self.__sentence_cos_sim_2d(*sentences)
+        if redundancy_checks:
+            sentence_lev_dist = self.__sentence_lev_dist_2d(*sentences)
+            sentence_cos_sim = self.__sentence_cos_sim_2d(*sentences)
 
         #calculate sentence info - saved in form (sentence, score, accepted)
         sentence_info_list = []
@@ -215,22 +300,22 @@ class Summarizer:
                 word = self.wordnet_lemmatizer.lemmatize(word)
                 score += word_freq.get(word, 0)
 
-            #get comparison of this sentence among all others
-            levdis = sentence_lev_dist[idx,:]
-            cossim = sentence_cos_sim[idx,:]
+            if redundancy_checks:
+                #get comparison of this sentence among all others
+                levdis = sentence_lev_dist[idx,:]
+                cossim = sentence_cos_sim[idx,:]
 
-            #search for close matches in sentences
-            idx_levdis, = np.where((levdis < 8))
-            idx_cossim, = np.where((cossim > 0.6))
+                #search for close matches in sentences
+                idx_levdis, = np.where((levdis < 8))
+                idx_cossim, = np.where((cossim > 0.6))
 
-            #merge all matches
-            idx_consider = np.unique(np.concatenate((idx_levdis, idx_cossim)))
+                #merge all matches
+                idx_consider = np.unique(np.concatenate((idx_levdis, idx_cossim)))
 
-            #if self.debug:
-                #print(idx_consider)
-
-            #the sentence would only be similar to itself if it's unique. If it's not unique, it should only accept the sentence if it's the first to appear.
-            accepted = idx_consider.shape[0] <= 1 or idx_consider[0] == idx
+                #the sentence would only be similar to itself if it's unique. If it's not unique, it should only accept the sentence if it's the first to appear.
+                accepted = idx_consider.shape[0] <= 1 or idx_consider[0] == idx
+            else:
+                accepted = True
 
             #add to list
             sentence_info_list.append((sentence, score, accepted))
@@ -258,12 +343,12 @@ class Summarizer:
             i = sentences.index(sen)
             if len(articles) == 1:
                 if last_index != -1 and i - 1 > last_index:
-                    final_summary_str += " [...] "
+                    final_summary_str += separator if separator else " [...] "
             else:
                 appended = False
                 while i >= next_article_start_idx:
                     if not appended and final_summary_str:
-                        final_summary_str += "\n[------]\n"
+                        final_summary_str += separator if separator else "\n[------]\n"
                         appended = True
 
                     current_article_idx += 1
@@ -293,7 +378,7 @@ if __name__ == '__main__':
 
     try:
         summarizer = Summarizer(debug=True)
-        articles = []
+        items = []
 
         while True:
             print("\n")
@@ -304,15 +389,15 @@ if __name__ == '__main__':
                     filename = filename.strip()
                     text = read_input_file(filename)
                     spstr = text.split("\n")
-                    articles.append((spstr[0], "\n".join(spstr[1:])))
+                    items.append((spstr[0], "\n".join(spstr[1:])))
                 break
             except IOError:
                 print("IO Error. Try again.")
-                articles = []
+                items = []
 
 
         print("note: assuming first line of each file to be the title.")
-        ans = summarizer.summarize_all(articles)
+        ans = summarizer.summarize_all(items)
         print("\nTITLE:")
         print(ans['title'])
         print("\nSUMMARY:")
