@@ -95,10 +95,11 @@ class Summarizer:
         tfidf = self.tfidf_vectorizer.fit_transform(sentences)
         pairwise_similarity = tfidf * tfidf.T
         arr = pairwise_similarity.toarray()
+        np.fill_diagonal(arr, 1.0) #guarentee that cos sim of a sentence w/ itself is 1.0
         return arr
 
 
-    def __summarize_all(self, articles: list, title_factor: int = 3, focus_factor: int = 5, separator: str = None, focus_on: str = None, num_sentences: str = None, redundancy_checks: bool = True):
+    def __summarize_all(self, articles: list, title_factor: int = 3, focus_factor: int = 5, separator: str = None, focus_on: str = None, num_sentences: str = None, redundancy_threshold: float = 0.6):
         """
         Returns a summary of all articles, assuming them all to be relevant to each other.
 
@@ -188,52 +189,78 @@ class Summarizer:
             word_freq[word] /= max_freq
 
         #calculate sentence distance for redundancy removal later
-        if redundancy_checks:
+        if redundancy_threshold < 1:
             sentence_cos_sim = self.__sentence_cos_sim_2d(*sentences)
 
-        #calculate sentence info - saved in form (sentence, score, accepted)
+        #calculate sentence info - saved in form (sentence, score, group_id)
+        # we compute the following:
+        #  - score   : the sum of weighted_importance of non-stopwords in the sentence
+        #  - group_id: identifier of similar sentences in which the sentence belong to
+
         sentence_info_list = []
+        group_ids = [-1]*len(sentences)
+        group_id_count = 0
+
         for idx, sentence in enumerate(sentences):
             score = 0
             for word in self.tokenizer.tokenize(sentence.lower()):
                 word = self.wordnet_lemmatizer.lemmatize(word)
                 score += word_freq.get(word, 0)
 
-            if redundancy_checks:
+            if redundancy_threshold < 1:
                 #get comparison of this sentence among all others
                 cossim = sentence_cos_sim[idx,:]
 
                 #search for close matches in sentences
-                idx_cossim, = np.where((cossim > 0.6))
+                idx_cossim, = np.where((cossim >= redundancy_threshold))
 
-                #the sentence would only be similar to itself if it's unique. If it's not unique, it should only accept the sentence if it's the first to appear.
-                accepted = idx_cossim.shape[0] <= 1 or idx_cossim[0] == idx
+                #If the first element to match this sentence is itself, we can create a new group for that
+                if idx_cossim[0] == idx:
+                    group_id_count += 1
+
+                    for sim_idx in idx_cossim:
+                        group_ids[sim_idx] = group_id_count
+
+                elif group_ids[idx] == -1:
+                    group_id_count += 1
+                    group_ids[idx] = group_id_count
             else:
-                accepted = True
+                group_id_count += 1
+                group_ids[idx] = group_id_count
 
             #add to list
-            sentence_info_list.append((sentence, score, accepted))
+            sentence_info_list.append((sentence, score, group_ids[idx]))
 
         #sort by sentence scores
         sentence_info_list.sort(key=lambda x: x[1], reverse=True)
         if self.debug:
-            print("<accepted>[score] <sentence>")
+            print("<id>[score] <sentence>")
             for data in sentence_info_list[0:min(len(sentence_info_list), 20)]:
-                print("%1s[%.6f]: %s" % ("+" if data[2] else "-", data[1], data[0]))
+                print("%6d[%.6f]: %s" % (data[2], data[1], data[0]))
 
-        #remove redundant sentences
-        sentence_info_list = list(filter(lambda x: x[2], sentence_info_list))
+        #use top k sentences excluding redundant sentences
+        final_sentences = []
+        used_sim_sent_groups = {}
 
-        #use first n sentences, and arrange based on original sentence order
-        sentence_info_list = sentence_info_list[0:min(num_sentences, len(sentence_info_list))]
-        sentence_info_list.sort(key=lambda x: sentences.index(x[0]))
+        for data in sentence_info_list:
+            if len(final_sentences) >= num_sentences:
+                break
+            if data[2] not in used_sim_sent_groups:
+                used_sim_sent_groups[data[2]] = True
+                final_sentences.append(data[0])
+
+        if self.debug:
+            print("using sentences from group_ids %s" % str(list(used_sim_sent_groups.keys())))
+
+        #arrange based on original sentence order
+        final_sentences.sort(key=sentences.index)
 
         #combine the summaries together, with [...] to indicate parts that are removed.
         last_index = -1
         current_article_idx = 0
         next_article_start_idx = idx_article_start[0]
         final_summary_str = ""
-        for sen, _, _ in sentence_info_list:
+        for sen in final_sentences:
             i = sentences.index(sen)
             if len(articles) == 1:
                 if last_index != -1 and i - 1 > last_index:
