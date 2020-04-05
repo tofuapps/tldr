@@ -35,7 +35,7 @@ class Summarizer:
 
         for article in articles:
             if not isinstance(article, dict):
-                raise ValueError("articles should only contain 'dict' elements, but %s found" % str(type(article)))
+                raise ValueError("articles should only contain 'dict' elements in the list, but %s found" % str(type(article)))
 
         #process query if requested
         if query:
@@ -46,7 +46,7 @@ class Summarizer:
 
     def extract_articles_for_query(self, articles: list, query: str, use_crisp: bool = False):
         """
-        Extracts relevant articles out of a list of articles for the given query
+        Extracts relevant articles out of a list of articles for the given query.
         """
         if use_crisp:
             corpus = [ x['passage'] for x in articles ]
@@ -99,22 +99,35 @@ class Summarizer:
         return arr
 
 
-    def __summarize_all(self, articles: list, title_factor: int = 3, focus_factor: int = 5, separator: str = None, focus_on: str = None, num_sentences: str = None, redundancy_threshold: float = 0.6):
+    def __summarize_all(self, articles: list, title_factor: int = 3, focus_factor: int = 5, separator: str = None, focus_on: str = None, num_sentences: str = None, redundancy_threshold: float = 0.6, lengthy_sentence_threshold = 300):
         """
         Returns a summary of all articles, assuming them all to be relevant to each other.
 
-        The first argument accepts a list of articles.
+        The first, and required, argument accepts a list of articles.
         An article must either be formatted as a dict {'title': <>, 'passage': <>} or a tuple (<title>, <passage>).
 
-        The importance of the title contents in the summary can be adjusted with the title_factor parameter, which defaults to 3.
+        The remaining arguments are optional.
 
-        The number of sentences in the returned summary can be adjusted with the num_sentences parameter, which defaults to None (auto-determine).
+        Parameters:
 
+        articles                  : The list of articles as described above
+        title_factor              : The importance of the title contents in the summary, which defaults to 3.
+        focus_on                  : Force the summarizer to focus on a certain topics in the given string.
+        focus_factor              : The importance of the focused topic in the summary, which defaults to 5.
+        num_sentences             : The number of sentences in the returned summary, which defaults to None (auto-determine).
+        redundancy_threshold      : The threshold for sentence similarities for them to be considered redundant (0.0-1.0), which defaults to 0.6.
+        lengthy_sentence_threshold: The threshold for sentence word count for them to be considered too lengthy, which defaults to 300 (characters).
+
+        Raises:
+        ValueError when articles fed in are not of the required type.
+
+        Returns:
         A dict with the keys 'title', 'summary_sentences' and 'summary' will be returned.
         """
 
         #stop if empty
         if not articles:
+            print("Warning: no articles are passed in.")
             return {'title': None, 'summary_sentences': [], 'summary': None}
 
         #type checking to avoid weird errors later
@@ -137,7 +150,8 @@ class Summarizer:
         for article in articles:
             passage = (article.get('passage','') or '') if isinstance(article, dict) else (article[1] or '')
             for paragraph in passage.rstrip().split("\n\n"):
-                sentences += nltk.sent_tokenize(paragraph)
+                sentences += list(filter(lambda x: len(x) < lengthy_sentence_threshold, nltk.sent_tokenize(paragraph)))
+
             idx_article_start.append(len(sentences))
 
         #stop if empty
