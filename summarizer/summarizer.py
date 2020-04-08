@@ -122,13 +122,13 @@ class Summarizer:
         ValueError when articles fed in are not of the required type.
 
         Returns:
-        A dict with the keys 'title', 'summary_sentences' and 'summary' will be returned.
+        A dict with the keys 'title' and 'summary' will be returned.
         """
 
         #stop if empty
         if not articles:
             print("Warning: no articles are passed in.")
-            return {'title': None, 'summary_sentences': [], 'summary': None}
+            return {'title': '', 'summary_sentences': [], 'summary': ''}
 
         #type checking to avoid weird errors later
         if not isinstance(articles, list):
@@ -156,7 +156,7 @@ class Summarizer:
 
         #stop if empty
         if not sentences:
-            return {'title': title, 'summary_sentences': [], 'summary': None}
+            return {'title': title, 'summary_sentences': [], 'summary': ''}
 
         #check if number of sentences to return is given
         if not num_sentences:
@@ -299,7 +299,7 @@ class Summarizer:
         #return the final result
         return {
             "title": title.split("\n")[0],
-            "summary_sentences": list(map(lambda x: x[0], sentence_info_list)),
+            #"summary_sentences": list(map(lambda x: x[0], sentence_info_list)),
             "summary": final_summary_str
         }
 
@@ -332,7 +332,7 @@ if __name__ == '__main__':
 
 
         print("note: assuming first line of each file to be the title.")
-        ans = summarizer.summarize_all(items)
+        ans = summarizer.summarize(items)
         print("\nTITLE:")
         print(ans['title'])
         print("\nSUMMARY:")
