@@ -12,6 +12,7 @@ var app = new Vue({
       let modal = makeModal();
       document.body.appendChild(modal.$el)
       modal.title = articles[0].title;
+      if (articles.length > 1) { modal.title = `"${modal.title}" and related articles` }
 
       let url = '/api/v1.0/newsfeed/get_article_summary';
       let opts = {
