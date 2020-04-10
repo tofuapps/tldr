@@ -35,7 +35,11 @@ var app = new Vue({
         })
         .then(data => {
           console.log('Fetched summary.');
-          modal.bodyContent = data.summary;
+          if (data.summary == null || data.summary == "") {
+            modal.bodyContent = "A summary cannot be generated for the given article(s).";
+          } else {
+            modal.bodyContent = data.summary;
+          }
         })
         .catch(error => {
           console.log('Error fetching summary: ' + error);
@@ -70,7 +74,11 @@ var app = new Vue({
         .then(data => {
           console.log(JSON.stringify(data));
           console.log('displaying summary of query ' + data.summary);
-          modal.bodyContent = data.summary;
+          if (data.summary == null || data.summary == "") {
+            modal.bodyContent = "A summary cannot be generated for the query.";
+          } else {
+            modal.bodyContent = data.summary;
+          }
         })
         .catch(error => {
           console.error('Error summarising query: ' + error);
