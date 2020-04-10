@@ -1,4 +1,14 @@
-# cs5131-project
+# News Reader
+
+Primarily powered by `vue.js`, `node.js`, `flask`, `scikit-learn` and `nltk`, this is a system which can
+- automatically curate topics/articles from multiple news sources online, and
+- summarise topics’ contents.
+
+Features include:
+- Summarizing single articles
+- Summarizing groups of articles on the same topic
+- Summarizing articles related to a query
+
 
 ## Installing & Setup
 You will need the following on your system:
@@ -7,7 +17,7 @@ You will need the following on your system:
 * Pip3
 * Pipenv
 
-To install the dependencies, enter the following in the root directory
+Once you're done, install the dependencies of the project by entering the following while in the root directory of the project:
 ```
 pipenv sync
 ```
@@ -24,7 +34,9 @@ nltk.download()
 
 ## Running
 
-You will need to start both the ui and api server. A script `tmux.sh` is available to start both servers in split view in a detached tmux session.
+You will need to start both the UI and API server. A script `tmux.sh` is available to start both servers in split view in a detached tmux session, which can be used on macOS and Linux systems with `tmux` installed.
+
+If you do not have `tmux`, follow the below steps to manually start the servers.
 
 ### UI Server
 Start a new shell in the current directory and enter
@@ -46,3 +58,13 @@ If you only want to test the AI component of this project, run
 pipenv run python3 main.py
 ```
 An empty output is expected. Pass the option `--help` or `-h` to view the complete list of available options.
+
+## Usage
+
+To use the News Reader, go to `http://localhost:8080` on your system. This web app is tested to function on Chrome, Firefox, and Safari.
+
+As of now, the default feed includes contents from Channel News Asia, BBC and The Straits Times.
+
+## Contributors
+- Li Yue Chen (@l-yc)
+- Lim Wern Jie (@wernjie)

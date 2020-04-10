@@ -11,8 +11,11 @@ import utils.utils as utils
 import traceback
 
 class Feed:
-    """ Class for newsfeeds """
+    """
+    Class for Newsfeeds
 
+    Each instance of Feed will contain the name of the rss feed and its corresponding url.
+    """
     def __init__(self, name, url):
         self.name = name
         self.url = url
@@ -28,14 +31,14 @@ class Fetcher:
         Feed('StraitsTimes', 'https://www.straitstimes.com/news/world/rss.xml')
     ]
 
-    def __init__(self, use_storage_for_cache=True):
+    def __init__(self, use_storage_for_cache: bool = True):
         self.use_storage_for_cache = use_storage_for_cache
         self.__cached_simple_fetch = {}
         self.__cached_articles_info = {}
         if use_storage_for_cache:
             self.readCacheFromStorage()
 
-    def fetch(self, srcs=None, debug=False):
+    def fetch(self, srcs: list = None):
         """"Fetches list of news from a list of rss feeds (list of Feed objects) and returns the raw result."""
         if srcs is None:
             srcs = Fetcher.feeds
@@ -50,19 +53,13 @@ class Fetcher:
             except:
                 continue
 
-            if debug:
-                entry = feed.entries[1]
-                print(entry.keys())
-                print(entry.title)
-                print(entry)
-
             res += feed.entries
 
         res.sort(key=lambda x: x.published_parsed, reverse=True)
         return res
 
 
-    def simple_fetch(self, srcs=None, cached=False):
+    def simple_fetch(self, srcs: list = None, cached: bool = False):
         """
         Fetches list of news from rss feeds (list of Feed objects), and returns it in a simplified form with basic types.
 
@@ -75,7 +72,7 @@ class Fetcher:
            - short_summary (plain text string)
         are returned.
         """
-        CACHE_KEY = ("URL<%s>" % str(None if not srcs else srcs.url))
+        CACHE_KEY = ("URL<%s>" % str(None if not srcs else set(map(lambda x: x.url, srcs))))
 
         if cached and CACHE_KEY in self.__cached_simple_fetch:
             final_data = self.__cached_simple_fetch[CACHE_KEY]
@@ -107,7 +104,7 @@ class Fetcher:
             pass
 
 
-    def retrieve_article_info(self, url, cached=True):
+    def retrieve_article_info(self, url: str, cached: bool = True):
         """
         Retrieves the article raw info from a url in a dictionary.
 

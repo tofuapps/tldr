@@ -11,6 +11,7 @@ from sklearn.decomposition import NMF
 from sklearn.metrics import silhouette_score
 
 class Curator:
+    """ Curates articles. """
 
     def __init__(self):
         pass

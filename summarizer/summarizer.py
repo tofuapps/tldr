@@ -8,7 +8,7 @@ from sklearn.metrics.pairwise import cosine_similarity
 #from .query_summarizer import QuerySummarizer
 
 class Summarizer:
-    """Summarizes news articles [WIP]"""
+    """Summarizes news articles"""
 
     def __init__(self, debug=False):
         self.debug = debug
