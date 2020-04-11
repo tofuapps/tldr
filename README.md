@@ -1,14 +1,26 @@
 # News Reader
 
-Primarily powered by `vue.js`, `node.js`, `flask`, `scikit-learn` and `nltk`, this is a system which can
-- automatically curate topics/articles from multiple news sources online, and
-- summarise topics’ contents.
+A system which can
+* automatically curate topics/articles from multiple news sources online, and
+* summarise topics’ contents.
 
 Features include:
-- Summarizing single articles
-- Summarizing groups of articles on the same topic
-- Summarizing articles related to a query
+* Summarizing single articles
+* Summarizing groups of articles on the same topic
+* Summarizing articles related to a query
 
+App structure, powered by:
+* UI/Web Server
+    + Vue.js
+    + Node.js
+* API Server
+    + Flask
+* AI Backend
+    + feedparser
+    + newspaper3k
+    + Beautiful Soup
+    + scikit-learn
+    + nltk
 
 ## Installing & Setup
 You will need the following on your system:
