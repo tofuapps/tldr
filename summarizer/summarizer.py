@@ -99,7 +99,7 @@ class Summarizer:
         return arr
 
 
-    def __summarize_all(self, articles: list, title_factor: int = 3, focus_factor: int = 5, separator: str = None, focus_on: str = None, num_sentences: int = None, redundancy_threshold: float = 0.6, lengthy_sentence_threshold: int = 300):
+    def __summarize_all(self, articles: list, title_factor: int = 3, focus_factor: int = 1000, separator: str = None, focus_on: str = None, num_sentences: int = None, redundancy_threshold: float = 0.6, lengthy_sentence_threshold: int = 300):
         """
         Returns a summary of all articles, assuming them all to be relevant to each other.
 
