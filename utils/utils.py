@@ -4,13 +4,13 @@ import matplotlib.pyplot as plt
 from sklearn.decomposition import PCA
 from sklearn.manifold import TSNE
 
-def visualize_tfidf_matrix(tfidf_matrix):
+def visualize_tfidf_matrix(tfidf_matrix, labels):
     # Visualisation (optional)
     # ----------------------------------------------------------------------------------------------------------------------
     X = tfidf_matrix.todense() # convert list of vectors into 2d matrix
 
     # first reduction using PCA (Principal Component Analysis)
-    reduced_data = PCA(n_components=50).fit_transform(X)
+    reduced_data = PCA(n_components=2).fit_transform(X)
 
     labels_color_map = {
         0: '#20b2aa', 1: '#ff7373', 2: '#ffe4e1', 3: '#005073', 4: '#4d0404',
@@ -22,7 +22,7 @@ def visualize_tfidf_matrix(tfidf_matrix):
         pca_comp_1, pca_comp_2 = reduced_data[index]
         color = labels_color_map[labels[index]]
         ax.scatter(pca_comp_1, pca_comp_2, c=color)
-        plt.show()
+    plt.show()
 
     # second reduction using t-SNE (t-Distributed Stochastic Neighbouring Entities)
     embeddings = TSNE(n_components=2)
