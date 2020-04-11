@@ -14,7 +14,7 @@ var app = new Vue({
       modal.title = articles[0].title;
       if (articles.length > 1) { modal.title = `"${modal.title}" and related articles` }
 
-      let url = '/api/v1.0/newsfeed/get_article_summary';
+      let url = 'api/v1.0/newsfeed/get_article_summary';
       let opts = {
         method: 'POST',
         body: JSON.stringify({
@@ -52,7 +52,7 @@ var app = new Vue({
       document.body.appendChild(modal.$el)
       modal.title = `Related to "${app.searchQuery}"`;
 
-      let url = '/api/v1.0/newsfeed/get_query_summary?'
+      let url = 'api/v1.0/newsfeed/get_query_summary?'
       let params = {
         query: app.searchQuery.trim()
       }
@@ -107,7 +107,7 @@ function makeModal() {
 }
 
 docReady(() => {
-  let url = '/api/v1.0/newsfeed/get';
+  let url = 'api/v1.0/newsfeed/get';
   let opts = {
     method: 'GET',
     headers: {}
