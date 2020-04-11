@@ -25,9 +25,11 @@ App structure, powered by:
 ## Installing & Setup
 You will need the following on your system:
 
-* Python3
+* Python 3.7
 * Pip3
 * Pipenv
+* Node.js
+* npm
 
 Once you're done, install the dependencies of the project by entering the following while in the root directory of the project:
 ```
