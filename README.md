@@ -9,6 +9,8 @@ Features include:
 * Summarizing groups of articles on the same topic
 * Summarizing articles related to a query
 
+[Try the LIVE DEMO (cached articles as of Apr 3, 2020)](https://www.wernjie.com/webapp/news-reader/)
+
 App structure, powered by:
 * UI/Web Server
     + Vue.js
