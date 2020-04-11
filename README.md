@@ -44,6 +44,11 @@ nltk.download()
 # Alternatively, you may download 'all-nltk' in the Collections page.
 ```
 
+Install nodejs dependencies by running the following in the `ui` subdirectory.
+```
+npm install
+```
+
 ## Running
 
 You will need to start both the UI and API server. A script `tmux.sh` is available to start both servers in split view in a detached tmux session, which can be used on macOS and Linux systems with `tmux` installed.
@@ -51,13 +56,13 @@ You will need to start both the UI and API server. A script `tmux.sh` is availab
 If you do not have `tmux`, follow the below steps to manually start the servers.
 
 ### UI Server
-Start a new shell in the current directory and enter
+Start a new shell in the current directory, navigate to the `ui` subdirectory and enter
 ```
-cd ui && npm start
+npm start
 ```
 
 ### API Server
-Now, in a separate shell in the current directory enter
+Now, in a separate shell in the current directory, enter
 ```
 pipenv run python3 api_server.py
 ```
