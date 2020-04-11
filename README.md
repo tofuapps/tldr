@@ -34,14 +34,13 @@ Once you're done, install the dependencies of the project by entering the follow
 pipenv sync
 ```
 
-Additionally, you need to download the `stopwords` and `wordnet*` corpora from `nltk`.
-To do so, run the following in a python shell and a GUI will pop up. 
+Additionally, you need to download some corpora from `nltk`.
+To do so, run the following in a python shell.
 ```
 import nltk
-nltk.download()
-
-# Download the relevant datasets by going to the Corpora page.
-# Alternatively, you may download 'all-nltk' in the Collections page.
+nltk.download('stopwords')
+nltk.download('wordnet')
+nltk.download('punkt')
 ```
 
 Install nodejs dependencies by running the following in the `ui` subdirectory.
